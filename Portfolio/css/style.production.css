@@ -1,0 +1,323 @@
+/*
+Colors used
+
+Text Color (Dark Gray): #2b2b2b;
+Primary Color (Purple): #357b70;
+Secondary Color (Orange): #e0b354;
+ */
+ 
+ * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', sans-serif;
+  font-weight: 400; 
+  font-size: 16px;
+  line-height: 1.4;
+  background-color: #ffffff;
+
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+h4 {
+  font-size: 22px;
+  font-weight: 400;
+}
+.texts {
+  font-size: 16px;
+  font-weight: 400;
+}
+a {
+  color: #0000ff;
+}
+a:visited {
+  /* visited link */
+  color: #05676e;
+}
+a:hover, focus {
+  /* No underlining when hovering over a link */
+  text-decoration: none;
+}
+a:active {
+  /* selected link */
+  color: #489c79;
+}
+button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #357b70;
+  color: white;
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+.navigation-list__item--active {
+  text-decoration: none;
+}
+.profile__portrait {
+  float: left;
+  width: 250px;
+  height: auto;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+.page-footer {
+  clear: both;
+}
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+
+}
+.profile2 {
+  max-width: 700px;
+  margin: 0 auto;
+
+}
+.about {
+  list-style-type: none;
+  padding: 0 0 0 0;
+}
+
+.page-footer {
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 80px;
+  padding:10px;
+  margin-right: 20px;
+  border-bottom: 1px solid black;
+  background-color: #d3d3d3;
+}
+.page-header__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
+}
+.page-header__item:last-child {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+}
+.navigation-list {
+  list-style-type: none;
+}
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+/* Grid fallback*/
+
+.grid__item {
+  display: inline-block;
+  width: 33%;
+}
+/* Styling CSS grid*/
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.grid__item {
+  background-color: #d3d3d3;
+  padding: 10px;
+  /* Set width to auto*/
+  width: auto;
+}
+.grid__item:last-child {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  -ms-grid-column-span: 0;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-row-span: 2;
+  grid-row-end: 3;
+}
+table {
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+.button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the button */
+  background-color: #d4af37;
+  color: #006400;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /* width of the border, type, color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+  position: center;
+}
+button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the button */
+  background-color: #d4af37;
+  color: #006400;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /* width of the border, type, color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+  position: center;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    -ms-grid-columns: 1fr 10px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  .texts {
+    font-size: 14px;
+  }
+   .navigation-list {
+  list-style-type: none;
+  font-size: 14px;
+}
+}
+@media all and (max-width: 500px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+  .texts {
+    font-size: 12px;
+  }
+  .navigation-list {
+  list-style-type: none;
+  font-size: 12px;
+}
+}
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  max-height: 350px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #d3d3d3;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: black;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
