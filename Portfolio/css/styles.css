@@ -6,22 +6,22 @@ Primary Color (Purple): #357b70;
 Secondary Color (Orange): #e0b354;
  */
 :root {
-  --primary-color: #357b70;
-  --secondary-color: #e0b354;
-  --dark-grey: #2b2b2b;
-  --main-bg-color: #ffffff;
-  --a-color:#0000ff;
-  --visited-color:#05676e;
-  --active-color: #489c79;
-  --button-bg-color: #d4af37;
-  --overlay-bg-color: #d3d3d3;
-  --button-tx-color: #006400;
-  --page-hr-color: #d3d3d3;
-  --bg-tb-color: #ffffff;
-  --grid-bg-color: #d3d3d3 ;
-  --hvy-font-weight: 700;
-  --lght-font-weight: 400;
-  --stand-font-size: 16px;
+  -primary-color: #357b70;
+  -secondary-color: #e0b354;
+  -dark-grey: #2b2b2b;
+  -main-bg-color: #ffffff;
+  -a-color:#0000ff;
+  -visited-color:#05676e;
+  -active-color: #489c79;
+  -button-bg-color: #d4af37;
+  -overlay-bg-color: #d3d3d3;
+  -button-tx-color: #006400;
+  -page-hr-color: #d3d3d3;
+  -bg-tb-color: #ffffff;
+  -grid-bg-color: #d3d3d3 ;
+  -hvy-font-weight: 700;
+  -lght-font-weight: 400;
+  -stand-font-size: 16px;
 
 }
  * {
@@ -30,41 +30,41 @@ Secondary Color (Orange): #e0b354;
 
 body {
   font-family: 'Merriweather', sans-serif;
-  font-weight: var(--lght-font-weight); 
-  font-size: var(--stand-font-size);
+  font-weight: var(-lght-font-weight);
+  font-size: var(-stand-font-size);
   line-height: 1.4;
-  background-color: var(--main-bg-color);
+  background-color: var(-main-bg-color);
 
 }
 
 h1 {
   font-size: 32px;
-  font-weight: var(--hvy-font-weight);
+  font-weight: var(-hvy-font-weight);
 }
 
 h2 {
   font-size: 24px;
-  font-weight: var(--hvy-font-weight);
+  font-weight: var(-hvy-font-weight);
 }
 
 h3 {
   font-size: 18px;
-  font-weight: var(--lght-font-weight);
+  font-weight: var(-lght-font-weight);
 }
 h4 {
   font-size: 22px;
-  font-weight: var(--lght-font-weight);
+  font-weight: var(-lght-font-weight);
 }
 .texts {
-  font-size: var(--stand-font-size);
-  font-weight: var(--lght-font-weight);
+  font-size: var(-stand-font-size);
+  font-weight: var(-lght-font-weight);
 }
 a {
-  color: var(--a-color);
+  color: var(-a-color);
 }
 a:visited {
   /* visited link */
-  color: var(--visited-color);
+  color: var(-visited-color);
 }
 a:hover, focus {
   /* No underlining when hovering over a link */
@@ -72,7 +72,7 @@ a:hover, focus {
 }
 a:active {
   /* selected link */
-  color: var(--active-color);
+  color: var(-active-color);
 }
 button {
   /* overwrites browser defaults and resets the border */
@@ -80,7 +80,7 @@ button {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: var(--primary-color);
+  background-color: var(-primary-color);
   color: white;
   text-decoration: none;
   /*adds spacing to the button (this will be discussed more in-depth later) */
@@ -131,7 +131,7 @@ button {
   padding:10px;
   margin-right: 20px;
   border-bottom: 1px solid black;
-  background-color: var(--page-hr-color);
+  background-color: var(-page-hr-color);
 }
 .page-header__item {
   flex: 0 1 200px;
@@ -162,7 +162,7 @@ button {
 }
 
 .grid__item {
-  background-color: var(--grid-bg-color);
+  background-color: var(-grid-bg-color);
   padding: 10px;
   /* Set width to auto*/
   width: auto;
@@ -175,7 +175,7 @@ button {
 }
 table {
   border-collapse: collapse;
-  background-color: var(--bg-tb-color);
+  background-color: var(-bg-tb-color);
 }
 
 table, th, td {
@@ -188,15 +188,14 @@ table, th, td {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the button */
-  background-color: var(--button-bg-color);
-  color: var(--button-tx-color);
+  background-color: var(-button-bg-color);
+  color: var(-button-tx-color);
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.2s opacity;
-  position: center;
 }
 
 button:hover,
@@ -221,7 +220,7 @@ button:focus,
     font-size: 22px;
   }
   h4 {
-    font-size: var(--stand-font-size);
+    font-size: var(-stand-font-size);
   }
   .texts {
     font-size: 14px;
@@ -271,7 +270,7 @@ button:focus,
   bottom: 100%;
   left: 0;
   right: 0;
-  background-color: var(--overlay-bg-color);
+  background-color: var(-overlay-bg-color);
   overflow: hidden;
   width: 100%;
   height:0;
@@ -284,10 +283,10 @@ button:focus,
 }
 
 .text {
-  white-space: nowrap; 
+  white-space: nowrap;
   color: black;
   font-size: 24px;
-  font-weight: var(--hvy-font-weight);
+  font-weight: var(-hvy-font-weight);
   position: absolute;
   overflow: hidden;
   top: 50%;
@@ -295,5 +294,3 @@ button:focus,
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
-
-
