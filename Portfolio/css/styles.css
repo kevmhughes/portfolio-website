@@ -24,7 +24,6 @@ Secondary Color (Orange): #e0b354;
   --stand-font-size: 16px;
 
 }
- 
  * {
   box-sizing: border-box;
 }
@@ -296,3 +295,5 @@ button:focus,
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+
+
