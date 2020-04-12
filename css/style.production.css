@@ -23,7 +23,6 @@ body {
 @media (max-width: 600px) {
   .flexbox-media {
     display: flex;
-    flex-direction: column;
     align-items: baseline;
     flex-direction: column;
     padding: 0% 0% 0% 10%;
@@ -124,6 +123,10 @@ h2 {
     padding-right: 10px;
 }
 
+.ztext{
+  font-size: 94px;
+}
+
 h3 {
   margin: 0;
   font-size: 25px;
@@ -153,7 +156,9 @@ h4 {
       font-weight: 400;
       font-family: lato, sans-serif;
   }
-  
+  .ztext{
+    font-size: 72px;
+  }
   h3 {
     margin: 0;
     font-size: 15px;
@@ -182,7 +187,9 @@ h4 {
       font-weight: 400;
       font-family: lato, sans-serif;
   }
-  
+  .ztext{
+    font-size: 49px;
+  }
   h3 {
     margin: 0;
     font-size: 13px;
@@ -541,13 +548,55 @@ body {
 }
 .floater {
   position: absolute;
-    top: 36%;
+    top: 42%;
     left: 11%;
     width: 320px;
     height: 240px;
     transform: translateZ(-0.75px) scale(0.75) translateX(-35%) translateY(-181%) rotate(0deg);
     padding: 10px;
 }
+
+@media (max-width: 2000px) {
+  .floater {
+    left: -9%;
+    top: 41.5%
+}
+  }
+@media (max-width: 500px) {
+    .floater {
+      left: -7%;
+      top: 56%;
+  }
+    }
+
+    .floater-otro {
+      position: absolute;
+        top: 42%;
+        left: 11%;
+        width: 320px;
+        height: 240px;
+        transform: translateZ(-0.75px) scale(0.75) translateX(-35%) translateY(-181%) rotate(0deg);
+        padding: 10px;
+    }
+    
+    @media (max-width: 2000px) {
+      .floater-otro {
+        left: -9%;
+        top: 41.5%
+    }
+      }
+      @media (max-width: 1024px) {
+        .floater-otro {
+          left: -9%;
+          top: 53.5%
+      }
+        }
+    @media (max-width: 500px) {
+        .floater-otro {
+          left: -7%;
+          top: 56%;
+      }
+        }
 
 .floater-two {
   position: absolute;
@@ -559,6 +608,59 @@ body {
     padding: 10px;
 }
 
+@media (max-width: 500px) {
+  .floater-two {
+    left: 60%;
+    top: 75%;
+}
+  }
+  .seework {
+    position: absolute;
+      top: 66.96%;
+      left: 57%;
+      width: 320px;
+      height: 240px;
+      transform: translateZ(0.25px) scale(0.75) translateX(-35%) translateY(-181%) rotate(0deg);
+      padding: 10px;
+  }
+  
+  @media (max-width: 500px) {
+    .seework {
+      left: 60%;
+      top: 93%;
+  }
+    }
+
+
+  .floater-two-img {
+    position: absolute;
+      top: 57.96%;
+      left: 57%;
+      width: 320px;
+      height: 240px;
+      transform: translateZ(0.25px) scale(0.75) translateX(-35%) translateY(-181%) rotate(0deg);
+      padding: 10px;
+  }
+  
+  @media (max-width: 1300px) {
+    .floater-two-img {
+      left: 60%;
+      top: 75%;
+      height: 10vh;
+  }
+    }
+
+  @media (max-width: 500px) {
+    .floater-two-img {
+      left: 60%;
+      top: 75%;
+      height: 10vh;
+  }
+    }
+
+  
+
+
 .floater-three {
   position: absolute;
   top: 76%;
@@ -568,6 +670,8 @@ body {
   transform: translateZ(0.50px) scale(0.75) translateX(-39%) translateY(-105%) rotate(0deg);
   padding: 10px;
 }
+
+
 #slide3:before {
   background: rgb(0, 0, 0);
   transform: translateZ(-1px) scale(2);
