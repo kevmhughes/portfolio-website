@@ -20,76 +20,221 @@ body {
 
 }
 
+@media (max-width: 600px) {
+  .flexbox-media {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    padding: 0% 0% 0% 10%;
+}
+  }
+
+  @media (max-width: 2600px) {
+    .flexbox-media-two {
+      display: flex;
+      align-items: baseline;
+      flex-direction: column;
+      padding: 0% 0% 0% 10%;
+  }
+    }
+
+/* Profile photo */
+
+.profile{
+    z-index: -1;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 990px) {
+  .profile {
+    width: 790px;
+  }
+  }
+  @media (max-width: 760px) {
+    .profile {
+      width: 590px;
+    }
+    }
+    @media (max-width: 560px) {
+      .profile {
+        width: 590px;
+        margin: 0px 0px 0px -97px;
+      }
+      }
+      @media (max-width: 390px) {
+        .profile {
+          width: 519px;
+          margin: 0px 0px 0px -88px;
+        }
+        }
+
+  .link {
+    color: blue;
+    font-family: lato, sans-serif;
+  }
+
+  .link:hover {
+  color: blue;
+  text-decoration: underline;
+  }
+
+/* KH logo */   
+.logo {
+  height: 40px;
+}
+.front-text {
+  color: white;
+  z-index: 2;
+  font-family: lato, sans-serif;
+  position: absolute;
+  top: -1%;
+  right: 40%
+}
+
+.btn-primary {
+  font-weight: 600;
+    font-family: lato, sans-serif;
+    position: absolute;
+    bottom: 4%;
+    right: 4%;
+}
+
+.tool_title {
+  position: absolute;
+  left: 3%;
+  top: 6%;
+  max-width: 141px;
+}
 h1 {
-  font-size: 32px;
-  font-weight: 700;
+  margin: 0;
+  font-size: 60px;
+  font-family: lato, sans-serif;
+  padding-right: 10px;
 }
 
 h2 {
-  font-size: 24px;
-  font-weight: 700;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: lato, sans-serif;
+    padding-right: 10px;
 }
 
 h3 {
-  font-size: 18px;
-  font-weight: 400;
+  margin: 0;
+  font-size: 25px;
+  font-weight: 300;
+  font-family: lato, sans-serif;
+  padding-right: 10px;
 }
+
 h4 {
-  font-size: 22px;
-  font-weight: 400;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: lato, sans-serif;
+  padding-right: 10px;
 }
+
+@media all and (min-width: 500px) and (max-width: 768px){
+  h1 {
+    margin: 0;
+    font-size: 40px;
+    font-family: lato, sans-serif;
+  }
+  
+  h2 {
+      margin: 0;
+      font-size: 30px;
+      font-weight: 400;
+      font-family: lato, sans-serif;
+  }
+  
+  h3 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: lato, sans-serif;
+    
+  }
+  h4 {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: lato, sans-serif;
+    
+  }
+}
+@media all and (max-width: 500px){
+  h1 {
+    margin: 0;
+    font-size: 28px;
+    font-family: lato, sans-serif;"
+  }
+  
+  h2 {
+      margin: 0;
+      font-size: 21px;
+      font-weight: 400;
+      font-family: lato, sans-serif;
+  }
+  
+  h3 {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: lato, sans-serif
+  }
+  h3 {
+    margin: 0;
+    font-size: 11px;
+    font-weight: 300;
+    font-family: lato, sans-serif
+  }
+}
+
 .texts {
   font-size: 16px;
   font-weight: 400;
 }
 a {
-  color: #0000ff;
-}
-a:visited {
-  /* visited link */
-  color: #05676e;
-}
-a:hover, focus {
-  /* No underlining when hovering over a link */
+  color: #ffffff;
   text-decoration: none;
 }
+a:hover {
+  /* visited link */
+  color: #919191;
+  text-decoration: none;
+}
+
 a:active {
   /* selected link */
-  color: #489c79;
+  color: #ffffff;
+  text-decoration: none;
 }
 button {
-  /* overwrites browser defaults and resets the border */
-  border: none;
-  /* takes the font from the outer container */
-  font-family: inherit;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #357b70;
+  background-color: #4b81f0;
   color: white;
   text-decoration: none;
   /*adds spacing to the button (this will be discussed more in-depth later) */
-  padding: 10px;
-  border-radius: 3px;
+  padding: 17px;
+  border-radius: 15px;
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
+
 .navigation-list__item--active {
   text-decoration: none;
 }
-.profile__portrait {
-  float: left;
-  width: 250px;
-  height: auto;
-  margin-right: 40px;
-  border-radius: 50%;
-}
+
 .page-footer {
   clear: both;
 }
-.profile {
-  max-width: 700px;
-  margin: 0 auto;
 
-}
 .profile2 {
   max-width: 700px;
   margin: 0 auto;
@@ -110,6 +255,7 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  background-color: rgb(1, 1, 1);
 }
 
 .page-header {
@@ -118,10 +264,10 @@ button {
   display: flex;
   width: 100%;
   height: 80px;
-  padding:10px;
+  padding:0px 20px 0px 0px;
   margin-right: 20px;
-  border-bottom: 1px solid black;
-  background-color: #d3d3d3;
+  background-color: rgb(1,1,1);
+  font-family: lato, sans-serif;
 }
 .page-header__item {
   -webkit-box-flex: 0;
@@ -164,11 +310,11 @@ button {
   width: auto;
 }
 .grid__item:last-child {
-  -ms-grid-column: 3;
+  grid-column: 3;
       grid-column-start: 3;
   -ms-grid-column-span: 0;
   grid-column-end: 3;
-  -ms-grid-row: 1;
+  grid-row: 1;
       grid-row-start: 1;
   -ms-grid-row-span: 2;
   grid-row-end: 3;
@@ -200,25 +346,6 @@ table, th, td {
   transition: 0.2s opacity;
   position: center;
 }
-button {
-  /* overwrites browser defaults and resets the border */
-  border: none;
-  display: inline-block;
-  /* takes the font from the outer container */
-  font-family: inherit;
-  /* styles the button */
-  background-color: #d4af37;
-  color: #006400;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  /* width of the border, type, color */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.2s opacity;
-  -o-transition: 0.2s opacity;
-  transition: 0.2s opacity;
-  position: center;
-}
 
 button:hover,
 button:focus,
@@ -229,6 +356,8 @@ button:focus,
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
+
+
 @media all and (min-width: 500px) and (max-width: 750px){
   .grid {
     -ms-grid-columns: 1fr 10px 1fr;
@@ -239,12 +368,7 @@ button:focus,
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
-  h1 {
-    font-size: 22px;
-  }
-  h4 {
-    font-size: 16px;
-  }
+  
   .texts {
     font-size: 14px;
   }
@@ -264,12 +388,6 @@ button:focus,
     grid-row: auto / auto;
   }
 
-  h1 {
-    font-size: 22px;
-  }
-  h4 {
-    font-size: 14px;
-  }
   .texts {
     font-size: 12px;
   }
@@ -310,7 +428,7 @@ button:focus,
 
 .text {
   white-space: nowrap; 
-  color: black;
+  color: White;
   font-size: 24px;
   font-weight: 700;
   position: absolute;
@@ -320,4 +438,359 @@ button:focus,
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+
+/* Parallax effect below*/
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body { 
+  margin:0;
+  padding:0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Montserrat;
+}
+
+.slide {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+	transform-style: inherit;
+}
+
+.img {
+  position: absolute;
+  top: 43%;
+  left: 44%;
+  width: 43%;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+.img:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+  z-index: -1;
+}
+
+.slide:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+}
+
+.header {
+  text-align: center;
+  color: rgb(88, 88, 88);
+  text-shadow: 0 2px 2px #000;
+}
+
+#title {
+  background: rgb(1, 1, 1);
+  z-index:2;
+}
+
+#title h1 {
+ transform: translateZ(.25px) scale(.75);
+ transform-origin: 50% 100%;
+
+}
+
+#slide1:before {
+  background: rgb(0, 0, 0);
+  transform: translateZ(-1px) scale(2);
+}
+
+#slide2 {
+  background-image: url("../img/mockvue.png");
+  z-index:2;
+}
+.floater {
+  position: absolute;
+    top: 36%;
+    left: 11%;
+    width: 320px;
+    height: 240px;
+    transform: translateZ(-0.75px) scale(0.75) translateX(-35%) translateY(-181%) rotate(0deg);
+    padding: 10px;
+}
+
+.floater-two {
+  position: absolute;
+    top: 57.96%;
+    left: 57%;
+    width: 320px;
+    height: 240px;
+    transform: translateZ(0.25px) scale(0.75) translateX(-35%) translateY(-181%) rotate(0deg);
+    padding: 10px;
+}
+
+.floater-three {
+  position: absolute;
+  top: 76%;
+  left: 45%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(0.50px) scale(0.75) translateX(-39%) translateY(-105%) rotate(0deg);
+  padding: 10px;
+}
+#slide3:before {
+  background: rgb(0, 0, 0);
+  transform: translateZ(-1px) scale(2);
+}
+
+#slide4 {
+  background-image: url("../img/mockang.png");
+    z-index:2;
+  }
+
+#slide5:before {
+  background: rgb(0, 0, 0);
+  transform: translateZ(-1px) scale(2);
+}
+
+#slide6 {
+  background: rgb(255, 255, 255);
+  background-image: url("../img/ph.png");
+}
+
+
+
+/* Container div on Home Page*/
+
+.wrapper {
+  display: block;
+  max-width: 100%;
+  position: absolute;
+  bottom:0;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+@font-face {
+  font-family: Clip;
+  src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+}
+
+.sign {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 2;
+  left: 50%;
+  top: -116%;
+  font-family: "Clip";
+  text-transform: uppercase;
+  font-size: 8.2vw;
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ffea65,
+    -0.2rem 0.1rem 1rem #ffea65, 0.2rem 0.1rem 1rem #ffea65,
+    0 -0.5rem 2rem #ffd724, 0 0.5rem 3rem #ffd724;
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ffea65,
+      -0.2rem 0.1rem 1rem #ffea65, 0.2rem 0.1rem 1rem #ffea65,
+      0 -0.5rem 2rem #ffd724, 0 0.5rem 3rem #ffd724;
+  }
+  28%,
+  33% {
+    color: #5f6b18;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #5f6b18;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #5f6b18;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ffea65,
+      -0.2rem 0.1rem 1rem #ffea65, 0.2rem 0.1rem 1rem #ffea65,
+      0 -0.5rem 2rem #ffd724, 0 0.5rem 3rem #ffd724;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

@@ -4,54 +4,147 @@
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width, initial-scale=1">
           <title>Kevin M Hughes - Portfolio</title>
-          <link rel="shortcut icon" href="img/favicon.ico">/link>
+          <link rel="shortcut icon" href="img/favicon.ico"></link>
           <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
           <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
           <link rel="stylesheet" type="text/css" href="css/style.production.css">
         </head>
         <body>
           <header class="page-header">
-  				  <img src="img/kev_logo.svg" height="60" alt="logo of Kevin Hughes Web Developer" class="page-header__item">
-  			    <nav class="main-navigation page-header__item">
+            <nav class="main-navigation page-header__item">
               <ul role="menubar" class="navigation-list">
-                <li role="presentation">
-                  <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-                </li>
                 <li role="presentation">
                   <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
                 </li>
                 <li role="presentation">
-                  <a href="about.html" role="menuitem" class="navigation-list__item" aria-label ="about me">About</a>
-                </li>
-                <li role="presentation">
-                  <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+                  <a href="contact.html" role="menuitem" class="navigation-list__item--active">Contact</a>
                 </li>
               </ul>
             </nav>
           </header>
-          <br>
-          <div class="profile">
-			      <img src="img/kevin_hughes.jpg" class="profile__portrait" alt="A photograph of me">
-  			    <h1>Hello World!</h1>
-  			    <p class="texts"> My name is Kevin Hughes.<br><br>I am a <span>web</span> developer, and web designer from the United Kingdom.</p>
-            <br>
-            <p class="texts"><a href="work.html">Check out my work here</a></p>
-          </div>
-          <br>
-          <div>
-             <img src="img/sun.svg" height="150" style="width:100%;" alt="an animated moving sun">
-          </div>
-          <div>
-            <img src="img/test.png" style="width:100%;" alt="a colourful background image">
+          <div id="title" class="slide header">
+            <div class="wrapper">
             </div>
-          <footer class="page-footer">
-            <p>Find me on</p>
-            <div class="social media">
-            <a href="https://github.com" target="_blank"><img src="img/github_icon.svg" width="30" height="30" alt="github"></a>
-            <a href="https://twitter.com" target="_blank"><img src="img/twitter_icon.svg" width="30" height="30" alt="twitter"></a>
-            <a href="https://www.linkedin.com/in/kevin-michael-hughes" target="_blank"><img src="img/linkedin_icon.svg" width="30" height="30" alt="linkedin"></a>
+          </div>
+          <div id="title" class="slide header">
+            <div class="wrapper">
+              <div class="sign">
+                <span class="fast-flicker">Scro</span>ll<span class="flicker">_do</span>wn
+              </div>
+              <img class="profile" src="img/kevin_hughes.png">
             </div>
-          </footer>
-          <script src="js/tota11y.min.js"></script>
+          </div>
+          <div id="slide1" class="slide">
+          <div class="floater" style="color: rgb(255, 255, 255); width: 100%;"><h2 style="font-size: 100px">My Name is Kevin Hughes.</h2></div>
+          <div class="floater-two" style="color: rgb(255, 255, 255); width: 50%;"><h2>I am a Web Developer based in Barcelona.</h2></div>
+          <div style="color: rgb(255, 255, 255); position:absolute;
+          bottom:0; text-align: center; width: 100%"><h3 style="font-weight: lighter">See my work below...</h3></div>
+          </div>
+          
+          <div id="slide2" class="slide">
+            <div style="flex-direction: row; padding: 6% 0px 0px 5%;">
+            <div style="display: flex;
+            align-items: baseline;"><img style="width: 10%"src="img/logovue.png"><h1> Mello</h1></div>
+            <div class="flexbox-media" style="display: flex;
+            align-items: baseline;
+            padding: 0% 0% 0% 10%;">
+            <h2> Vue.js application:</h2>
+            <h3>A Kanzan board Trello clone</h3>
+            <h4><a class="link" href=" https://github.com/kevmhughes/simple-Vue-application" 
+            target="_blank">
+                See code</a></h4>        
+          </div>
+        
+          </div>
+          <a href="https://kevmhughes.github.io/simple-Vue-application/" 
+          target="_blank">
+                <button 
+                class="btn btn-primary mb1 bg-blue">Demo app
+                </button></a>
+            </div>
+          
+          <div id="slide3" class="slide">
+            <div class="floater" style="color: rgb(255, 255, 255); width: 100%;"><h2 style="font-size: 100px;">Frameworks I use include:</h2></div>
+            <img class="floater-two" style="width: auto; left: 52%; top: 54%" src="img/logoang.png">
+            <img class="floater-two" style="width: auto;
+            top: 54%;
+            left: 63%;" src="img/logovue.png">
+            <img class="floater-two" style="width: auto;
+            top: 54%;
+            left: 75%;" src="img/logoreact.png">
+          <div style="color: rgb(255, 255, 255); position:absolute;
+          bottom:0; text-align: center; width: 100%"><h3 style="font-weight: lighter">See more work of mine below...</h3></div>
+          </div>
+          
+          <div id="slide4" class="slide">
+            <div style="flex-direction: row; padding: 6% 0px 0px 5%;">
+            <div style="display: flex;
+            align-items: baseline;"><img style="width: 10%" src="img/logoang.png"><h1>Quiz App</h1></div>
+            <div class="flexbox-media-two" style="display: flex;
+            align-items: baseline;
+            padding: 0% 0% 0% 10%;">
+            <h2> AngularJS application:</h2>
+            <h3>A quiz app to test your English.</h3>
+            <h4><a class="link" href="https://github.com/kevmhughes/my-awesome-quiz-app" 
+            target="_blank">
+                See code</a></h4>       
+          </div>
+          </div>
+          <a href=" https://kevmhughes.github.io/my-awesome-quiz-app/" 
+          target="_blank">
+                <button 
+                class="btn btn-primary mb1 bg-blue">Demo app
+                </button></a>
+            </div>
+
+          <div id="slide5" class="slide">
+            <div class="floater" style="color: rgb(255, 255, 255); width: 60%;"><h2 style="font-size: 100px;">Languages and other tools I use include:</h2></div>
+            <img class="floater-two" style="width: auto;
+            top: 54%;
+            left: 76%;" src="img/imgcss.png">
+            <img class="floater-two" style="width: auto;
+            top: 54%;
+            left: 53%;" src="img/imgnode.png">
+            <img class="floater-two" style="width: auto;
+            top: 52%;
+            left: 62%;" src="img/imgmongo.png">
+            
+          <div style="color: rgb(255, 255, 255); position:absolute;
+          bottom:0; text-align: center; width: 100%"><h3 style="font-weight: lighter">See more work of mine below...</h3></div>
+          </div>
+
+          <div id="slide6" class="slide">
+            <div style="flex-direction: row; padding: 6% 0px 0px 5%;">
+            <div style="display: flex;
+            align-items: baseline;"><img style="width: 10%" src="img/logoreact.png"><h1>MyFlix</h1></div>
+            <div class="flexbox-media" style="display: flex;
+            align-items: baseline;
+            padding: 0% 0% 0% 10%;">
+            <h2> React application:</h2>
+            <h3>A Netflix styled app for film buffs.</h3>
+            <a class="link" href="https://github.com/kevmhughes/my-awesome-quiz-app" 
+            target="_blank">
+                See code</a>        
+          </div>
+          </div>
+          <a href=" https://kevmhughes.github.io/my-awesome-quiz-app/" 
+          target="_blank">
+                <button 
+                class="btn btn-primary mb1 bg-blue">Demo app
+                </button></a>
+            </div>
+
+      <footer class="page-footer">
+        <!-- Github logo -->
+      <div style="text-align:center">
+        <a href="https://github.com" target="_blank"><img src="img/github_icon.svg" width="30" height="30" alt="github"></a>
+        <!-- Twitter logo -->
+        <a href="https://twitter.com" target="_blank"><img src="img/twitter_icon.svg" width="30" height="30" alt="twitter"></a>
+        <!-- LinkedIn logo -->
+        <a href="https://www.linkedin.com/in/kevin-michael-hughes" target="_blank"><img src="img/linkedin_icon.svg" width="30" height="30" alt="linkedin"></a>
+      </div>
+      </footer>
         </body>
     </html>
+
+    
