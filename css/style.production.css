@@ -23,6 +23,7 @@ body {
 @media (max-width: 600px) {
   .flexbox-media {
     display: flex;
+    flex-direction: column;
     align-items: baseline;
     flex-direction: column;
     padding: 0% 0% 0% 10%;
@@ -535,7 +536,7 @@ body {
 }
 
 #slide2 {
-  background-image: url("../img/mockvue.png");
+  background-image: url("../img/vue2.png");
   z-index:2;
 }
 .floater {
