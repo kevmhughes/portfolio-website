@@ -295,38 +295,7 @@ button {
   display: inline-block;
   margin-left: 15px;
 }
-/* Grid fallback*/
 
-.grid__item {
-  display: inline-block;
-  width: 33%;
-}
-/* Styling CSS grid*/
-.grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  padding: 20px;
-}
-
-.grid__item {
-  background-color: #d3d3d3;
-  padding: 10px;
-  /* Set width to auto*/
-  width: auto;
-}
-.grid__item:last-child {
-  grid-column: 3;
-      grid-column-start: 3;
-  -ms-grid-column-span: 0;
-  grid-column-end: 3;
-  grid-row: 1;
-      grid-row-start: 1;
-  -ms-grid-row-span: 2;
-  grid-row-end: 3;
-}
 table {
   border-collapse: collapse;
   background-color: #ffffff;
@@ -367,17 +336,7 @@ button:focus,
 
 
 @media all and (min-width: 500px) and (max-width: 750px){
-  .grid {
-    -ms-grid-columns: 1fr 10px 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-  }
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-  
-  .texts {
+    .texts {
     font-size: 14px;
   }
    .navigation-list {
@@ -386,15 +345,7 @@ button:focus,
 }
 }
 @media all and (max-width: 500px) {
-  .grid {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-  }
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
+  
 
   .texts {
     font-size: 12px;
@@ -898,4 +849,11 @@ body {
   to {
     opacity: 1;
   }
+}
+
+form {
+  border: solid; 
+  border-color: white;
+  max-width: 60%;
+  margin: auto;
 }
