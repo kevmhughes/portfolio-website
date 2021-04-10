@@ -16,7 +16,7 @@ body {
   font-weight: 400; 
   font-size: 16px;
   line-height: 1.4;
-  background-color: #ffffff;
+  background-color: #000000;
 
 }
 
@@ -43,24 +43,24 @@ body {
 .profile{
     z-index: -1;
     height: auto;
-    width: auto;
+    width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
 
 @media (max-width: 990px) {
   .profile {
-    width: 790px;
+    width: 600px;
   }
   }
   @media (max-width: 760px) {
     .profile {
-      width: 590px;
+      width: 600px;
     }
     }
     @media (max-width: 560px) {
       .profile {
-        width: 590px;
+        width: 600px;
         margin: 0px 0px 0px -97px;
       }
       }
@@ -510,7 +510,7 @@ body {
 @media (max-width: 2000px) {
   .floater {
     left: -9%;
-    top: 41.5%
+    top: 40%
 }
   }
 @media (max-width: 500px) {
@@ -551,7 +551,7 @@ body {
 
 .floater-two {
   position: absolute;
-    top: 57.96%;
+    top: 68%;
     left: 57%;
     width: 320px;
     height: 240px;
@@ -587,8 +587,8 @@ body {
     position: absolute;
       top: 57.96%;
       left: 57%;
-      width: 320px;
-      height: 240px;
+      width: 210px;
+      height: 160px;
       transform: translateZ(0.25px) scale(0.75) translateX(-35%) translateY(-181%) rotate(0deg);
       padding: 10px;
   }
@@ -639,10 +639,19 @@ body {
 }
 
 #slide6 {
-  background: rgb(255, 255, 255);
-  background-image: url("../img/ph.png");
+  background-image: url("../img/flickz.png");
+  z-index:2;
 }
 
+#slide7:before {
+  background: rgb(0, 0, 0);
+  transform: translateZ(-1px) scale(2);
+}
+
+#slide8 {
+  background-image: url("../img/meetup.png");
+    z-index:2;
+  }
 
 
 /* Container div on Home Page*/
@@ -658,7 +667,7 @@ body {
 
 @font-face {
   font-family: Clip;
-  src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+  src: url("../img/clip.ttf");
 }
 
 .sign {
@@ -671,7 +680,7 @@ body {
   transform: translate(-50%, -50%);
   letter-spacing: 2;
   left: 50%;
-  top: -116%;
+  top: -100%;
   font-family: "Clip";
   text-transform: uppercase;
   font-size: 8.2vw;
@@ -851,9 +860,27 @@ body {
   }
 }
 
-form {
-  border: solid; 
-  border-color: white;
-  max-width: 60%;
-  margin: auto;
+
+.typewriter h1 {
+  color: #fff;
+  font-family: lato, sans-serif;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
 }
