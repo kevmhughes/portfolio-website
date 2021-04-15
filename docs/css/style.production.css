@@ -653,6 +653,16 @@ body {
     z-index:2;
   }
 
+#slide9:before {
+  background: rgb(0, 0, 0);
+  transform: translateZ(-1px) scale(2);
+}
+
+#slide10 {
+  background-image: url("../img/reactnative.png");
+    z-index:2;
+  }
+
 
 /* Container div on Home Page*/
 
