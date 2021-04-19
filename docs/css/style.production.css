@@ -1,5 +1,5 @@
 /*
-Colors used
+Colors used 
 
 Text Color (Dark Gray): #2b2b2b;
 Primary Color (Purple): #357b70;
@@ -81,10 +81,6 @@ body {
   text-decoration: underline;
   }
 
-/* KH logo */   
-.logo {
-  height: 40px;
-}
 .front-text {
   color: white;
   z-index: 2;
@@ -893,3 +889,5 @@ body {
   from, to { border-color: transparent }
   50% { border-color: orange }
 }
+
+
