@@ -95,7 +95,6 @@ body {
 }
 
 .btn-primary {
-  font-weight: 600;
     font-family: lato, sans-serif;
     position: absolute;
     bottom: 4%;
@@ -597,7 +596,7 @@ body {
     .floater-two-img {
       left: 60%;
       top: 75%;
-      height: 10vh;
+      height: 20vh;
   }
     }
 
