@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-    <html style="max-width: 100%;
-    overflow-x: hidden;">
+    <html>
 
         <head>
           <meta charset="utf-8">
@@ -12,13 +11,11 @@
           <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
           <link rel="stylesheet" type="text/css" href="css/style.production.css">
         </head>
-
-        <body style="max-width: 100%;
-        overflow-x: hidden;">
-
+ 
+        <body>
           <header class="page-header">
             <nav class="main-navigation page-header__item">
-              <ul role="menubar" class="navigation-list">
+              <ul role="menubar" class="navigation-list" style="margin-top: 1rem">
                 <li role="presentation">
                   <a href="contact.html" role="menuitem" class="navigation-list__item--active">Contact</a>
                 </li>
@@ -26,23 +23,26 @@
             </nav>
           </header>
 
-          <div id="title" class="slide header">
-            <div class="wrapper">
-            </div>
-          </div>
-          <div id="title" class="slide header">
+          <div class="first-page">
             <div class="wrapper">
               <div class="sign">
                 <span class="fast-flicker">Scro</span>ll<span class="flicker">_do</span>wn
               </div>
+          </div>
+
+          <div id="title" class="slide header">
+            <div class="wrapper" style="display: flex;
+            flex-direction: column-reverse;">
               <img class="profile" src="img/kevinhughes.png">
             </div>
           </div>
 
           <div id="slide1" class="slide">
-            <div class="floater" style="color: rgb(255, 255, 255); width: 100%;"><h2 class="ztext">Hi! My name is Kevin Hughes.</h2></div>
+            <div class="floater" style="width: 100%;"><h2 class="ztext">Hi! My name is Kevin Hughes.</h2></div>
             <div class="floater-two" style="color: rgb(255, 255, 255); width: 50%;"><h2>I am a Web Developer based in Barcelona</h2></div>
           </div>
+
+          
           
           <div style="background-color: white;"id="slide2" class="slide">
             <div style="flex-direction: row; padding: 6% 0px 0px 5%;">
@@ -140,14 +140,14 @@
             </div>
 
             <div id="slide7" class="slide">
-              <div class="floater" style="color: rgb(255, 255, 255); width: 100%;"><h2 class="ztext">Backend tools I use.</h2></div>
-              <img class="floater-two-img" style="width: auto;
+              <div class="floater-three-text" style="color: rgb(255, 255, 255); width: 100%;"><h2 class="ztext">Backend tools I use.</h2></div>
+              <img class="floater-three-img" style="width: auto;
             top: 51%;
             left: 76%;" src="img/heroku.png">
-            <img class="floater-two-img" style="width: auto;
+            <img class="floater-three-img" style="width: auto;
             top: 50%;
             left: 52%;" src="img/firebase.png">
-            <img class="floater-two-img" style="width: auto;
+            <img class="floater-three-img" style="width: auto;
             top: 49.75%;
             left: 65%;" src="img/imgmongo.png">
             </div>
@@ -175,7 +175,7 @@
 
               <div id="slide9" class="slide">
               <div class="floater" style="color: rgb(255, 255, 255); width: 100%;"><h2 class="ztext"><a href="mailto:kevhughes24@hotmail.com">Get in touch.</a></h2></div>
-              <div class="floater-two" style="color: rgb(255, 255, 255); width: 50%;"><h2><a href="mailto:kevhughes24@hotmail.com">Let´s collaborate</a></h2></div>
+              <div class="floater-two" style="color: rgb(255, 255, 255); width: 50%;"><h2><a href="mailto:kevhughes24@hotmail.com">Let's collaborate.</a></h2></div>
             </div>
             
             <div id="slide10" class="slide">
@@ -209,6 +209,8 @@
         <a href="https://www.linkedin.com/in/kevin-michael-hughes" target="_blank"><img src="img/linkedin_icon.svg" width="30" height="30" alt="linkedin"></a>
       </div>
       </footer>
+
+      <script src="js/tota11y.min.js"></script>
         </body>
     </html>
 
