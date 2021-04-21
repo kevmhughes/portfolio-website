@@ -771,23 +771,37 @@ body {
     top: 75%;
 }
   }
-  .seework {
+
+  .floater-three {
     position: absolute;
-      top: 66.96%;
-      left: 57%;
-      width: 320px;
+      top: 138%;
+      left: 3%;
       height: 240px;
       transform: translateZ(0.25px) scale(0.75) translateX(-35%) translateY(-181%) rotate(0deg);
       padding: 10px;
+      text-align: center;
   }
-  
-  @media (max-width: 500px) {
-    .seework {
-      left: 60%;
-      top: 93%;
+
+  @media (max-width: 1200px) {
+    .floater-three {
+      left: 3%;
+      top: 128%;
   }
     }
 
+@media (max-width: 768px) {
+      .floater-three {
+        left: 3%;
+        top: 133%;
+    }
+      }
+  
+  @media (max-width: 500px) {
+    .floater-three {
+      left: 3%;
+      top: 138%;
+  }
+    }
 
   .floater-two-img {
     position: absolute;
