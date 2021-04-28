@@ -86,6 +86,14 @@ body {
         0 -0.5rem 2rem #ffd724, 0 0.5rem 3rem #ffd724;
       animation: shine 2s forwards, flicker 3s infinite;
     }
+
+    @media (max-width: 720px) {
+      .sign {
+        font-size: 11vw;
+    }
+      } 
+
+
     
     @keyframes blink {
       0%,
