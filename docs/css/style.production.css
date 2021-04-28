@@ -957,6 +957,12 @@ body {
   justify-content: center;
 }
 
+@media (max-width: 500px) {
+  .contact-imgs {
+    margin-left: 3vw;
+}
+  }
+
 .contact-icons{ 
   width: 60px; 
   margin-right: 20px
@@ -968,6 +974,8 @@ body {
   position:relative; 
   top:-4px
 }
+
+
  
 
 
