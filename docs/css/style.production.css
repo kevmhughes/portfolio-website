@@ -43,6 +43,10 @@ body {
       height: 100vh;
     }
 
+    .wrapper-two {
+      width: 50%;
+  }
+
     @media (max-width: 720px) {
       .wrapper-two {
         width: 100%;
