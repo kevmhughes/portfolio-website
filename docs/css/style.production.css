@@ -57,6 +57,17 @@ body {
         width: 100%;
     }
       }
+
+      .wrapper-about {
+        text-align:justify;
+    }
+
+
+    @media (max-width: 720px) {
+      .wrapper-about {
+        text-align:center;
+    }
+      }   
     
     /*Start of scroll down special effects on home page*/
     
