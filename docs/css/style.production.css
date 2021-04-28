@@ -44,6 +44,11 @@ body {
     }
 
     .wrapper-two {
+      color: white;
+      border: solid;
+      margin-left: auto;
+      font-size: 3vh;
+      margin-right: auto;
       width: 50%;
   }
   
