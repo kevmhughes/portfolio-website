@@ -43,21 +43,6 @@ body {
       height: 100vh;
     }
 
-    .wrapper-two {
-      color: white;
-      border: solid;
-      margin-left: auto;
-      font-size: 3vh;
-      margin-right: auto;
-      width: 50%;
-  }
-  
-    @media (max-width: 720px) {
-      .wrapper-two {
-        width: 100%;
-    }
-      }
-
       .wrapper-about {
         text-align:justify;
     }
