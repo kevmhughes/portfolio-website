@@ -47,7 +47,6 @@ body {
         text-align:justify;
     }
 
-
     @media (max-width: 720px) {
       .wrapper-about {
         text-align:center;
@@ -942,5 +941,52 @@ body {
   from, to { border-color: transparent }
   50% { border-color: orange }
 }
+
+
+/*Contact page*/
+
+.contact-box {
+  position: sticky; 
+  top: 50%; 
+  left: 50%
+}
+
+@media (max-width: 500px) {
+  .contact-box {
+    position: none; 
+    top: 33%; 
+    left: 0%
+}
+  }
+
+.contact-imgs {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+@media (max-width: 500px) {
+  .contact-imgs {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+  }
+.contact-icons{ 
+  width: 60px; 
+  margin-right: 20px
+}
+
+.contact-icons-whatsapp{ 
+  width: 70px; 
+  margin-right: 16px; 
+  position:relative; 
+  top:-4px
+}
+ 
+
+
+
 
 
