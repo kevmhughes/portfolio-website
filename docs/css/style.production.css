@@ -45,11 +45,13 @@ body {
 
       .wrapper-about {
         text-align:justify;
+        width: 50%;
     }
 
     @media (max-width: 720px) {
       .wrapper-about {
-        text-align:center;
+        word-break: break-all;
+        width: 80%;
     }
       }   
     
