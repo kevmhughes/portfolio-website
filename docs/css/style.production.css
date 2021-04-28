@@ -42,6 +42,12 @@ body {
       background-color: black;
       height: 100vh;
     }
+
+    @media (max-width: 720px) {
+      .wrapper-two {
+        width: 100%;
+    }
+      }
     
     /*Start of scroll down special effects on home page*/
     
