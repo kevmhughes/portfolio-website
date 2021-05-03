@@ -1252,7 +1252,7 @@ body {
   height: 280px;
   background: rgb(223, 95, 40);
   border-radius: 5%;
-  box-shadow: inset 0 0 10px rgba(109, 44, 0, 0.7);
+  box-shadow: inset 0 0 10px rgb(2 2 2 / 70%);
   margin: 20px;
 }
 
