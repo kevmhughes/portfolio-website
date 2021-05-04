@@ -1469,9 +1469,16 @@ body {
 
   .project-images {
     width: 80%;
-    margin: auto
+    margin: auto;
+    box-shadow: 12px 12px 29px #555;
   }
 
+  .projects-link {
+    color: black
+  }
+  .projects-link: hover {
+    color: darkgray
+  }
 
 
 
