@@ -1,16 +1,16 @@
 
-  @media (max-width: 450px) {
-    .text-font {
-      font-size: 18px
-  
-  }
-    }
-
 .text-font{
   text-align: left; 
   font-weight: lighter; 
   font-family: 'Courier New', Courier, monospace;
 }
+
+@media (max-width: 450px) {
+  .text-font {
+    font-size: 18px
+
+}
+  }
  
  * {
   -webkit-box-sizing: border-box;
@@ -980,12 +980,36 @@ body {
 
 /*About page*/
 
+.text-likes {
+  width: 50%;
+}
+
+@media (max-width: 760px) {
+  .text-likes {
+    width: 80%
+
+}
+  }
+
 .wrapper-about {
   width: 80%;
 }
 
 .interests-box {
   text-align: -webkit-center;
+}
+
+.interests-box-two {
+  text-align: -webkit-center;
+  flex-direction: row;
+}
+
+@media (max-width: 760px) {
+.interests-box-two {
+  text-align: -webkit-center;
+  flex-direction: row;
+  flex-direction: column-reverse;
+}
 }
 
 .container {
