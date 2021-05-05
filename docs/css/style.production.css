@@ -979,6 +979,16 @@ body {
   top:-4px
 }
 
+.form-group {
+  width: 35%
+}
+
+@media (max-width: 500px) {
+  .form-group {
+    width: 80%
+}
+  }
+
 /*About page*/
 
 .text-likes {
