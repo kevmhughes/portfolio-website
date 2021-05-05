@@ -949,12 +949,6 @@ body {
 
 /*Contact page*/
 
-.contact-box {
-  position: sticky; 
-  top: 50%; 
-  left: 50%
-}
-
 .contact-imgs {
   display: flex;
   flex-flow: row;
@@ -968,15 +962,8 @@ body {
   }
 
 .contact-icons{ 
-  width: 60px; 
-  margin-right: 20px
-}
-
-.contact-icons-whatsapp{ 
-  width: 70px; 
-  margin-right: 16px; 
-  position:relative; 
-  top:-4px
+  width: 45px; 
+  margin: 10px;
 }
 
 .form-group {
@@ -988,6 +975,15 @@ body {
     width: 80%
 }
   }
+
+.form-button {
+  background-color: rgb(10, 97, 254);
+}
+  
+
+.form-button:hover {
+  background-color: rgb(19, 74, 170)
+}
 
 /*About page*/
 

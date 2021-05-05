@@ -39,8 +39,8 @@
         <body style="overflow: hidden; background-color: white">
   			  <header class="page-header" style="background-color: white;">
             <nav class="main-navigation page-header__item">
-              <ul role="menubar" class="navigation-list">
-                <li role="presentation" style="margin-top: 16px;">
+              <ul role="menubar" class="navigation-list" style="margin-top: 15px">
+                <li role="presentation">
                   <a href="projects.html" role="menuitem" style="margin-right: 5px" class="projects-link">Projects</a>
                   <a href="about.html" role="menuitem" style="margin-right: 5px" class="projects-link">About</a>
                   <a href="contact.html" role="menuitem" style="margin-right: 5px" class="projects-link">Contact</a>
@@ -61,17 +61,17 @@
           <form class="form-group" 
           id="contact-form" 
           style="
-          text-align-last: center;
           margin: 50px auto 50px auto;">
           <div>
             <input type="hidden" name="contact_number">
             <label class="text-font">Name</label>
             <input type="text" name="user_name" class="form-control">
-            <label class="text-font" style="margin-top: 5px;">Email</label>
+            <label class="text-font" style="margin-top: 20px;">Email</label>
             <input type="email" name="user_email" class="form-control">
-            <label class="text-font" style="margin-top: 5px;">Message</label>
+            <label class="text-font" style="margin-top: 20px;">Message</label>
             <textarea name="message" class="form-control" style="height: 10vh"></textarea>
-            <input type="submit" value="Send" class="form-control text-font" style="background-color: deepskyblue;
+            <input type="submit" value="Send" class="form-control text-font form-button" style="
+            color: white;
             width: 50%;
             margin: 30px auto;
             text-align: center;">
@@ -79,16 +79,22 @@
           </form>
     </body>
 
-
-            <div class="contact-box">
+            <footer style="position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;">
+            <div style="display: flex;
+            justify-content: center;
+            ">
                 <div 
                 class ="contact-imgs">
-                  <a href="https://wa.me/34630116629" target="_blank" aria-label="telephone number"><img src="img/whatsapp.svg" class="contact-icons-whatsapp" alt="whatsapp icon"></a>
                   <a href="mailto:kevhughes24@hotmail.com" target="_blank" aria-label="email"><img src="img/email.png" class="contact-icons" alt="email icon"></a>
-                  <a href="https://www.linkedin.com/in/kevin-michael-hughes" target="_blank" aria-label="linkedin profile"><img src="img/linkedin_icon.svg" class="contact-icons" alt="linkedin icon"></a>
+                  <a href="https://www.linkedin.com/in/kevin-michael-hughes" target="_blank" aria-label="linkedin profile"><img src="img/linkedin_icon.png" class="contact-icons" alt="linkedin icon"></a>
                   <a href="https://github.com/kevmhughes" target="_blank" aria-label="github profile"><img src="img/github_icon.svg" class="contact-icons" alt="github icon"></a>
+                  <a href="https://wa.me/34630116629" target="_blank" aria-label="telephone number"><img src="img/whatsapp.png" class="contact-icons" alt="whatsapp icon"></a>
                 </div>
               </div>
+            </footer>
 
 
           <script src="js/tota11y.min.js"></script>
