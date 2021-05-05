@@ -5,9 +5,35 @@
           <meta name="viewport" content="width=device-width, initial-scale=1">
           <title>Contact</title>
           <link rel="shortcut icon" href="img/favicon.ico"></link>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
           <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
           <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
           <link rel="stylesheet" type="text/css" href="css/style.production.css">
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+          <script type="text/javascript">
+          (function() {
+          emailjs.init("user_L1fJmc6AtUBprJUa6umUE");
+          })();
+          </script>
+          <script type="text/javascript">
+              window.onload = function() {
+                  document.getElementById('contact-form').addEventListener('submit', function(event) {
+                      event.preventDefault();
+                      // generate a five digit number for the contact_number variable
+                      this.contact_number.value = Math.random() * 100000 | 0;
+                      // these IDs from the previous steps
+                      emailjs.sendForm('service_10m0o46', 'template_kophd6m', this)
+                          .then(function() {
+                              console.log('SUCCESS!');
+                              alert("Your message has been sent!");
+                              location.reload();
+                          }, function(error) {
+                              console.log('FAILED...', error);
+                              alert("Your message has not been sent!");
+                          });
+                  });
+              }
+          </script>
         </head>
 
         <body style="overflow: hidden; background-color: white">
@@ -31,6 +57,27 @@
             <h1 style="font-weight: lighter;
             font-family: 'Courier New', Courier, monospace; padding-right:0px; color:black">Get In Touch</h1>
           </div>
+
+          <form class="form-group" 
+          id="contact-form" 
+          style="
+          width: 35%;
+          text-align-last: center;
+          margin: 50px auto 50px auto;">
+          <div class="form-group">
+            <input type="hidden" name="contact_number">
+            <label class="text-font">Name</label>
+            <input type="text" name="user_name" class="form-control">
+            <label class="text-font" style="margin-top: 5px;">Email</label>
+            <input type="email" name="user_email" class="form-control">
+            <label class="text-font" style="margin-top: 5px;">Message</label>
+            <textarea name="message" class="form-control" style="height: 200px"></textarea>
+            <input type="submit" value="Send" class="form-control text-font" style="background-color: deepskyblue;
+            width: 50%;
+            margin: 30px auto;">
+          </div>
+          </form>
+    </body>
 
 
             <div class="contact-box">
