@@ -966,6 +966,12 @@ body {
   margin: 10px;
 }
 
+@media (max-width: 500px) {
+  .contact-icons {
+    width: 35px; 
+}
+  }
+
 .form-group {
   width: 35%
 }
@@ -978,7 +984,14 @@ body {
 
 .form-button {
   background-color: rgb(10, 97, 254);
+  margin: 30px auto;
 }
+
+@media (max-width: 500px) {
+  .form-button {
+    margin: 20px auto;
+}
+  }
   
 
 .form-button:hover {
