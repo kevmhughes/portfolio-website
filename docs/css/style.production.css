@@ -43,256 +43,7 @@ body {
       padding: 0% 0% 0% 10%;
   }
     }
-
-    .first-page {
-      background-color: black;
-      height: 100vh;
-    }
-
-    /*Start of scroll down special effects on home page*/
-    
-    .wrapper {
-      height: 100vh;
-    }
-    
-    @font-face {
-      font-family: Clip;
-      src: url("../img/clip.ttf");
-    }
-    
-    .sign {
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      max-width: 50%;
-      height: 50%;
-      transform: translate(-50%, -50%);
-      letter-spacing: 2;
-      top: 50%;
-      left: 50%;
-      font-family: "Clip";
-      text-transform: uppercase;
-      font-size: 8.2vw;
-      color: #ffe6ff;
-      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ffea65,
-        -0.2rem 0.1rem 1rem #ffea65, 0.2rem 0.1rem 1rem #ffea65,
-        0 -0.5rem 2rem #ffd724, 0 0.5rem 3rem #ffd724;
-      animation: shine 2s forwards, flicker 3s infinite;
-    }
-
-    @media (max-width: 720px) {
-      .sign {
-        font-size: 11vw;
-    }
-      } 
-
-
-    
-    @keyframes blink {
-      0%,
-      22%,
-      36%,
-      75% {
-        color: #ffe6ff;
-        text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ffea65,
-          -0.2rem 0.1rem 1rem #ffea65, 0.2rem 0.1rem 1rem #ffea65,
-          0 -0.5rem 2rem #ffd724, 0 0.5rem 3rem #ffd724;
-      }
-      28%,
-      33% {
-        color: #5f6b18;
-        text-shadow: none;
-      }
-      82%,
-      97% {
-        color: #5f6b18;
-        text-shadow: none;
-      }
-    }
-    
-    .flicker {
-      animation: shine 2s forwards, blink 3s 2s infinite;
-    }
-    
-    .fast-flicker {
-      animation: shine 2s forwards, blink 10s 1s infinite;
-    }
-    
-    @keyframes shine {
-      0% {
-        color: #5f6b18;
-        text-shadow: none;
-      }
-      100% {
-        color: #ffe6ff;
-        text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ffea65,
-          -0.2rem 0.1rem 1rem #ffea65, 0.2rem 0.1rem 1rem #ffea65,
-          0 -0.5rem 2rem #ffd724, 0 0.5rem 3rem #ffd724;
-      }
-    }
-    
-    @keyframes flicker {
-      from {
-        opacity: 1;
-      }
-    
-      4% {
-        opacity: 0.9;
-      }
-    
-      6% {
-        opacity: 0.85;
-      }
-    
-      8% {
-        opacity: 0.95;
-      }
-    
-      10% {
-        opacity: 0.9;
-      }
-    
-      11% {
-        opacity: 0.922;
-      }
-    
-      12% {
-        opacity: 0.9;
-      }
-    
-      14% {
-        opacity: 0.95;
-      }
-    
-      16% {
-        opacity: 0.98;
-      }
-    
-      17% {
-        opacity: 0.9;
-      }
-    
-      19% {
-        opacity: 0.93;
-      }
-    
-      20% {
-        opacity: 0.99;
-      }
-    
-      24% {
-        opacity: 1;
-      }
-    
-      26% {
-        opacity: 0.94;
-      }
-    
-      28% {
-        opacity: 0.98;
-      }
-    
-      37% {
-        opacity: 0.93;
-      }
-    
-      38% {
-        opacity: 0.5;
-      }
-    
-      39% {
-        opacity: 0.96;
-      }
-    
-      42% {
-        opacity: 1;
-      }
-    
-      44% {
-        opacity: 0.97;
-      }
-    
-      46% {
-        opacity: 0.94;
-      }
-    
-      56% {
-        opacity: 0.9;
-      }
-    
-      58% {
-        opacity: 0.9;
-      }
-    
-      60% {
-        opacity: 0.99;
-      }
-    
-      68% {
-        opacity: 1;
-      }
-    
-      70% {
-        opacity: 0.9;
-      }
-    
-      72% {
-        opacity: 0.95;
-      }
-    
-      93% {
-        opacity: 0.93;
-      }
-    
-      95% {
-        opacity: 0.95;
-      }
-    
-      97% {
-        opacity: 0.93;
-      }
-    
-      to {
-        opacity: 1;
-      }
-    }
-    
-    /*End of scroll down sppecial effects on home page*/
-    
-/* Profile photo */
-
-.profile{
-    z-index: -1;
-    height: auto;
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media (max-width: 990px) {
-  .profile {
-    width: 600px;
-  }
-  }
-  @media (max-width: 760px) {
-    .profile {
-      width: 600px;
-    }
-    }
-    @media (max-width: 560px) {
-      .profile {
-        width: 600px;
-        margin: 0px 0px 0px -97px;
-      }
-      }
-      @media (max-width: 390px) {
-        .profile {
-          width: 519px;
-          margin: 0px 0px 0px -88px;
-        }
-        }
-
+  
   .link {
     color: blue;
     font-family: lato, sans-serif;
@@ -312,7 +63,7 @@ body {
   right: 40%
 }
 
-.btn-primary {
+.btn-home {
     font-family: lato, sans-serif;
     position: absolute;
     bottom: 4%;
@@ -529,8 +280,6 @@ table, th, td {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the button */
-  background-color: #d4af37;
-  color: #006400;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
@@ -637,6 +386,7 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   font-family: Montserrat;
+  background-color: white;
 }
 
 .slide {
@@ -644,8 +394,7 @@ body {
   min-height: 100vh;
   width: 100vw;
   box-sizing: border-box;
-  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
-	transform-style: inherit;
+  margin-bottom: 40px;
 }
 
 .img {
@@ -671,7 +420,6 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
   z-index: -1;
 }
 
@@ -715,207 +463,24 @@ body {
   background-image: url("../img/vue2.png");
   z-index:2;
 }
-.floater {
-  position: absolute;
-    color: rgb(255, 255, 255);
-    top: 42%;
-    left: 11%;
-    width: 320px;
-    height: 240px;
-    transform: translateZ(-0.75px) scale(0.75) translateX(-35%) translateY(-181%) rotate(0deg);
-    padding: 10px;
-}
 
-@media (max-width: 2000px) {
-  .floater {
-    left: -9%;
-    top: 40%
-}
-  }
-@media (max-width: 500px) {
-    .floater {
-      left: -7%;
-      top: 56%;
-  }
-    }
-
-    .floater-otro {
-      position: absolute;
-        top: 42%;
-        left: 11%;
-        width: 320px;
-        height: 240px;
-        transform: translateZ(-0.75px) scale(0.75) translateX(-35%) translateY(-181%) rotate(0deg);
-        padding: 10px;
-    }
-    
-    @media (max-width: 2000px) {
-      .floater-otro {
-        left: -9%;
-        top: 41.5%
-    }
-      }
-
-      @media (max-width: 1300px) {
-        .floater-otro {
-          left: -9%;
-          top: 56.5%
-      }
-        }
-    @media (max-width: 500px) {
-        .floater-otro {
-          left: -7%;
-          top: 71%;
-      }
-        }
-
-.floater-two {
-  position: absolute;
-    top: 68%;
-    left: 57%;
-    width: 320px;
-    height: 240px;
-    transform: translateZ(0.25px) scale(0.75) translateX(-35%) translateY(-181%) rotate(0deg);
-    padding: 10px;
-}
-
-@media (max-width: 500px) {
-  .floater-two {
-    left: 60%;
-    top: 75%;
-}
-  }
-
-  .floater-two-img {
-    position: absolute;
-      top: 57.96%;
-      left: 57%;
-      width: 210px;
-      height: 160px;
-      transform: translateZ(0.25px) scale(0.75) translateX(-35%) translateY(-181%) rotate(0deg);
-      padding: 10px;
-  }
-  
-  @media (max-width: 1300px) {
-    .floater-two-img {
-      left: 60%;
-      top: 65%;
-      height: 15vh;
-  }
-    }
-    @media (max-width: 750px) {
-      .floater-two-img {
-        left: 60%;
-        top: 65%;
-        height: 12vh;
-    }
-      }
-
-  @media (max-width: 500px) {
-    .floater-two-img {
-      left: 60%;
-      top: 75%;
-      height: 10vh;
-  }
-    }
-
-    .floater-three-img {
-      position: absolute;
-        top: 57.96%;
-        left: 57%;
-        width: 210px;
-        height: 160px;
-        transform: translateZ(0.25px) scale(0.75) translateX(-35%) translateY(-181%) rotate(0deg);
-        padding: 10px;
-    }
-    
-    @media (max-width: 1300px) {
-      .floater-three-img {
-        left: 60%;
-        top: 65%;
-        height: 13vh;
-    }
-      }
-      @media (max-width: 750px) {
-        .floater-three-img {
-          left: 60%;
-          top: 65%;
-          height: 12vh;
-      }
-        }
-  
-    @media (max-width: 500px) {
-      .floater-three-img {
-        left: 60%;
-        top: 75%;
-        height: 10vh;
-    }
-      }
-
-      .floater-three-text {
-        position: absolute;
-          top: 42%;
-          left: 11%;
-          width: 320px;
-          height: 240px;
-          transform: translateZ(-0.75px) scale(0.75) translateX(-35%) translateY(-181%) rotate(0deg);
-          padding: 10px;
-      }
-      
-      @media (max-width: 2000px) {
-        .floater-three-text {
-          left: -9%;
-          top: 41%
-      }
-        }
-        @media (max-width: 1300px) {
-          .floater-three-text {
-            left: -9%;
-            top: 56%
-        }
-          }
-      @media (max-width: 500px) {
-        .floater-three-text {
-            left: -7%;
-            top: 56%;
-        }
-          }
-
-
-#slide3:before {
-  background: rgb(0, 0, 0);
-  transform: translateZ(-1px) scale(2);
-}
 
 #slide4 {
   background-image: url("../img/mockang.png");
     z-index:2;
   }
 
-#slide5:before {
-  background: rgb(0, 0, 0);
-  transform: translateZ(-1px) scale(2);
-}
-
 #slide6 {
   background-image: url("../img/flickz.png");
   z-index:2;
 }
 
-#slide7:before {
-  background: rgb(0, 0, 0);
-  transform: translateZ(-1px) scale(2);
-}
 
 #slide8 {
   background-image: url("../img/meetup.png");
     z-index:2;
   }
 
-#slide9:before {
-  background: rgb(0, 0, 0);
-  transform: translateZ(-1px) scale(2);
-}
 
 #slide10 {
   background-image: url("../img/reactnative.png");
@@ -1052,15 +617,60 @@ body {
   }
 
   .projects-link {
-    color: black
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
   }
 
   .projects-link:hover {
-    color: darkgray
+    color: black;
+    font-weight: bold
   }
 
+  /*Home page*/
 
+  .see-work{
+    position: absolute;
+    bottom: 4%;
+    right: 4%;
+    background-color: white;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: inset 7px -1px 11px #555;
+  }
 
+  @media (max-width: 1440px) {
+    .see-work {
+      bottom: 40%;
+    }
+    } 
+
+    @media (max-width: 1024px) {
+      .see-work {
+        bottom: 4%;
+      }
+      } 
+
+    @media (max-width: 500px) {
+      .see-work {
+        display: none
+      }
+      } 
+
+      .face-colours {
+            width: 500px;
+      }
+
+      @media (max-width: 500px) {
+        .face-colours {
+          width: 350px;
+        }
+        } 
+        @media (max-width: 1024px) {
+          .text-home {
+            margin-top: 30px
+          }
+          } 
 
 
 

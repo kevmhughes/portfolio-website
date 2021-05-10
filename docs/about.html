@@ -5,6 +5,7 @@
           <meta name="viewport" content="width=device-width, initial-scale=1">
           <title>About</title>
           <link rel="shortcut icon" href="img/favicon.ico"></link>
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
           <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
           <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
           <link rel="stylesheet" type="text/css" href="css/style.production.css">
@@ -15,10 +16,12 @@
             <nav class="main-navigation page-header__item">
               <ul role="menubar" class="navigation-list" style="margin-top: 15px">
                 <li role="presentation">
-                  <a href="projects.html" role="menuitem" style="margin-right: 5px" class="projects-link">Projects</a>
+                  <a href="work.html" role="menuitem" style="margin-right: 5px" class="projects-link">Work</a>
                   <a href="about.html" role="menuitem" style="margin-right: 5px" class="projects-link">About</a>
                   <a href="contact.html" role="menuitem" style="margin-right: 5px" class="projects-link">Contact</a>
-                  <a href="index.html" role="menuitem" class="projects-link">Home</a>
+                  <a href="index.html" role="menuitem" class="projects-link" style="position: fixed;
+                  left: 20px;
+            font-family: 'Courier New', Courier, monospace;">Kevin Hughes</a>
                 </li>
               </ul>
             </nav>
@@ -32,12 +35,12 @@
             <h1 style="font-weight: lighter;
             font-family: 'Courier New', Courier, monospace; padding-right:0px; color: black">About Me</h1>
           </div>
-            
+           
           <div style="text-align: -webkit-center;">
           <img
           style="
-          width: 350px;
-          " src="img/about-foto.png">
+          width: 350px; margin-bottom: 30px; position: relative; top: -40px;
+          " src="img/kevinhughes.png">
           </div>
             <div
             class="wrapper-about"
@@ -56,7 +59,6 @@
                 </div>
               </div>
           </br>
-
 
            <div class="interests-box" style="
               display: flex;
@@ -124,6 +126,11 @@
             </br>
         </div>
           </div>
-          <script src="js/tota11y.min.js"></script>
+          
+          <div style="text-align: -webkit-center; margin-bottom: 20px;">
+          <button style="font-family: 'Courier New', Courier, monospace;" class="btn btn-primary mb1 bg-blue" onclick="window.open('Kevin.pdf')">Download CV</button>
+          </div>
+
+        <script src="js/tota11y.min.js"></script>
         </body>
     </html>
