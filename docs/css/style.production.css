@@ -630,6 +630,22 @@ body {
     font-weight: bold
   }
 
+  .grower1 {
+    width: 43px;
+  }
+
+  .grower1:hover {
+    width: 45px;
+  }
+
+  .grower2 {
+    width: 45px;
+  }
+
+  .grower2:hover {
+    width: 47px;
+  }
+
   /*Home page*/
 
 
