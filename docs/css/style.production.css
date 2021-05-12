@@ -569,7 +569,7 @@ body {
   width: 50%;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 1440px) {
   .text-likes {
     width: 80%
 
@@ -582,14 +582,18 @@ body {
 
 .interests-box {
   text-align: -webkit-center;
+  width: 80%;
+  margin: auto;
 }
 
 .interests-box-two {
   text-align: -webkit-center;
   flex-direction: row;
+  width: 80%;
+  margin: auto;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 1440px) {
 .interests-box-two {
   text-align: -webkit-center;
   flex-direction: row;
@@ -628,34 +632,6 @@ body {
 
   /*Home page*/
 
-  .see-work{
-    position: absolute;
-    bottom: 4%;
-    right: 4%;
-    background-color: white;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    box-shadow: inset 7px -1px 11px #555;
-  }
-
-  @media (max-width: 1440px) {
-    .see-work {
-      bottom: 40%;
-    }
-    } 
-
-    @media (max-width: 1024px) {
-      .see-work {
-        bottom: 4%;
-      }
-      } 
-
-    @media (max-width: 500px) {
-      .see-work {
-        display: none
-      }
-      } 
 
       .face-colours {
             width: 500px;
