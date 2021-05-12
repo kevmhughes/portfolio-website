@@ -1,208 +1,170 @@
 <!DOCTYPE html>
     <html>
-
         <head>
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width, initial-scale=1">
-          <title>Home</title>
+          <title>Projects</title>
           <link rel="shortcut icon" href="img/favicon.ico"></link>
           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-          <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
           <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
+          <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
           <link rel="stylesheet" type="text/css" href="css/style.production.css">
         </head>
- 
-        <body>
-          <div style="min-height: 100vh; background-color: #ffc300">
-  			  <header class="page-header" style="background-color: #ffc300">
+
+        <body style="background-color: black;">
+  			  <header class="page-header" style="background-color: black;">
             <nav class="main-navigation page-header__item">
               <ul role="menubar" class="navigation-list" style="margin-top: 15px">
                 <li role="presentation">
-                  <a href="projects.html" role="menuitem" style="margin-right: 5px" class="projects-link">Projects</a>
-                  <a href="about.html" role="menuitem" style="margin-right: 5px" class="projects-link">About</a>
-                  <a href="contact.html" role="menuitem" style="margin-right: 5px" class="projects-link">Contact</a>
+                  <a href="index.html#projects" role="menuitem" style="margin-right: 5px; color: white;" class="projects-link">Projects</a>
+                  <a href="about.html" role="menuitem" style="margin-right: 5px; color: white;" class="projects-link">About</a>
+                  <a href="contact.html" role="menuitem" style="margin-right: 5px; color: white;" class="projects-link">Contact</a>
                   <a href="index.html" role="menuitem" class="projects-link" style="position: absolute;
                   left: 20px;
-            font-family: 'Courier New', Courier, monospace; letter-spacing: normal;">Kevin Hughes</a>
+                  color: white;
+            font-family: 'Courier New', Courier, monospace;">Kevin Hughes</a>
                 </li>
               </ul>
             </nav>
           </header>
 
-          <div class="typewriter" 
+          <div class="first-page">
+            <div class="wrapper">
+              <div class="sign">
+                <span class="fast-flicker">Scro</span>ll<span class="flicker">_do</span>wn
+              </div>
+          </div>
+
+          <div id="title" class="slide header">
+            <div class="wrapper" style="display: flex;
+            flex-direction: column-reverse;">
+              <img class="profile" src="img/kevinhughes.png">
+            </div>
+          </div>
+
+          <div id="slide1" class="slide">
+            <div class="floater" ><h2 class="ztext">I am a Web Developer in Barcelona.</h2></br></br></br><h2 class="ztext">My name is Kevin Hughes.</h2></div>
+          </div>
+
+        <div style="background-color: white;"id="slide2" class="slide">
+          
+          <div id="projects" class="typewriter" 
           style="
           margin: auto;
           width: 100%;
           text-align: center;">
-            <h1 style="
-            font-family: 'Courier New', Courier, monospace; -webkit-text-stroke: medium; letter-spacing: normal; padding-right:0px; color: black">Kevin Hughes</h1>
+            <h1 style="font-weight: lighter;
+            font-family: 'Courier New', Courier, monospace; padding-right:0px; color: black; position: relative;
+    top: 75px;">Projects</h1>
           </div>
-            
-
-          <div style="text-align: -webkit-center;">
-            <img class="face-colours"
-            src="img/colours.jpg">
-            </div>
-
-            <div
-            class="wrapper-about"
-            style="
-            margin-left: auto;
-            margin-right: auto;">
-                <div 
-                style="
-                display: flex;
-                flex-flow: column;
-                line-height: 30px;">
-                          <h1 style="text-align: center;
-                font-weight: lighter;
-                font-family: 'Courier New', Courier, monospace;
-                padding-right: 0px" class="text-home">
-                  Web Developer in Barcelona</h1> 
-                  </div>
-                </div>
+          </br>
+          </br>
+          
+           <div class="interests-box">
+              <img class="image-test1"
+              src="img/test1.png">
+            <div class="text-likes">
+              <h2 class="main-titles">MyFlickz</h2>
+              <p class="text-font">MyFlickz is a full-stack RESTful responsive web application built with the MERN stack. See case study <a class="projects-link" style="text-decoration: underline;" href="myflickz.html">here</a>.
+              </p>
+              <div class="code-demo">
+                <a href="https://github.com/kevmhughes/MyFlickz">
+                  <img class="grower1" src="img/embed-code.svg">
+                </a>
+                <a href="https://myflickz.herokuapp.com/client/">
+                  <img class="grower2" src="img/demo.svg">
+                </a>
               </div>
+            </br>
+            </div>
+            </div>
 
-          <div id="slide6" class="slide" style="margin-top: 40px">
-            <div style="flex-direction: row; padding: 6% 0px 0px 5%;">
-            <div style="display: flex;
-            align-items: baseline;"><img style="width: 10%" src="img/logoreact.png"><h1>MyFlickz</h1></div>
-            <div class="flexbox-media" style="display: flex;
-            align-items: baseline;
-            padding: 0% 0% 0% 10%;">
-            <h2> React full-stack project:</h2>
-            </div>
-            <div class="flexbox-media" style="display: flex;
-            flex-direction: column;
-            align-items: baseline;
-            padding: 0% 0% 0% 10%;">
-            <h3>An app for film buffs.</h3>
-            <a class="link" href="work.html" target="_blank">
-                See case study</a>
-                <a class="link" href="https://github.com/kevmhughes/MyFlickz" 
-                  target="_blank">
-                      See code</a>                 
-            </div>
-          </div>
-          <a href="https://myflickz.herokuapp.com/client/" 
-          target="_blank">
-                <button 
-                class="btn btn-primary btn-home mb1 bg-blue">Demo app
-                </button></a>
+            <div class="interests-box-two">
+             <div class="text-likes">
+              <h2 class="main-titles">Mello</h2>
+              <p class="text-font">Mello is a responsive single-view to-do list application similar to Trello built with Vue.js. See case study <a class="projects-link" style="text-decoration: underline;" href="mello.html">here</a>.
+              </p>
+              <div class="code-demo">
+                <a href="https://github.com/kevmhughes/Mello/">
+                  <img class="grower1" src="img/embed-code.svg">
+                </a>
+                <a href="https://kevmhughes.github.io/Mello/">
+                  <img class="grower2" src="img/demo.svg">
+                </a>
+              </div>
+              </br>
+              </div>           
+              <img
+              class="image-test2"
+              style="
+              margin-bottom: 30px;
+              " src="img/test2.png">
             </div>
 
 
-            <div style="background-color: white;"id="slide2" class="slide">
-              <div style="flex-direction: row; padding: 6% 0px 0px 5%;">
-              <div style="display: flex;
-              align-items: baseline;"><img style="width: 10%" src="img/logovue.png"><h1> Mello</h1></div>
-              <div class="flexbox-media-two" style="display: flex;
-              align-items: baseline;
-              padding: 0% 0% 0% 10%;">
-              <h2> Vue.js application:</h2>
-              <h3>A Kanban board to-do list app.</h3>
-              <a class="link" href="mello.html" 
-              target="_blank">
-                  See case study</a>
-                  <a class="link" href="https://github.com/kevmhughes/Mello/" 
-                  target="_blank">
-                      See code</a>        
+            <div class="interests-box">
+              <img
+              class="image-test3"
+              src="img/test3.png">
+              <div class="text-likes">
+                <h2 class="main-titles">ChitChat</h2>
+                <p class="text-font">ChitChat is a messenger service app built with React Native. See case study <a class="projects-link" style="text-decoration: underline;" href="chitchat.html">here</a>.</p>
+                <div class="code-demo">
+                  <a href="https://github.com/kevmhughes/ChitChat">
+                    <img class="grower1" src="img/embed-code.svg">
+                  </a>
+                  <a href="https://github.com/kevmhughes/ChitChat#take-a-look-at-the-app">
+                    <img class="grower2" src="img/demo.svg">
+                  </a>
+              </div>
+              </br>
+              </div>
+            </div>
+
+          <div class="interests-box-two" >
+             <div class="text-likes">
+              <h2 class="main-titles">Meetup</h2>
+              <p class="text-font">Meetup is a serverless, progressive web application (PWA) built with React using a test-driven development (TDD) technique. See case study <a class="projects-link" style="text-decoration: underline;" href="meetup.html">here</a>.</p>
+              <div class="code-demo">
+                <a href="https://github.com/kevmhughes/meetup">
+                  <img class="grower1" src="img/embed-code.svg">
+                </a>
+                <a href="https://kevmhughes.github.io/meetup/">
+                  <img class="grower2" src="img/demo.svg">
+                </a>
+              </div>
+              </br>
+            </div>
+             <img
+             class="image-test4"
+             style="
+              margin-bottom: 30px;
+             " src="img/test4.png"> 
             </div>
           
-            </div>
-            <a href="https://kevmhughes.github.io/Mello/" 
-            target="_blank">
-                  <button 
-                  class="btn btn-primary btn-home mb1 bg-blue">Demo app
-                  </button></a>
-              </div>
-
-            <div id="slide8" class="slide">
-              <div style="flex-direction: row; padding: 6% 0px 0px 5%;">
-              <div style="display: flex;
-              align-items: baseline;"><img style="width: 10%" src="img/logoreact.png"><h1>Meetup</h1></div>
-              <div class="flexbox-media-two" style="display: flex;
-              align-items: baseline;
-              padding: 0% 0% 0% 10%;">
-              <h2> React application:</h2>
-              <h3>A responsive web application.</h3>
-              <a class="link" href="meetup.html" 
-              target="_blank">
-                  See case study</a> 
-              <a class="link" href="https://github.com/kevmhughes/meetup" 
-              target="_blank">
-                  See code</a>     
-            </div>
-            </div>
-            <a href="https://kevmhughes.github.io/meetup/" 
-            target="_blank">
-                  <button 
-                  class="btn btn-primary btn-home mb1 bg-blue">Demo app
-                  </button></a>
-              </div>
-
-              <div id="slide4" class="slide">
-                <div style="flex-direction: row; padding: 6% 0px 0px 5%;">
-                <div style="display: flex;
-                align-items: baseline;"><img style="width: 10%" src="img/logoang.png"><h1>English Quiz</h1></div>
-                <div class="flexbox-media-two" style="display: flex;
-                align-items: baseline;
-                padding: 0% 0% 0% 10%;">
-                <h2> AngularJS app:</h2>
-                <h3>A quiz app to test your English.</h3>
-                <a class="link" href="quiz.html" 
-                target="_blank">
-                    See case study</a>  
-                <a class="link" href="https://github.com/kevmhughes/EnglishQuiz" 
-                target="_blank">
-                    See code</a>     
-              </div>
-              </div>
-              <a href="https://kevmhughes.github.io/EnglishQuiz/" 
-              target="_blank">
-                    <button 
-                    class="btn btn-primary btn-home mb1 bg-blue">Demo app
-                    </button></a>
+          <div class="interests-box">
+             <img
+             class="image-test5" src="img/test5.png">
+                <div class="text-likes">
+                  <h2 class="main-titles">English Quiz</h2>
+                  <p class="text-font">English Quiz is a responsive quiz application built with Angular. See case study <a class="projects-link" style="text-decoration: underline;" href="quiz.html">here</a>.
+                  </p>
+                  <div class="code-demo">
+                    <a href="https://github.com/kevmhughes/EnglishQuiz">
+                      <img class="grower1" src="img/embed-code.svg">
+                    </a>
+                    <a href="https://kevmhughes.github.io/EnglishQuiz/">
+                      <img class="grower2" src="img/demo.svg">
+                    </a>
                 </div>
+                </br>
+              </div>
+            </div>
+          </br>
+          </div>
+        
 
-                <div id="slide10" class="slide" style="margin-bottom: 0;">
-                  <div style="flex-direction: row; padding: 6% 0px 0px 5%;">
-                  <div style="display: flex;
-                  align-items: baseline;"><img style="width: 10%" src="img/logoreact.png"><h1>ChitChat</h1></div>
-                  <div class="flexbox-media-two" style="display: flex;
-                  align-items: baseline;
-                  padding: 0% 0% 0% 10%;">
-                  <h2> React Native app:</h2>
-                  <h3>A chat messenger app.</h3>
-                  <a class="link" href="chitchat.html" 
-                  target="_blank">
-                      See case study</a> 
-                  <a class="link" href="https://github.com/kevmhughes/ChitChat" 
-                  target="_blank">
-                      See code</a>     
-                </div>
-                </div>
-                <a href="https://github.com/kevmhughes/ChitChat#take-a-look-at-the-app" 
-                target="_blank">
-                      <button 
-                      class="btn btn-primary btn-home mb1 bg-blue">Take a look
-                      </button></a>
-                  </div>
 
-                  <footer class="page-footer" style="background-color: white;">
-                    <!-- Github logo -->
-                  <div style="text-align:center">
-                    <a href="https://github.com/kevmhughes" target="_blank" aria-label="GitHub"><img src="img/github.svg" width="30" height="30" alt="github"></a>
-                    <!-- Email -->
-                    <a href="contact.html" target="_blank" aria-label="email"><img src="img/email.svg" width="30" height="30" alt="email icon"></a>
-                    <!-- LinkedIn logo -->
-                    <a href="https://www.linkedin.com/in/kevin-michael-hughes" target="_blank" aria-label="LinkedIn"><img src="img/linkedin.svg" width="30" height="30" alt="linkedin"></a>
-                  </div>
-                  </footer>
-
-            
-      <script src="js/tota11y.min.js"></script>
+        <script src="js/tota11y.min.js"></script>
         </body>
     </html>
-
-    
