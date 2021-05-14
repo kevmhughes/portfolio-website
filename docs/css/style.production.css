@@ -614,6 +614,19 @@ margin-top: 30px;
 
 /*case study pages*/
 
+  .image-test5-quiz {
+    width: 800px;
+  }
+
+
+@media (max-width: 500px) {
+  .image-test5-quiz {
+    width: 400px;
+    position: relative;
+    right: 60px;
+  }
+  } 
+
 .arrow-up-btn{
   display: flex;
   line-height: 30px;
