@@ -476,8 +476,14 @@ width: 600px
   } 
 
 .image-test2{
-width: 500px
+width: 500px;
 }
+
+@media (max-width: 1440px) {
+  .image-test2 {
+    margin-top: 20px;
+  }
+  } 
 
 @media (max-width: 500px) {
   .image-test2 {
@@ -503,6 +509,12 @@ margin: 0px 30px 30px 30px;
 .image-test4{
 width: 350px
 }
+
+@media (max-width: 1440px) {
+  .image-test4 {
+    margin-top: 40px;
+  }
+  } 
 
 @media (max-width: 500px) {
 .image-test4 {
