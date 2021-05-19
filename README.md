@@ -1,6 +1,6 @@
 # My portfolio
 
-Take a look at my portfolio [here](https://kevmhughes.github.io/portfolio-website/)
+Take a look at my portfolio [here](https://www.kevmhughes.com)
 
 # Description
 
