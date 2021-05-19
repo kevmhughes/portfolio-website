@@ -994,16 +994,6 @@ body {
 /*End of Parallax effect*/
 
 
-@-moz-document {
-  cv-button {
-      margin-bottom: 20px;
-  }
-}
-
-.cv-button, x:-moz-any-link, x:default {
-  margin-bottom: 20px;
-}
-
 
 
 
