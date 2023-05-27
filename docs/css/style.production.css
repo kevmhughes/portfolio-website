@@ -600,6 +600,15 @@ margin-top: 30px;
     justify-content: space-between;
   }
 
+
+  @media (max-width: 500px) {
+
+    .code-demo {
+      margin-bottom: 30px;
+    }
+    } 
+
+
   .main-titles {
     text-align: left; 
     font-weight: lighter; 
