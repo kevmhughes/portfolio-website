@@ -6,22 +6,19 @@
 
 @font-face {
   font-family: "Raleway";
-  src: url("./assets/fonts/Raleway-Italic-VariableFont_wght.ttf")
-    format("truetype");
+  src: url("./assets/fonts/Raleway-Italic-VariableFont_wght.ttf") format("truetype");
   font-style: italic;
 }
 
 @font-face {
   font-family: "Source Code Pro";
-  src: url("./assets/fonts/SourceCodePro-VariableFont_wght.ttf")
-    format("truetype");
+  src: url("./assets/fonts/SourceCodePro-VariableFont_wght.ttf") format("truetype");
   font-style: normal;
 }
 
 @font-face {
   font-family: "Source Code Pro";
-  src: url("./assets/fonts/SourceCodePro-Italic-VariableFont_wght.ttf")
-    format("truetype");
+  src: url("./assets/fonts/SourceCodePro-Italic-VariableFont_wght.ttf") format("truetype");
   font-style: italic;
 }
 
@@ -274,6 +271,7 @@ figcaption {
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
+
   from,
   to {
     border-color: transparent;
@@ -342,6 +340,13 @@ figcaption {
 
 /* contact */
 
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .form-text {
   font-size: 1.5rem;
   font-weight: 300;
@@ -381,18 +386,15 @@ figcaption {
 }
 
 .social-media-icons {
-    position: fixed;
-    bottom: 1rem;
-    left: 50%;
-    transform: translateX(-50%); /* Centers the icons horizontally */
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .contact-icons {
-    height: 3rem;
+  height: 3rem;
 }
 
 /* media queries */
