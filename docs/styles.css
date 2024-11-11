@@ -590,6 +590,10 @@ figcaption {
     width: 90%;
   }
 
+  .projects-icons-container {
+    width: 90px;
+  }
+
   .face {
     height: 400px;
   }
@@ -611,6 +615,11 @@ figcaption {
 
   .case-study-title {
     font-size: 3rem;
+  }
+
+  .success-message,
+  .error-message {
+    font-size: 1.3rem;
   }
 }
 

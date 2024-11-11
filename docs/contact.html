@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light" >
+<html lang="en" data-theme="light">
   <head>
     <title>Contact Form</title>
     <link
@@ -35,12 +35,17 @@
         Get In Touch
       </h1>
     </div>
-    <form id="contact-form" class="container" onsubmit="sendEmail(event)" style="font-family: Raleway">
-      <input type="hidden" name="contact_number" minlength="3" required/>
+    <form
+      id="contact-form"
+      class="container"
+      onsubmit="sendEmail(event)"
+      style="font-family: Raleway"
+    >
+      <input type="hidden" name="contact_number" minlength="3" required />
       <label class="form-text">Name</label>
-      <input type="text" id="user_name" name="user_name" required/>
+      <input type="text" id="user_name" name="user_name" required />
       <label class="form-text">Email</label>
-      <input type="email" id="user_email" name="user_email" required/>
+      <input type="email" id="user_email" name="user_email" required />
       <label class="form-text">Message</label>
       <textarea
         id="message"
@@ -54,19 +59,60 @@
       ></textarea>
       <button type="submit" class="form-text form-button">Send</button>
     </form>
-    <div id="success-message" class="container success-message message-container" style="display: none;">
-      Your message has been sent successfully! Thank you.
-    </div>
-
-    <div id="error-message" class="container error-message message-container" style="display: none;">
-      Sorry, something went wrong. Please try again later.
+    <div class="container">
+      <div
+        id="success-message"
+        class="container success-message message-container"
+        style="display: none"
+      >
+        Your message has been sent successfully!
+      </div>
+      <div
+        id="error-message"
+        class="container error-message message-container"
+        style="display: none"
+      >
+        Something went wrong. Please try later.
+      </div>
     </div>
     <footer>
       <div class="social-media-icons">
-        <a href="mailto:kevhughes24@hotmail.com" target="_blank" aria-label="email"><img src="./assets/social-media/email.svg" class="contact-icons" alt="email icon"></a>
-        <a href="https://www.linkedin.com/in/kevin-michael-hughes" target="_blank" aria-label="linkedin profile"><img src="./assets/social-media/linkedin.svg" class="contact-icons" alt="linkedin icon"></a>
-        <a href="https://github.com/kevmhughes" target="_blank" aria-label="github profile"><img src="./assets/social-media/github.svg" class="contact-icons" alt="github icon"></a>
-        <a href="https://wa.me/34630116629" target="_blank" aria-label="telephone number"><img src="./assets/social-media/whatsapp.svg" class="contact-icons" alt="whatsapp icon"></a>
+        <a
+          href="mailto:kevhughes24@hotmail.com"
+          target="_blank"
+          aria-label="email"
+          ><img
+            src="./assets/social-media/email.svg"
+            class="contact-icons"
+            alt="email icon"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/kevin-michael-hughes"
+          target="_blank"
+          aria-label="linkedin profile"
+          ><img
+            src="./assets/social-media/linkedin.svg"
+            class="contact-icons"
+            alt="linkedin icon"
+        /></a>
+        <a
+          href="https://github.com/kevmhughes"
+          target="_blank"
+          aria-label="github profile"
+          ><img
+            src="./assets/social-media/github.svg"
+            class="contact-icons"
+            alt="github icon"
+        /></a>
+        <a
+          href="https://wa.me/34630116629"
+          target="_blank"
+          aria-label="telephone number"
+          ><img
+            src="./assets/social-media/whatsapp.svg"
+            class="contact-icons"
+            alt="whatsapp icon"
+        /></a>
       </div>
     </footer>
     <script src="./js/contact.js"></script>
