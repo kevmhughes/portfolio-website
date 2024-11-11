@@ -1,241 +1,141 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-          <meta charset="utf-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <title>Projects</title>
-          <link rel="shortcut icon" href="img/favicon.ico"></link>
-          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-          <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
-          <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-          <link rel="stylesheet" type="text/css" href="css/style.production.css">
-        </head>
+<html lang="en">
 
-        <body style="background-color: black;">
-  			  <header id="header" class="page-header" style="background-color: black;">
-            <nav class="main-navigation page-header__item">
-              <ul role="menubar" class="navigation-list" style="margin-top: 15px">
-                <li role="presentation">
-                  <a href="index.html#projects" role="menuitem" style="margin-right: 5px; color: white;" class="projects-link">Projects</a>
-                  <a href="about.html" role="menuitem" style="margin-right: 5px; color: white;" class="projects-link">About</a>
-                  <a href="contact.html" role="menuitem" style="margin-right: 5px; color: white;" class="projects-link">Contact</a>
-                  <a href="index.html" role="menuitem" class="projects-link" style="position: absolute;
-                  left: 20px;
-                  color: white;
-            font-family: 'Courier New', Courier, monospace;">Kevin Hughes</a>
-                </li>
-              </ul>
-            </nav>
-          </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Home</title>
+</head>
 
-          <div class="first-page">
-            <div class="wrapper">
-              <div class="sign">
-                <span class="fast-flicker">Scro</span>ll<span class="flicker">_do</span>wn
-              </div>
-          </div>
+<body>
+  <header>
+    <div class="nav-bar">
+      <div class="nav-bar-name"><a href="./index.html">KEVIN HUGHES</a></div>
+      <div class="nav-items">
+        <div>
+          <a href="#projects-title">Projects</a>
+        </div>
+        <div><a href="./about.html">About</a></div>
+        <div><a href="./contact.html">Contact</a></div>
+      </div>
+    </div>
+  </header>
 
-          <div id="title" class="slide header">
-            <div class="wrapper" style="display: flex;
-            flex-direction: column-reverse;">
-              <img class="profile" src="img/kevinhughes.png">
-            </div>
-          </div>
+  <div class="face-container">
+    <img src="./assets/images/face_and_text.svg" alt="an image of a face" class="face" id="rotateImage" />
+  </div>
 
-          <div id="slide1" class="slide">
-            <div class="floater" ><h2 class="ztext">My name is Kevin Hughes.</h2></br></br></br><h2 class="ztext">I'm a web developer in Barcelona.</h2></div>
-          </div>
+  <h1 class="projects-title" id="projects-title">My Projects</h1>
+  <main class="projects-grid">
+    <div class="grid-item lyriks-grid">
+      <img src="./assets/mock-ups/lyriks.png" alt="Lryiks mock-up" class="projects-mock-up mockup-adjust lyriks"/>
+      <div class="projects-text-container">
+        <h2 class="project-title">Lyriks</h2>
+        <p>
+          Lyriks is a fully responsive Spotify clone app built with React, utilizing Redux for state management to ensure smooth user interactions. It features real-time music streaming, intuitive navigation, and playlist management, providing a seamless user experience across devices. See case study <a href="" class="case-study-link">here</a>.
+        </p>
+        <div class="projects-icons-container">
+          <img src="./assets/icons/embed-code.svg" alt="embed code icon" class="projects-icon embed" />
+          <img src="./assets/icons/demo.svg" alt="demo icon" class="projects-icon demo" />
+        </div>
+      </div>
+    </div>
+    <div class="grid-item even">
+      <img src="./assets/mock-ups/flowerheads.png" alt="Flowerheads mock-up" class="projects-mock-up mockup flowerheads" />
+      <div class="projects-text-container">
+        <h2 class="project-title">Flowerheads</h2>
+        <p>
+          Flower Heads is a fully responsive and modern full-stack e-commerce application built with React, Next.js, Stripe, and Sanity. It provides a seamless shopping experience, from browsing products to secure payment processing. See case study <a href="./flowerheads.html" class="case-study-link">here</a>.
+        </p>
+        <div class="projects-icons-container">
+          <a href="https://github.com/kevmhughes/flowerheads_ecom_app" target="_blank">
+            <img src="./assets/icons/embed-code.svg" alt="embed code icon" class="projects-icon embed" />
+          </a>
+          <a href="https://flowerheads-ecom-app.vercel.app" target="_blank">
+          <img src="./assets/icons/demo.svg" alt="demo icon" class="projects-icon demo" />
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="./assets/mock-ups/mello.png" alt="Mello mock-up" class="projects-mock-up mockup mello"/>
+      <div class="projects-text-container">
+        <h2 class="project-title">Mello</h2>
+        <p>
+          Mello is a fully responsive, single-view Kanban to-do list app built with Vue.js, offering a streamlined and
+          intuitive way to organize tasks and manage workflow. Discover more about the development journey in the full
+          case study <a href="./mello.html" class="case-study-link">here</a>.
+        </p>
+        <div class="projects-icons-container">
+          <a href="https://github.com/kevmhughes/Mello" target="_blank"> <img src="./assets/icons/embed-code.svg"
+              alt="embed code icon" class="projects-icon embed" /></a>
+          <a href="https://kevmhughes.github.io/Mello" target="_blank"> <img src="./assets/icons/demo.svg"
+              alt="demo icon" class="projects-icon demo" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="grid-item even">
+      <img src="./assets/mock-ups/chit-chat.png" alt="chitchat mock-up" class="projects-mock-up mockup chitchat"/>
+      <div class="projects-text-container">
+        <h2 class="project-title">ChitChat</h2>
+        <p>
+          ChitChat is a native mobile application built using React Native, offering a messaging service similar to
+          WhatsApp. With features like real-time communication and media sharing, it provides users with a seamless
+          messaging experience. See the full case study <a href="./chitchat.html" class="case-study-link">here</a>.
+        </p>
+        <div class="projects-icons-container">
+          <a href="https://github.com/kevmhughes/ChitChat" target="_blank"><img src="./assets/icons/embed-code.svg"
+              alt="embed code icon" class="projects-icon embed" />
+          </a>
+          <a href="https://github.com/kevmhughes/ChitChat?tab=readme-ov-file#take-a-look-at-the-app" target="_blank">
+            <img src="./assets/icons/demo.svg" alt="demo icon" class="projects-icon demo" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="./assets/mock-ups/krypt.png" alt="Krypt mock-up" class="projects-mock-up mockup krypt"/>
+      <div class="projects-text-container">
+        <h2>Krypt</h2>
+        <p>
+          Krypt is a Web 3.0 blockchain app for sending and receiving cryptocurrency, built with React, Solidity, Tailwind, and Vite. It enables users to securely manage transactions via a MetaMask account by connecting their digital wallet.
+        </p>
+        <div class="projects-icons-container">
+          <a href="https://github.com/kevmhughes/krypt" target="_blank">
+            <img src="./assets/icons/embed-code.svg" alt="embed code icon" class="projects-icon embed" />
+          </a>
+          <a href="https://krypt-transfers.netlify.app" target="_blank">
+          <img src="./assets/icons/demo.svg" alt="demo icon" class="projects-icon demo" />
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="grid-item even yariga-grid">
+      <img src="./assets/mock-ups/yariga.png" alt="Yariga mock-up" class="projects-mock-up mockup yariga"/>
+      <div class="projects-text-container">
+        <h2 class="project-title">Yariga</h2>
+        <p>
+          Yariga is a full-stack real estate management dashboard for desktops, built with the MERN stack. It offers powerful, intuitive tools for managing properties and agents, tracking reviews, and handling transactions, all within a sleek, user-friendly interface.
+        </p>
+        <div class="projects-icons-container">
+          <a href="https://github.com/kevmhughes/real_estate_admin_dashboard" target="_blank"> <img src="./assets/icons/embed-code.svg"
+              alt="embed code icon" class="projects-icon embed" /></a>
+          <a href="https://real-estate-admin-dashboard.netlify.app" target="_blank"> <img src="./assets/icons/demo.svg"
+              alt="demo icon" class="projects-icon demo" /></a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="arrow-up-container">
+      <a href="#">
+        <img src="./assets/icons/arrow-up.svg" alt="go back to top arrow" class="arrow-up">
+      </a>
+    </div>
+  </footer>
 
-        <div style="background-color: white;"id="slide2" class="slide">
-          
-          <div id="projects" class="typewriter" 
-          style="
-          margin: auto;
-          width: 100%;
-          text-align: center;">
-            <h1 style="font-weight: lighter;
-            font-family: 'Courier New', Courier, monospace; padding-right:0px; color: black; position: relative;
-    top: 75px;">Projects</h1>
-          </div>
-          </br>
-          </br>
-          
-           <div class="interests-box">
-              <img class="image-test1"
-              src="img/test8.png">
-            <div class="text-likes">
-              <h2 class="main-titles">Lyriks</h2>
-              <p class="text-font">Lyriks is a fully responsive Spotify clone app built with React and using Redux state management. See case study <a class="projects-link" style="text-decoration: underline;" href="lyriks.html">here</a>.</a>
-              </p>
-              <div class="code-demo">
-                <a href="https://github.com/kevmhughes/lyriks" target="_blank">
-                  <img class="grower1" src="img/embed-code.svg">
-                </a>
-                <a href="https://lyriks-shazam-app.netlify.app/" target="_blank">
-                  <img class="grower2" src="img/demo.svg">
-                </a>
-              </div>
-            </br>
-            </div>
-            </div>
+  <script src="./js/index.js"></script>
+</body>
 
-            <div class="mobile-view-line">
-            </br>
-            <hr style="width: 80%;  border-color: gray;">
-            </div>
-
-            <div class="interests-box-two">
-              <div class="text-likes">
-               <h2 class="main-titles">Yariga</h2>
-               <p class="text-font">Yariga is a full stack real-estate management dashboard for desktops built using the MERN stack.</a>
-               </p>
-               <div class="code-demo">
-                 <a href="https://github.com/kevmhughes/real_estate_admin_dashboard" target="_blank">
-                   <img class="grower1" src="img/embed-code.svg">
-                 </a>
-                 <a href="https://real-estate-admin-dashboard.netlify.app/" target="_blank">
-                   <img class="grower2" src="img/demo.svg">
-                 </a>
-               </div>
-               </br>
-               </div>           
-               <img
-               class="image-test1"
-               style="
-               margin-bottom: 30px;
-               " src="img/test9.png">
-             </div>
-
-            <div class="mobile-view-line">
-              </br>
-              <hr style="width: 80%;  border-color: gray;">
-            </div>
-
-            <div class="interests-box">
-              <img
-              class="image-test7"
-              src="img/test7.png">
-              <div class="text-likes">
-                <h2 class="main-titles">Krypt</h2>
-                <p class="text-font">Krypt is a Web 3.0 blockchain app for sending and receiving cryptocurrency built with React, Solidity, Tailwind and Vite.</p>
-                <div class="code-demo">
-                  <a href="https://github.com/kevmhughes/krypt" target="_blank">
-                    <img class="grower1" src="img/embed-code.svg">
-                  </a>
-                  <a href="https://krypt-transfers.netlify.app" target="_blank">
-                    <img class="grower2" src="img/demo.svg">
-                  </a>
-              </div>
-              </br>
-              </div>
-            </div>
-
-            <div class="mobile-view-line">
-              </br>
-              <hr style="width: 80%;  border-color: gray;">
-            </div>
-
-            <div class="interests-box-two">
-              <div class="text-likes">
-               <h2 class="main-titles">Mello</h2>
-               <p class="text-font">Mello is a responsive, and single-view, Kanban style to-do list application built with Vue.js. See case study <a class="projects-link" style="text-decoration: underline;" href="mello.html">here</a>.
-               </p>
-               <div class="code-demo">
-                 <a href="https://github.com/kevmhughes/Mello/" target="_blank">
-                   <img class="grower1" src="img/embed-code.svg">
-                 </a>
-                 <a href="https://kevmhughes.github.io/Mello/" target="_blank">
-                   <img class="grower2" src="img/demo.svg">
-                 </a>
-               </div>
-               </br>
-               </div>           
-               <img
-               class="image-test2"
-               style="
-               margin-bottom: 30px;
-               " src="img/test2.png">
-             </div>
-
-            <div class="mobile-view-line">
-            </br>
-            <hr style="width: 80%;  border-color: gray;">
-            </div>
-
-            <div class="interests-box">
-              <img
-              class="image-test3"
-              src="img/test3.png">
-              <div class="text-likes">
-                <h2 class="main-titles">ChitChat</h2>
-                <p class="text-font">ChitChat is a messenging service app built with React Native. See case study <a class="projects-link" style="text-decoration: underline;" href="chitchat.html">here</a>.</p>
-                <div class="code-demo">
-                  <a href="https://github.com/kevmhughes/ChitChat" target="_blank">
-                    <img class="grower1" src="img/embed-code.svg">
-                  </a>
-                  <a href="https://github.com/kevmhughes/ChitChat#take-a-look-at-the-app" target="_blank">
-                    <img class="grower2" src="img/demo.svg">
-                  </a>
-              </div>
-              </br>
-              </div>
-            </div>
-
-            <div class="mobile-view-line">
-            </br>
-            <hr style="width: 80%;  border-color: gray;">
-            </div>
-
-          <div class="interests-box-two" >
-             <div class="text-likes">
-              <h2 class="main-titles">JSM ProSounds</h2>
-              <p class="text-font">JSM ProSounds is a fully responsive and modern full stack e-commerce application built with React, React Context API, Next.JS, Stripe & Sanity. See case study <a class="projects-link" style="text-decoration: underline;" href="jsmprosounds.html">here</a>. </p>
-              <div class="code-demo">
-                <a href="https://github.com/kevmhughes/e_com_app" target="_blank">
-                  <img class="grower1" src="img/embed-code.svg">
-                </a>
-                <a href="https://e-com-app-sanity.vercel.app" target="_blank">
-                  <img class="grower2" src="img/demo.svg">
-                </a>
-              </div>
-              </br>
-            </div>
-             <img
-             class="image-test4"
-             style="
-              margin-bottom: 30px;
-             " src="img/test10.png"> 
-            </div>
-          
-            <div class="mobile-view-line">
-            </br>
-            <hr style="width: 80%;  border-color: gray;">
-            </div>
-
-          <div class="interests-box">
-             <img
-             class="image-test5" src="img/test5.png">
-                <div class="text-likes">
-                  <h2 class="main-titles">English Quiz</h2>
-                  <p class="text-font">English Quiz is a responsive quiz application built with Angular. See case study <a class="projects-link" style="text-decoration: underline;" href="quiz.html">here</a>.
-                  </p>
-                  <div class="code-demo">
-                    <a href="https://github.com/kevmhughes/EnglishQuiz" target="_blank">
-                      <img class="grower1" src="img/embed-code.svg">
-                    </a>
-                    <a href="https://kevmhughes.github.io/EnglishQuiz/" target="_blank">
-                      <img class="grower2" src="img/demo.svg">
-                    </a>
-                </div>
-                </br>
-              </br>
-              </div>
-            </div>
-            <div 
-            class="arrow-up-btn" style="margin-bottom: 0px">
-              <a href="index.html#header"><img style="width: 45px; margin-bottom: 10px"src="img/arrow-up.svg"></a>
-            </div>
-          </div>
-
-        </body>
-    </html>
+</html>

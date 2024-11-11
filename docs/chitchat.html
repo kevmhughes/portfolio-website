@@ -1,396 +1,136 @@
 <!DOCTYPE html>
-    <html style="height: 100%">
-        <head>
-          <meta charset="utf-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <title>Chit Chat</title>
-          <link rel="shortcut icon" href="img/favicon.ico"></link>
-          <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
-          <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-          <link rel="stylesheet" type="text/css" href="css/style.production.css">
-        </head>
+<html lang="en">
 
-        <body style="background-color: white;">
-  			  <header id="header" class="page-header" style="background-color: white;">
-            <nav class="main-navigation page-header__item">
-              <ul role="menubar" class="navigation-list" style="margin-top: 15px">
-                <li role="presentation">
-                  <a href="index.html#projects" role="menuitem" style="margin-right: 5px" class="projects-link">Projects</a>
-                  <a href="about.html" role="menuitem" style="margin-right: 5px" class="projects-link">About</a>
-                  <a href="contact.html" role="menuitem" style="margin-right: 5px" class="projects-link">Contact</a>
-                  <a href="index.html" role="menuitem" class="projects-link" style="position: absolute;
-                  left: 20px;
-            font-family: 'Courier New', Courier, monospace;">Kevin Hughes</a>
-                </li>
-              </ul>
-            </nav>
-          </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>ChitChat</title>
+</head>
 
-          <div class="typewriter" 
-          style="
-          margin: auto;
-          width: 100%;
-          text-align: center;">
-            <h1 style="font-weight: lighter;
-            font-family: 'Courier New', Courier, monospace; padding-right: 0px; color: black">ChitChat</h1>
-          </div>
-
-            <div class="wrapper-two" 
-            style="
-            margin-left: auto;
-            font-size: 3vh;
-            margin-right: auto;">
-                <div 
-                style="
-                display: flex;
-                flex-flow: column">
-                <img style="width:100%" src="img/reactnative.png">
-                </div>
-              </div>
-
-              <div
-              class="wrapper-about"
-              style="
-              margin-left: auto;
-              font-size: 3vh;
-              margin-right: auto;
-              width: 80%">
-                  <div 
-                  style="
-                  display: flex;
-                  flex-flow: column;
-                  line-height: 30px;">
-                  </br>
-                  </br>
-                  <h2 style="text-align: left; font-weight: lighter; font-family: 'Courier New', Courier, monospace; font-weight: 600;">Project Overview</h2>
-                  </br>
-                  </br>
-                  <h2 style="text-align: left; font-weight: lighter; font-family: 'Courier New', Courier, monospace;">What is it? </h2>
-                  <p class="text-font">
-                    ChitChat is a native mobile application built using React Native. It is a messenging service app that is not dissimilar from WhatsApp given that the user can send and receive text messages, photos taken with the phone's camera, images or photos from the phone's storage, and share the user's location.</br>
-                    </br>
-                    <h2 style="text-align: left; font-weight: lighter; font-family: 'Courier New', Courier, monospace;">What was the objective?</h2>
-                    <p class="text-font">To build a chat app for mobile devices using React Native, and Expo.io, as part of the CareerFoundry Web Development course.</p>
-                    </br>
-                    <h2 style="text-align: left; font-weight: lighter; font-family: 'Courier New', Courier, monospace;">Which tools were used?</h2>
-                      <p class="text-font">
-                        Server-side: Google Firestore Database, Google Firebase
-                        </br>Client-side: React Native, Gifted Chat library
-                        </br>Development Environment: Expo.io
-                      </p>
-                  </div>
-                  </div>
-
-                  <div id="logos" class="wrapper-two" 
-                  style="
-                  margin-left: auto;
-                  font-size: 3vh;
-                  margin-right: auto;">
-                      <div 
-                      style="
-                      display: flex;
-                      flex-flow: column">
-                      </br>
-                      <img class="tool-logos" src="img/toollogos4.png" alt="tool logos">
-                      </br>
-                      </br>
-                      </div>
-                    </div>
-                       
-                        <hr style="
-                        width: 80%;
-                        border-color: gray;
-                        border-style: double;">
-
-<div
-class="wrapper-about"
-style="
-margin-left: auto;
-font-size: 3vh;
-margin-right: auto;
-width: 80%">
-    <div 
-    style="
-    display: flex;
-    flex-flow: column;
-    line-height: 30px;">
-      </br>
-      </br>
-        <h2 style="text-align: left; font-weight: lighter; font-family: 'Courier New', Courier, monospace; font-weight: 600;">User Stories</h2>
-      </br>
-        <ul>
-          <li class="text-font">
-            As a new user, I want to be able to easily enter a chat room so I can quickly start talking to my friends and family.
-          </li>
-          <li class="text-font">
-            As a user, I want to be able to send messages to my friends and family members to exchange the latest news.
-          </li>
-          <li class="text-font">
-            As a user, I want to send images to my friends to show them what I'm currently doing.
-           </li>
-          <li class="text-font">
-            As a user, I want to share my location with my friends to show them where I am.
-          </li>
-          <li class="text-font">
-            As a user, I want to be able to read my messages offline so I can reread conversations
-            at any time.
-          </li>
-          <li class="text-font">
-            As a user with a visual impairment, I want to use a chat app that is compatible with a
-            screen reader so that I can engage with a chat interface.
-          </li>
-        </ul>
-      </br>
+<body style="background: white">
+  <header>
+    <div class="nav-bar">
+      <div class="nav-bar-name"><a href="./index.html">KEVIN HUGHES</a></div>
+      <div class="nav-items">
+        <div>
+          <a href="./index.html#projects-title">Projects</a>
+        </div>
+        <div><a href="./about.html">About</a></div>
+        <div><a href="./contact.html">Contact</a></div>
+      </div>
     </div>
+  </header>
+  <div class="typewriter">
+    <h1 style="color: black; margin-bottom: 1rem" class="case-study-title">
+      ChitChat
+    </h1>
+  </div>
+  <main>
+    <div>
+      <img src="./assets/case-study-images/chitchat_full_width.png" alt="mobile phone in the hand"
+        class="case-study-full-width-image" />
     </div>
+    <article class="case-study-text-container">
+      <h2 class="title-two">Project Overview</h2>
+      <h3 class="title-three">What is it?</h3>
+      <p class="case-study-text">
+        ChitChat is a native mobile application built using React Native. It
+        is a messenging service app that is not dissimilar from WhatsApp given
+        that the user can send and receive text messages, photos taken with
+        the phone's camera, images or photos from the phone's storage, and
+        share the user's location.
+      </p>
+      <h3 class="title-three">What was the objective?</h3>
+      <p class="case-study-text">
+        To build a chat app for mobile devices using React Native, and
+        Expo.io, as part of the CareerFoundry Web Development course.
+      </p>
+      <h3 class="title-three">Which tools were used?</h3>
+      <div class="case-study-text">
+        <div>Server-side: Google Firestore Database, Google Firebase</div>
+        <div>Client-side: React Native, Gifted Chat library</div>
+        <div>Development Environment: Expo.io</div>
+      </div>
+      <div class="case-study-logos-container">
+        <img src="./assets/case-study-images/chitchat_tool_logos.png" alt="case study tool logos"
+          class="case-study-logos">
+      </div>
+      <h2 class="title-two">User Stories</h2>
+      <ul class="case-study-text">
+        <li>As a new user, I want to be able to easily enter a chat room so I can quickly start talking to my friends
+          and family.</li>
+        <li>As a user, I want to be able to send messages to my friends and family members to exchange the latest news.
+        </li>
+        <li>As a user, I want to send images to my friends to show them what I'm currently doing.</li>
+        <li>As a user, I want to share my location with my friends to show them where I am.</li>
+        <li>As a user, I want to be able to read my messages offline so I can reread conversations at any time.</li>
+        <li>As a user with a visual impairment, I want to use a chat app that is compatible with a screen reader so that
+          I can engage with a chat interface.</li>
+      </ul>
+      <h2 class="title-two">Key Features</h2>
+      <ul class="case-study-text">
+        <li>A page where users can enter their name and choose a background color for the chat screen before joining the
+          chat.</li>
+        <li>A page displaying the conversation, as well as an input field and submit button.</li>
+        <li>The chat must provide users with two additional communication features: sending images and location data.
+        </li>
+        <li>Data gets stored online and offline.</li>
+      </ul>
+      <h2 class="title-two">UI Design & Assets</h2>
+      <h3 class="title-three">Design Specifications:</h3>
+      <div class="chitchat-ui-design">
+        <img src="./assets/case-study-images/chitchat_ui.png" alt="chitchat ui design">
+      </div>
+      <ul class="case-study-text">
+        <li>Vertical and horizontal spacing: evenly distributed.</li>
+        <li>App title: font size 45, font weight 600, font color #FFFFFF.</li>
+        <li>“Your name”: font size 16, font weight 300, font color #757083, 50% opacity.</li>
+        <li>“Choose background color”: font size 16, font weight 300, font color #757083, 100% opacity.</li>
+        <li>Color options HEX codes: #090C08; #474056; #8A95A5; #B9C6AE.</li>
+        <li>Start chatting button: font size 16, font weight 600, font color #FFFFFF, button color #757083.</li>
+      </ul>
+      <h2 class="title-two">Building The App</h2>
+      <h3 class="title-three">The technical requirements for creating the app:</h3>
+      <ul class="case-study-text">
+        <li>The app must be written with the React Native framework.</li>
+        <li>The app must be developed using Expo.io.</li>
+        <li>The app must be styled according to the given Figma screen design.</li>
+        <li>Chat conversations must be stored in Google Firestore Database.</li>
+        <li>The app must authenticate users anonymously via Google Firebase authentication.</li>
+        <li>Chat conversations must be stored locally.</li>
+        <li>The app must let users pick and send images from the phone's image library.</li>
+        <li>The app must let users take pictures with the device's camera app, and send them.</li>
+        <li>The app must store images in Firebase Cloud Storage.</li>
+        <li>The app must be able to read the user's location data.</li>
+        <li>Location data must be sent via the chat in a map view.</li>
+        <li>The chat interface and functionality must be created using the Gifted Chat library.</li>
+        <li>The project must include technical documentation.</li>
+        <li>All the code must be linted according to given requirements.</li>
+      </ul>
+      <h2 class="title-two">The Final Product</h2>
+      <div class="chitchat-gif-container">
+        <img src="./assets/case-study-images/chitchat.gif" alt="chitchat gif" class="chitchat-gif">
+      </div>
+      <p class="case-study-text">The source code is hosted on GitHub, a collaborative platform that supports version
+        control and project management. You can access the source <a href="https://github.com/kevmhughes/ChitChat"
+          class=" case-study-link " target="_blank">here</a>.</p>
+      <h2 class="title-two">Challenges Faced</h2>
+      <p class="case-study-text">This project marked my first venture into React Native, and it came with a steep
+        learning curve. However, my solid background in React helped me adapt quickly to the framework and navigate its
+        unique challenges. One of the biggest obstacles was maintaining patience while working with Expo, an iPhone, and
+        a slow, RAM-intensive Android emulator. I discovered that functionality on iOS didn’t always translate smoothly
+        to Android, and vice versa, requiring constant testing on both systems. In the process, I truly learned the
+        meaning of 'patience is a virtue.'</p>
+      <footer>
+        <div class="arrow-up-container">
+          <a href="#">
+            <img src="./assets/icons/arrow-up.svg" alt="go back to top arrow" class="arrow-up">
+          </a>
+        </div>
+      </footer>
+    </article>
+  </main>
+</body>
 
-
-<div
-class="wrapper-about"
-style="
-margin-left: auto;
-font-size: 3vh;
-margin-right: auto;
-width: 80%">
-    <div 
-    style="
-    display: flex;
-    flex-flow: column;
-    line-height: 30px;">
-        <h2 style="text-align: left; font-weight: lighter; font-family: 'Courier New', Courier, monospace; font-weight: 600;">Key Features</h2>
-      </br>
-        <ul>
-          <li class="text-font">
-            A page where users can enter their name and choose a background color for the chat screen before joining the chat.
-          </li>
-          <li class="text-font">
-            A page displaying the conversation, as well as an input field and submit button.
-          </li>
-          <li class="text-font">
-            The chat must provide users with two additional communication features: sending
-            images and location data.
-           </li>
-          <li class="text-font">
-            Data gets stored online and offline.
-          </li>
-        </ul>
-      </br>
-    </div>
-    </div>
-    <div
-                            class="wrapper-about"
-                            style="
-                            margin-left: auto;
-                            font-size: 3vh;
-                            margin-right: auto;
-                            width: 80%">
-                                <div 
-                                style="
-                                display: flex;
-                                flex-flow: column;
-                                line-height: 30px;">
-                                    <h2 style="text-align: left; font-weight: lighter; font-family: 'Courier New', Courier, monospace; font-weight: 600;">Screen Design & Assets</h2>
-                                  </br>
-                                  </br>
-                                </div>
-                                </div>
-
-                            <div class="wrapper-two" 
-                            style="
-                            margin-left: auto;
-                            font-size: 3vh;
-                            margin-right: auto;">
-                                <div 
-                                style="
-                                display: flex;
-                                flex-flow: column;">
-                                <img class="chitchat-img" style="margin: auto;" src="img/chitchat_screen_design.png">
-                                </div>
-                              </div>
-                                                          
-                            <div
-                            class="wrapper-about"
-                            style="
-                            margin-left: auto;
-                            font-size: 3vh;
-                            margin-right: auto;
-                            width: 80%">
-                                <div 
-                                style="
-                                display: flex;
-                                flex-flow: column;
-                                line-height: 30px;">
-                                  </br>
-                                    <p class="text-font">Design Specifications:</p>
-                                    <ul>
-                                      <li class="text-font">
-                                        Vertical and horizontal spacing: evenly distributed.
-                                      </li>
-                                      <li class="text-font">
-                                        App title: font size 45, font weight 600, font color #FFFFFF.
-                                      </li>
-                                      <li class="text-font">
-                                        “Your name”: font size 16, font weight 300, font color #757083, 50% opacity.
-                                       </li>
-                                      <li class="text-font">
-                                        “Choose background color”: font size 16, font weight 300, font color #757083, 100%
-                                        opacity.
-                                      </li>
-                                      <li class="text-font">
-                                        Color options HEX codes: #090C08; #474056; #8A95A5; #B9C6AE.
-                                      </li>
-                                      <li class="text-font">
-                                        Start chatting button: font size 16, font weight 600, font color #FFFFFF, button color
-                                        #757083.
-                                      </li>
-                                      </li>
-                                    </ul>
-                                  </br>
-                                </div>
-                                </div>
-    
-
-                        <div
-                        class="wrapper-about"
-                        style="
-                        margin-left: auto;
-                        font-size: 3vh;
-                        margin-right: auto;
-                        width: 80%">
-                            <div 
-                            style="
-                            display: flex;
-                            flex-flow: column;
-                            line-height: 30px;">
-                                <h2 style="text-align: left; font-weight: lighter; font-family: 'Courier New', Courier, monospace; font-weight: 600;">Building The App</h2>
-                              </br>
-                                <p class="text-font">The technical requirements for creating the app:</p>
-                                <ul>
-                                  <li class="text-font">
-                                    The app must be written in React Native.
-                                  </li>
-                                  <li class="text-font">
-                                    The app must be developed using Expo.io.
-                                  </li>
-                                  <li class="text-font">
-                                    The app must be styled according to the given screen design.
-                                   </li>
-                                  <li class="text-font">
-                                    Chat conversations must be stored in Google Firestore Database.
-                                  </li>
-                                  <li class="text-font">
-                                    The app must authenticate users anonymously via Google Firebase authentication.
-                                  </li>
-                                  <li class="text-font">
-                                    Chat conversations must be stored locally.
-                                  </li>
-                                  <li class="text-font">
-                                    The app must let users pick and send images from the phone's image library.
-                                  </li>
-                                  <li class="text-font">
-                                    The app must let users take pictures with the device's camera app, and send them.
-                                  </li>
-                                  <li class="text-font">
-                                    The app must store images in Firebase Cloud Storage.
-                                  </li>
-                                  <li class="text-font">
-                                    The app must be able to read the user's location data.
-                                  </li>
-                                  <li class="text-font">
-                                    Location data must be sent via the chat in a map view.
-                                  </li>
-                                  <li class="text-font">
-                                    The chat interface and functionality must be created using the Gifted Chat library.
-                                  </li>
-                                  <li class="text-font">
-                                    The project must include technical documentation.
-                                  </li>
-                                  <li class="text-font">
-                                    All React Native code must be valid and linted according to given requirements.
-                                  </li>
-                                </ul>
-                              </br>
-                            </div>
-                            </div>
-
-                            <div
-class="wrapper-about"
-style="
-margin-left: auto;
-font-size: 3vh;
-margin-right: auto;
-width: 80%">
-    <div 
-    style="
-    display: flex;
-    flex-flow: column;
-    line-height: 30px;">
-        <h2 style="text-align: left; font-weight: lighter; font-family: 'Courier New', Courier, monospace; font-weight: 600;">The Final Product</h2>
-      </br>
-      </br>
-    </div>
-    </div>
-
-                              <div style="text-align: center;">                     
-                              <img class="chitchat-img2" src="img/chitchat.gif">
-                              </div>
-                 
-                                  <div
-                                  class="wrapper-about"
-                                  style="
-                                  margin-left: auto;
-                                  font-size: 3vh;
-                                  margin-right: auto;
-                                  width: 80%">
-                                      <div 
-                                      style="
-                                      display: flex;
-                                      flex-flow: column;
-                                      line-height: 30px;">
-                                       </br>
-                                      <p class="text-font">
-                                        The source code is deployed to GitHub, a platform for hosting, collaborating, and version control. Take a look at the code <a link href="https://github.com/kevmhughes/ChitChat" target="blank" role="link" style="text-decoration: underline;" class="projects-link">here</a>.
-                                      </p>
-                                      </br>
-                                      <hr style="width: 100%;  border-color: gray;">
-                                      </div>
-                                      </div>
-                          
-                                          <div
-                                          class="wrapper-about"
-                                          style="
-                                          margin-left: auto;
-                                          font-size: 3vh;
-                                          margin-right: auto;
-                                          width: 80%">
-                                              <div 
-                                              style="
-                                              display: flex;
-                                              flex-flow: column;
-                                              line-height: 30px;">
-                                              </br>
-                                              <h2 style="text-align: left; font-weight: lighter; font-family: 'Courier New', Courier, monospace; font-weight: 600;">Challenges Faced</h2></br>
-                                              <p class="text-font">
-                                                This was my first venture into the world of React Native, and with it came a new steep learning curve. Nevertheless, thanks to my consolidated previous experience with React, I quickly adapted to this framework and the challenges that it posed. The biggest issue I had with this project was having patience while working with expo.io, an Apple phone, and a very slow, RAM-consuming Android emulator. What worked on iOS didn´t mean it was necessarily going to work on Android, and vice-versa, which meant endless double-checking on both systems, and me learning the true meaning of "patience is a virtue".</p>
-                                              </br>
-                                              </div>
-                                              </div>
-
-                                                <hr style="width: 80%;  border-color: gray;">
-
-                                                <div
-                                                class="wrapper-about"
-                                                style="
-                                                margin-left: auto;
-                                                font-size: 3vh;
-                                                margin-right: auto;
-                                                width: 80%">
-                                                <div 
-                                                class="arrow-up-btn">
-                                                  <a href="chitchat.html#header"><img style="width: 45px"src="img/arrow-up.svg"></a>
-                                                </br>
-                                                </div>
-                                                </div>
-
-        </body>
-    </html>
+</html>

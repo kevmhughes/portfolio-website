@@ -1,381 +1,100 @@
 <!DOCTYPE html>
-    <html style="height: 100%">
-        <head>
-          <meta charset="utf-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <title>Mello</title>
-          <link rel="shortcut icon" href="img/favicon.ico"></link>
-          <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
-          <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-          <link rel="stylesheet" type="text/css" href="css/style.production.css">
-        </head>
-
-        <body style="background-color: white;">
-  			  <header id="header" class="page-header" style="background-color: white;">
-            <nav class="main-navigation page-header__item">
-              <ul role="menubar" class="navigation-list" style="margin-top: 15px">
-                <li role="presentation">
-                  <a href="index.html#projects" role="menuitem" style="margin-right: 5px" class="projects-link">Projects</a>
-                  <a href="about.html" role="menuitem" style="margin-right: 5px" class="projects-link">About</a>
-                  <a href="contact.html" role="menuitem" style="margin-right: 5px" class="projects-link">Contact</a>
-                  <a href="index.html" role="menuitem" class="projects-link" style="position: absolute;
-                  left: 20px;
-            font-family: 'Courier New', Courier, monospace;">Kevin Hughes</a>
-                </li>
-              </ul>
-            </nav>
-          </header>
-
-          <div class="typewriter" 
-          style="
-          margin: auto;
-          width: 100%;
-          text-align: center;">
-            <h1 style="font-weight: lighter;
-            font-family: 'Courier New', Courier, monospace; padding-right: 0px; color: black">Mello</h1>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Mello</title>
+  </head>
+  <body style="background: white">
+    <header>
+      <div class="nav-bar">
+        <div class="nav-bar-name"><a href="./index.html">KEVIN HUGHES</a></div>
+        <div class="nav-items">
+          <div>
+            <a href="./index.html#projects-title">Projects</a>
           </div>
-
-            <div class="wrapper-two" 
-            style="
-            margin-left: auto;
-            font-size: 3vh;
-            margin-right: auto;">
-                <div 
-                style="
-                display: flex;
-                flex-flow: column">
-                <img style="width:100%" src="img/vue2.png">
-                </div>
-              </div>
-
-              <div
-              class="wrapper-about"
-              style="
-              margin-left: auto;
-              font-size: 3vh;
-              margin-right: auto;
-              width: 80%">
-                  <div 
-                  style="
-                  display: flex;
-                  flex-flow: column;
-                  line-height: 30px;">
-                  </br>
-                  </br>
-                  <h2 style="text-align: left; font-weight: lighter; font-family: 'Courier New', Courier, monospace; font-weight: 600;">Project Overview</h2>
-                  </br>
-                  </br>
-                  <h2 style="text-align: left; font-weight: lighter; font-family: 'Courier New', Courier, monospace;">What is it? </h2>
-                  <p class="text-font">
-                    Mello is a single-view, responsive web application built with Vue.js. It is a to-do list application similar to Trello, and allows the user to create, manage, and prioritize to-do lists. The user can also choose from a selection of pre-determined background images to personalize the UI. </br>
-                    </br>
-                    <h2 style="text-align: left; font-weight: lighter; font-family: 'Courier New', Courier, monospace;">What was the objective?</h2>
-                    <p class="text-font">To create a responsive web application with the Vue.js framework, and the Material Design system, as part of the CareerFoundry Web Development course.</p>
-                    </br>
-                    <h2 style="text-align: left; font-weight: lighter; font-family: 'Courier New', Courier, monospace;">Which tools were used?</h2>
-                      <p class="text-font">
-                             Client-side: Vue, Material Design 
-                        </br>Development Environment: Node.js
-                        </br>Hosting: GitHub Pages
-                      </p>
-                  </div>
-                  </div>
-
-                  <div id="logos" class="wrapper-two" 
-                  style="
-                  margin-left: auto;
-                  font-size: 3vh;
-                  margin-right: auto;">
-                      <div 
-                      style="
-                      display: flex;
-                      flex-flow: column">
-                      <img class="tool-logos" src="img/toollogos3.png" alt="tool logos">
-                      </div>
-                    </div>
-                       
-                        <hr style="
-                        width: 80%;
-                        border-color: gray;
-                        border-style: double;">
-
-                        <div
-                        class="wrapper-about"
-                        style="
-                        margin-left: auto;
-                        font-size: 3vh;
-                        margin-right: auto;
-                        width: 80%">
-                            <div 
-                            style="
-                            display: flex;
-                            flex-flow: column;
-                            line-height: 30px;">
-                              </br>
-                              </br>
-                                <h2 style="text-align: left; font-weight: lighter; font-family: 'Courier New', Courier, monospace; font-weight: 600;">Building The App</h2>
-                              </br>
-                                <p class="text-font">The technical requirements for creating the app:</p>
-                                <ul>
-                                  <li class="text-font">
-                                    The app must be built using Vue.js. 
-                                  </li>
-                                  <li class="text-font">
-                                    The UI must be designed with Material Design through Vue Material. 
-                                  </li>
-                                  <li class="text-font">
-                                    The app ​must be responsive, and d​isplay well on all screen sizes.
-                                  </li>
-                                  <li class="text-font">
-                                    The app must be serverless. 
-                                  </li>
-                                  <li class="text-font">
-                                    The app ​must​ allow the user to personalize the UI.
-                                  </li>
-                                  <li class="text-font">
-                                    The app ​must​ be deployed on GitHub Pages.
-                                  </li>
-                                </ul>
-                              </br>
-                            </br>
-                            </div>
-                            </div>
-
-                            
-
-                            <div class="wrapper-two" 
-                            style="
-                            margin-left: auto;
-                            font-size: 3vh;
-                            margin-right: auto;">
-                                <div 
-                                style="
-                                display: flex;
-                                flex-flow: column;">
-                                <img class="project-images" src="img/code3.png">
-                                </div>
-                              </div>
-
-                              <div
-                              class="wrapper-about"
-                              style="
-                              margin-left: auto;
-                              font-size: 3vh;
-                              margin-right: auto;
-                              width: 80%">
-                                  <div 
-                                  style="
-                                  display: flex;
-                                  flex-flow: column;
-                                  line-height: 30px;">
-                                  <h4 style="text-align: center; font-weight: lighter; color: gray; margin-top: 10px;">GitHub.</h4>
-                                  </br>
-                                  </div>
-                                  </div>
-                                  <div
-                                  class="wrapper-about"
-                                  style="
-                                  margin-left: auto;
-                                  font-size: 3vh;
-                                  margin-right: auto;
-                                  width: 80%">
-                                      <div 
-                                      style="
-                                      display: flex;
-                                      flex-flow: column;
-                                      line-height: 30px;">
-                                      <p class="text-font">
-                                        The source code is deployed to GitHub, a platform for hosting, collaborating, and version control. Take a look at the code <a link href="https://github.com/kevmhughes/Mello/" target="blank" role="link" style="text-decoration: underline;" class="projects-link">here</a>. The app is also hosted on Github Pages.
-                                      </p>
-                                      </br>
-                                      <hr style="width: 100%;  border-color: gray;">
-                                      </div>
-                                      </div>
-
-                            <div class="wrapper-two" 
-                            style="
-                            margin-left: auto;
-                            font-size: 3vh;
-                            margin-right: auto;">
-                                </br>
-                                <div 
-                                style="
-                                display: flex;
-                                flex-flow: column">
-                                <img class="project-images" src="img/mello_ui.png">
-                                </div>
-                              </div>
-                              <div
-                        class="wrapper-about"
-                        style="
-                        margin-left: auto;
-                        font-size: 3vh;
-                        margin-right: auto;
-                        width: 80%">
-                            <div 
-                            style="
-                            display: flex;
-                            flex-flow: column;
-                            line-height: 30px;">
-                              <h4 style="text-align: center; font-weight: lighter; color: gray; margin-top: 10px;">The UI.</h4>
-                            </br>
-                            </div>
-                            </div>
-                            <div
-                                  class="wrapper-about"
-                                  style="
-                                  margin-left: auto;
-                                  font-size: 3vh;
-                                  margin-right: auto;
-                                  width: 80%">
-                                      <div 
-                                      style="
-                                      display: flex;
-                                      flex-flow: column;
-                                      line-height: 30px;">
-                                      <p class="text-font">
-                                        The user can create new lists and tasks, then drag and drop them to change the order of the lists in order to prioritize them. Clicking on a task shows more specific details about the tasks, and allows the user to edit the details. 
-                                      </p>
-                                    </br>
-                                    <hr style="width:100%;  border-color: gray;">
-                                      </div>
-                                      </div>
-
-                            <div class="wrapper-two" 
-                            style="
-                            margin-left: auto;
-                            font-size: 3vh;
-                            margin-right: auto;">
-                                <div 
-                                style="
-                                display: flex;
-                                flex-flow: column">
-                                </br>
-                                <img class="project-images" src="img/mello_ui2.png">
-                                </div>
-                              </div>
-                              <div
-                        class="wrapper-about"
-                        style="
-                        margin-left: auto;
-                        font-size: 3vh;
-                        margin-right: auto;
-                        width: 80%">
-                            <div 
-                            style="
-                            display: flex;
-                            flex-flow: column;
-                            line-height: 30px;">
-                              <h4 style="text-align: center; font-weight: lighter; color: gray; margin-top: 10px;">Personalizing the UI.</h4>
-                            </br>
-                            </div>
-                            </div>
-                            <div
-                            class="wrapper-about"
-                            style="
-                            margin-left: auto;
-                            font-size: 3vh;
-                            margin-right: auto;
-                            width: 80%">
-                                <div 
-                                style="
-                                display: flex;
-                                flex-flow: column;
-                                line-height: 30px;">
-                                <p class="text-font">
-                                  The user can choose from a selection of background images to personalize the UI.</p>
-                                </br>
-                                <hr style="width: 100%; border-style: double; color: gray">
-                                </div>
-                                </br>
-                                </br>
-                                </div>
-
-
-                            <div class="wrapper-two" 
-                            style="
-                            margin-left: auto;
-                            font-size: 3vh;
-                            margin-right: auto;">
-                            <div 
-                              style="
-                              display: flex;
-                              flex-flow: column">
-                              <img class="project-images" src="img/responsive3.png">
-                              </div>
-                            </div>
-
-                            <div
-                            class="wrapper-about"
-                            style="
-                            margin-left: auto;
-                            font-size: 3vh;
-                            margin-right: auto;
-                            width: 80%">
-                            <div 
-                            style="
-                            display: flex;
-                            flex-flow: column;
-                            line-height: 30px;">
-                              <h4 style="text-align: center; font-weight: lighter; color: gray; margin-top: 10px;">Responsive design.</h4>
-                            </br>
-                            </div>
-                            </div>
-
-                            <div
-                            class="wrapper-about"
-                            style="
-                            margin-left: auto;
-                            font-size: 3vh;
-                            margin-right: auto;
-                            width: 80%">
-                            <div 
-                            style="
-                            display: flex;
-                            flex-flow: column;
-                            line-height: 30px;">
-                            <p class="text-font">
-                              The application has been responsively designed for desktops, tablets, and mobiles using Material Design, CSS, media query breakpoints, and flex boxes. Demo the app <a link href="https://kevmhughes.github.io/Mello/" target="blank" role="link" style="text-decoration: underline" class="projects-link">here</a>.</p>
-                            </br>
-                            <hr style="width: 100%;  border-color: gray;">
-                            </br>
-                            </div>
-                            </div>
-
-                            <div
-                            class="wrapper-about"
-                            style="
-                            margin-left: auto;
-                            font-size: 3vh;
-                            margin-right: auto;
-                            width: 80%">
-                            <div 
-                            style="
-                            display: flex;
-                            flex-flow: column;
-                            line-height: 30px;">
-                            </br>
-                            <h2 style="text-align: left; font-weight: lighter; font-family: 'Courier New', Courier, monospace; font-weight: 600;">Challenges Faced</h2></br>
-                            <p class="text-font">
-                              The major task I had with this project was learning the basics of the Vue framework after having spent a lot of time with the React framework in previous projects. I had to literally "change the chip", which was fantastic practical experience in working with different frameworks. This project also gave me the opportunity to work with the Material Design system for the first time, after having only worked with Bootstrap in other projects.</p>
-                            </br>
-                            </div>
-                            </div>
-
-                            <hr style="width: 80%;  border-color: gray;">
-
-                            <div
-                            class="wrapper-about"
-                            style="
-                            margin-left: auto;
-                            font-size: 3vh;
-                            margin-right: auto;
-                            width: 80%">
-                            <div class="arrow-up-btn">
-                              <a href="mello.html#header"><img style="width: 45px"src="img/arrow-up.svg"></a>
-                            </br>
-                            </div>
-                            </div>
-
-        </body>
-    </html>
+          <div><a href="./about.html">About</a></div>
+          <div><a href="./contact.html">Contact</a></div>
+        </div>
+      </div>
+    </header>
+    <div class="typewriter">
+      <h1 style="color: black; margin-bottom: 1rem" class="case-study-title">
+        Mello
+      </h1>
+    </div>
+    <main>
+      <div>
+        <img
+          src="./assets/case-study-images/mello_full_width.png"
+          alt="mello displayed on a laptop"
+          class="case-study-full-width-image"
+        />
+      </div>
+      <article class="case-study-text-container">
+        <h2 class="title-two">Project Overview</h2>
+        <h3 class="title-three">What is it?</h3>
+        <p class="case-study-text">
+            Mello is a responsive, single-view web application built with Vue.js. Inspired by Trello, it allows users to create, manage, and prioritize their to-do lists. Additionally, users can personalize the interface by selecting from a variety of pre-determined background images.
+        </p>
+        <h3 class="title-three">What was the objective?</h3>
+        <p class="case-study-text">
+            The goal was to develop a responsive web application using the Vue.js framework and the Material Design system as part of the CareerFoundry Web Development Fullstack Bootcamp. This project aimed to showcase both front-end and design skills while adhering to modern web development best practices.
+        </p>
+        <h3 class="title-three">Which tools were used?</h3>
+        <div class="case-study-text">
+          <div>Client-side: Vue, Material Design</div>
+          <div>Development Environment: Node.js</div>
+          <div>Hosting: GitHub Pages</div>
+        </div>
+        <div class="case-study-logos-container">
+          <img src="./assets/case-study-images/mello_tool_logos.png" alt="case study tool logos" class="case-study-logos">
+        </div>       
+        <h2 class="title-two">Building The App</h2>
+        <h3 class="title-three">The technical requirements for creating the app:</h3>
+        <ul class="case-study-text">
+          <li>The app must be built using Vue.js.</li>
+          <li>The UI must be designed with Material Design through Vue Material.</li>
+          <li>The app ​must be responsive, and d​isplay well on all screen sizes.</li>
+          <li>The app must be serverless.</li>
+          <li>The app ​must​ allow the user to personalize the UI.</li>
+          <li>The app ​must​ be deployed on GitHub Pages.</li>
+        </ul>
+        <fig class="case-study-floating-screen-container">
+            <img src="./assets/case-study-images/mello_github.png" alt="mello on github" class="case-study-floating-screen">
+            <figcaption>GitHub</figcaption>
+        </fig>
+        <p class="case-study-text">The source code is hosted on GitHub, a collaborative platform that supports version control and project management. You can access the source <a href="https://github.com/kevmhughes/Mello" class="case-study-link" target="_blank">here</a>.</p>
+        <fig class="case-study-floating-screen-container">
+            <img src="./assets/case-study-images/mello_ui.png" alt="mello UI" class="case-study-floating-screen">
+            <figcaption>The UI</figcaption>
+        </fig>
+        <p class="case-study-text">
+            The user can create new lists and tasks, then drag and drop them to change the order of the lists in order to prioritize them. Clicking on a task shows more specific details about the tasks, and allows the user to edit the details.
+        </p>
+        <fig class="case-study-floating-screen-container">
+            <img src="./assets/case-study-images/mello_ui2.png" alt="personalising the UI" class="case-study-floating-screen">
+            <figcaption>Personalising the UI</figcaption>
+        </fig>
+        <p class="case-study-text">The user can choose from a selection of background images to personalize the UI.</p>
+        <fig class="case-study-floating-screen-container">
+            <img src="./assets/case-study-images/mello_responsive_design.png" alt="responsive design" class="case-study-floating-screen">
+            <figcaption>Responsive design</figcaption>
+        </fig>
+        <p class="case-study-text">
+            The application is fully responsive, ensuring a seamless experience across mobile, laptop, and desktop devices.
+        </p>
+        <h2 class="title-two">Challenges Faced</h2>
+        <p class="case-study-text">The biggest challenge in this project was learning the fundamentals of the Vue.js framework, especially after spending a significant amount of time with React in previous projects. I had to truly ‘change gears,’ which provided invaluable hands-on experience working with different frameworks. Additionally, this project offered me the opportunity to work with the Material Design system for the first time, having previously only worked with Bootstrap in other projects."</p>
+        <footer>
+          <div class="arrow-up-container">
+            <a href="#">
+              <img src="./assets/icons/arrow-up.svg" alt="go back to top arrow" class="arrow-up">
+            </a>
+          </div>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>

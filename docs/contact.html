@@ -1,97 +1,74 @@
 <!DOCTYPE html>
-    <html >
-      <html style="height: 100%">
-        <head>
-          <meta charset="utf-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <title>Contact</title>
-          <link rel="shortcut icon" href="img/favicon.ico"></link>
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-          <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
-          <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-          <link rel="stylesheet" type="text/css" href="css/style.production.css">
-          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-          <script type="text/javascript">
-          (function() {
-          emailjs.init("user_L1fJmc6AtUBprJUa6umUE");
-          })();
-          </script>
-          <script type="text/javascript">
-              window.onload = function() {
-                  document.getElementById('contact-form').addEventListener('submit', function(event) {
-                      event.preventDefault();
-                      // generate a five digit number for the contact_number variable
-                      this.contact_number.value = Math.random() * 100000 | 0;
-                      // these IDs from the previous steps
-                      emailjs.sendForm('service_10m0o46', 'template_kophd6m', this)
-                          .then(function() {
-                              console.log('SUCCESS!');
-                              alert("Your message has been sent!");
-                              location.reload();
-                          }, function(error) {
-                              console.log('FAILED...', error);
-                              alert("Your message has not been sent!");
-                          });
-                  });
-              }
-          </script>
-        </head>
-
-        <body style="background-color: white; overflow: hidden">
-  			  <header class="page-header" style="background-color: white;">
-            <nav class="main-navigation page-header__item">
-              <ul role="menubar" class="navigation-list" style="margin-top: 15px">
-                <li role="presentation">
-                  <a href="index.html#projects" role="menuitem" style="margin-right: 5px" class="projects-link">Projects</a>
-                  <a href="about.html" role="menuitem" style="margin-right: 5px" class="projects-link">About</a>
-                  <a href="contact.html" role="menuitem" style="margin-right: 5px" class="projects-link">Contact</a>
-                  <a href="index.html" role="menuitem" class="projects-link" style="position: absolute;
-                  left: 20px;
-            font-family: 'Courier New', Courier, monospace;">Kevin Hughes</a>
-                </li>
-              </ul>
-            </nav>
-          </header>
-
-          <div class="typewriter" 
-          style="
-          width: 100%;
-          text-align: center;">
-            <h1 style="font-weight: lighter;
-            font-family: 'Courier New', Courier, monospace; padding-right:0px; color:black">Get In Touch</h1>
-          </div>
-
-          <form class="form-group" 
-          id="contact-form" 
-          style="
-          margin: 50px auto 50px auto;">
+<html lang="en" data-theme="light" >
+  <head>
+    <title>Contact Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+  </head>
+  <body style="background: white" style="all: unset">
+    <header style="all: unset">
+      <div class="nav-bar">
+        <div class="nav-bar-name"><a href="./index.html">KEVIN HUGHES</a></div>
+        <div class="nav-items">
           <div>
-            <input type="hidden" name="contact_number">
-            <label class="text-font">Name</label>
-            <input type="text" name="user_name" class="form-control">
-            <label class="text-font" style="margin-top: 20px;">Email</label>
-            <input type="email" name="user_email" class="form-control">
-            <label class="text-font" style="margin-top: 20px;">Message</label>
-            <textarea name="message" class="form-control text-font" style="height: 10vh; font-size: 17px;"></textarea>
-            <input type="submit" value="Send" class="form-control text-font form-button" style="
-            color: white;
-            width: 50%;
-            text-align: center;">
+            <a href="./index.html#projects-title">Projects</a>
           </div>
-          </form>
-    <footer style="position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: white;">
-            <div 
-            class ="contact-imgs">
-              <a href="mailto:kevhughes24@hotmail.com" target="_blank" aria-label="email"><img src="img/email.svg" class="contact-icons" alt="email icon"></a>
-              <a href="https://www.linkedin.com/in/kevin-michael-hughes" target="_blank" aria-label="linkedin profile"><img src="img/linkedin.svg" class="contact-icons" alt="linkedin icon"></a>
-              <a href="https://github.com/kevmhughes" target="_blank" aria-label="github profile"><img src="img/github.svg" class="contact-icons" alt="github icon"></a>
-              <a href="https://wa.me/34630116629" target="_blank" aria-label="telephone number"><img src="img/whatsapp.svg" class="contact-icons" alt="whatsapp icon"></a>
-            </div>
-        </footer>
+          <div><a href="./about.html">About</a></div>
+          <div><a href="./contact.html">Contact</a></div>
+        </div>
+      </div>
+    </header>
+    <div class="typewriter">
+      <h1
+        style="color: black; margin-bottom: 1rem; font-family: Raleway"
+        class="case-study-title"
+      >
+        Get In Touch
+      </h1>
+    </div>
+    <form id="contact-form" class="container" onsubmit="sendEmail(event)" style="font-family: Raleway">
+      <input type="hidden" name="contact_number" minlength="3" required/>
+      <label class="form-text">Name</label>
+      <input type="text" id="user_name" name="user_name" required/>
+      <label class="form-text">Email</label>
+      <input type="email" id="user_email" name="user_email" required/>
+      <label class="form-text">Message</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="5"
+        minlength="10"
+        maxlength="500"
+        placeholder="Write your e-mail here..."
+        class="form-text"
+        required
+      ></textarea>
+      <button type="submit" class="form-text form-button">Send</button>
+    </form>
+    <div id="success-message" class="container success-message message-container" style="display: none;">
+      Your message has been sent successfully! Thank you.
+    </div>
 
-        </body>
-    </html>
+    <div id="error-message" class="container error-message message-container" style="display: none;">
+      Sorry, something went wrong. Please try again later.
+    </div>
+    <footer>
+      <div class="social-media-icons">
+        <a href="mailto:kevhughes24@hotmail.com" target="_blank" aria-label="email"><img src="./assets/social-media/email.svg" class="contact-icons" alt="email icon"></a>
+        <a href="https://www.linkedin.com/in/kevin-michael-hughes" target="_blank" aria-label="linkedin profile"><img src="./assets/social-media/linkedin.svg" class="contact-icons" alt="linkedin icon"></a>
+        <a href="https://github.com/kevmhughes" target="_blank" aria-label="github profile"><img src="./assets/social-media/github.svg" class="contact-icons" alt="github icon"></a>
+        <a href="https://wa.me/34630116629" target="_blank" aria-label="telephone number"><img src="./assets/social-media/whatsapp.svg" class="contact-icons" alt="whatsapp icon"></a>
+      </div>
+    </footer>
+    <script src="./js/contact.js"></script>
+  </body>
+</html>
