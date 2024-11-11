@@ -37,13 +37,6 @@ a {
   color: black;
 }
 
-hr {
-  width: 100%;
-  height: 0px;
-  border: none;
-  border-top: 1px solid gray;
-}
-
 figcaption {
   color: gray;
   margin-top: 1.5rem;
@@ -76,6 +69,7 @@ figcaption {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow: hidden;
 }
 
 .face {
