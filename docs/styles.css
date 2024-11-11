@@ -610,9 +610,16 @@ figcaption {
     margin-bottom: 2rem;
   }
 
-  .mockup-adjust,
-  .yariga {
+  .mockup {
+    height: 33rem;
+  }
+
+  .mockup-adjust {
     width: 90vw;
+  }
+
+  .yariga {
+    height: 31vh;
   }
 
   .case-study-title {
@@ -652,4 +659,8 @@ figcaption {
   .face {
     width: 360px;
   }
+  .mockup {
+    height: 25rem;
+  }
+
 }
