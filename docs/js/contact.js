@@ -1,66 +1,59 @@
 // Initialize EmailJS
 emailjs.init("UgbZDkujbJx7CxKt4");
 
-// Function to handle form submission and validation
+// Handle form submission
 function sendEmail(event) {
-  event.preventDefault();  // Prevent default form submission
+  event.preventDefault();
+
+  const form = document.getElementById("contact-form");
 
   // Check reCAPTCHA response
-const recaptchaResponse = grecaptcha.getResponse();
-if (!recaptchaResponse) {
-  alert('Please confirm you are not a robot.');
-  return;
-}
-  
-  // Get form data
-  const userName = document.getElementById('user_name').value;
-  const userEmail = document.getElementById('user_email').value;
-  const message = document.getElementById('message').value;
+  const recaptchaResponse = grecaptcha.getResponse();
+  if (!recaptchaResponse) {
+    alert("Please confirm you are not a robot.");
+    return;
+  }
 
-  // Form validation
+  // Validate inputs
+  const userName = form.user_name.value;
+  const userEmail = form.user_email.value;
+  const message = form.message.value;
+
   if (!validateForm(userName, userEmail, message)) {
-    document.getElementById('error-message').style.display = 'block'; // Show error message
+    showErrorMessage();
     return;
   } else {
-    document.getElementById('error-message').style.display = 'none'; // Hide error message
+    document.getElementById('error-message').style.display = 'none'; // Hide error
   }
-  
-  // Data to send to EmailJS
-  const formData = {
-    user_name: userName,
-    user_email: userEmail,
-    message: message,
-    'g-recaptcha-response': recaptchaResponse
-  };
 
-  // Show loading spinner or feedback message (Optional)
   showLoadingSpinner();
 
-  // Send email via EmailJS
-  emailjs.send("service_1to1gzb", "template_cjnzzfj", formData)
+  emailjs
+    .sendForm("service_1to1gzb", "template_cjnzzfj", form)
     .then((response) => {
-      console.log('SUCCESS!', response);
+      console.log("SUCCESS!", response);
       showSuccessMessage();
-      hideLoadingSpinner();
-      grecaptcha.reset(); 
-    }, (error) => {
-      console.log('FAILED...', error);
+      grecaptcha.reset(); // Reset CAPTCHA
+      form.reset();       // Reset form
+    })
+    .catch((error) => {
+      console.error("FAILED...", error);
       showErrorMessage();
+    })
+    .finally(() => {
       hideLoadingSpinner();
     });
 }
 
-// Function to validate form inputs
+// Validate form fields
 function validateForm(userName, userEmail, message) {
   const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-  
-  // Validate that all fields are filled
+
   if (!userName || !userEmail || !message) {
     alert("All fields are required.");
     return false;
   }
 
-  // Validate the email format
   if (!emailPattern.test(userEmail)) {
     alert("Please enter a valid email address.");
     return false;
@@ -69,32 +62,23 @@ function validateForm(userName, userEmail, message) {
   return true;
 }
 
-// Function to show success message
+// Feedback helpers
 function showSuccessMessage() {
-    const successMessage = document.getElementById('success-message');
-    successMessage.style.display = 'flex';  // Show success message
-    setTimeout(() => {
-      successMessage.style.display = 'none'; // Hide after 5 seconds
-    }, 5000);
-  }
-  
-  // Function to show error message
-  function showErrorMessage() {
-    const errorMessage = document.getElementById('error-message');
-    errorMessage.style.display = 'flex';  // Show error message
-    setTimeout(() => {
-      errorMessage.style.display = 'none'; // Hide after 5 seconds
-    }, 5000);
-  }
-
-// Function to show loading spinner
-function showLoadingSpinner() {
-  // Optional: You can show a loading spinner here while the email is being sent.
-  console.log('Sending message...');
+  const successMessage = document.getElementById("success-message");
+  successMessage.style.display = "flex";
+  setTimeout(() => (successMessage.style.display = "none"), 5000);
 }
 
-// Function to hide loading spinner
+function showErrorMessage() {
+  const errorMessage = document.getElementById("error-message");
+  errorMessage.style.display = "flex";
+  setTimeout(() => (errorMessage.style.display = "none"), 5000);
+}
+
+function showLoadingSpinner() {
+  console.log("Sending message...");
+}
+
 function hideLoadingSpinner() {
-  // Optional: Hide the loading spinner once the email is sent.
-  console.log('Message sent!');
+  console.log("Done sending.");
 }
