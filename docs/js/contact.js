@@ -29,7 +29,8 @@ if (!recaptchaResponse) {
   const formData = {
     user_name: userName,
     user_email: userEmail,
-    message: message
+    message: message,
+    'g-recaptcha-response': recaptchaToken 
   };
 
   // Show loading spinner or feedback message (Optional)
@@ -41,6 +42,7 @@ if (!recaptchaResponse) {
       console.log('SUCCESS!', response);
       showSuccessMessage();
       hideLoadingSpinner();
+      grecaptcha.reset(); 
     }, (error) => {
       console.log('FAILED...', error);
       showErrorMessage();
