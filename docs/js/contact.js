@@ -30,7 +30,7 @@ if (!recaptchaResponse) {
     user_name: userName,
     user_email: userEmail,
     message: message,
-    'g-recaptcha-response': recaptchaToken 
+    'g-recaptcha-response': recaptchaResponse
   };
 
   // Show loading spinner or feedback message (Optional)
