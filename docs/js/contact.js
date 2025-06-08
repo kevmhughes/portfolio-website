@@ -12,6 +12,7 @@ function sendEmail(event) {
 
   // Check reCAPTCHA response
   const recaptchaResponse = grecaptcha.getResponse();
+  console.log("reCAPTCHA token:", recaptchaResponse);
   if (!recaptchaResponse) {
     alert('Please confirm you are not a robot.');
     return;
