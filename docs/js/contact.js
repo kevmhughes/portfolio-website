@@ -4,6 +4,13 @@ emailjs.init("UgbZDkujbJx7CxKt4");
 // Function to handle form submission and validation
 function sendEmail(event) {
   event.preventDefault();  // Prevent default form submission
+
+    // Check reCAPTCHA response
+const recaptchaResponse = grecaptcha.getResponse();
+if (!recaptchaResponse) {
+  alert('Please confirm you are not a robot.');
+  return;
+}
   
   // Get form data
   const userName = document.getElementById('user_name').value;
@@ -22,7 +29,8 @@ function sendEmail(event) {
   const formData = {
     user_name: userName,
     user_email: userEmail,
-    message: message
+    message: message,
+  'g-recaptcha-response': recaptchaResponse
   };
 
   // Show loading spinner or feedback message (Optional)
@@ -34,6 +42,7 @@ function sendEmail(event) {
       console.log('SUCCESS!', response);
       showSuccessMessage();
       hideLoadingSpinner();
+      grecaptcha.reset(); 
     }, (error) => {
       console.log('FAILED...', error);
       showErrorMessage();
