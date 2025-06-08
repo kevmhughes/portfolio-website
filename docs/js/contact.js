@@ -1,59 +1,57 @@
 // Initialize EmailJS
 emailjs.init("UgbZDkujbJx7CxKt4");
 
-// Handle form submission
+// Function to handle form submission and validation
 function sendEmail(event) {
-  event.preventDefault();
+  event.preventDefault();  // Prevent default form submission
+  
+  // Get form data
+  const userName = document.getElementById('user_name').value;
+  const userEmail = document.getElementById('user_email').value;
+  const message = document.getElementById('message').value;
 
-  const form = document.getElementById("contact-form");
-
-  // Check reCAPTCHA response
-  const recaptchaResponse = grecaptcha.getResponse();
-  if (!recaptchaResponse) {
-    alert("Please confirm you are not a robot.");
-    return;
-  }
-
-  // Validate inputs
-  const userName = form.user_name.value;
-  const userEmail = form.user_email.value;
-  const message = form.message.value;
-
+  // Form validation
   if (!validateForm(userName, userEmail, message)) {
-    showErrorMessage();
+    document.getElementById('error-message').style.display = 'block'; // Show error message
     return;
   } else {
-    document.getElementById('error-message').style.display = 'none'; // Hide error
+    document.getElementById('error-message').style.display = 'none'; // Hide error message
   }
+  
+  // Data to send to EmailJS
+  const formData = {
+    user_name: userName,
+    user_email: userEmail,
+    message: message
+  };
 
+  // Show loading spinner or feedback message (Optional)
   showLoadingSpinner();
 
-  emailjs
-    .sendForm("service_1to1gzb", "template_cjnzzfj", form)
+  // Send email via EmailJS
+  emailjs.send("service_7slz0dg", "template_cjnzzfj", formData)
     .then((response) => {
-      console.log("SUCCESS!", response);
+      console.log('SUCCESS!', response);
       showSuccessMessage();
-      grecaptcha.reset(); // Reset CAPTCHA
-      form.reset();       // Reset form
-    })
-    .catch((error) => {
-      console.error("FAILED...", error);
+      hideLoadingSpinner();
+    }, (error) => {
+      console.log('FAILED...', error);
       showErrorMessage();
-    })
-    .finally(() => {
       hideLoadingSpinner();
     });
 }
 
-// Validate form fields
+// Function to validate form inputs
 function validateForm(userName, userEmail, message) {
   const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-
+  
+  // Validate that all fields are filled
   if (!userName || !userEmail || !message) {
     alert("All fields are required.");
     return false;
   }
 
+  // Validate the email format
   if (!emailPattern.test(userEmail)) {
     alert("Please enter a valid email address.");
     return false;
@@ -62,23 +60,32 @@ function validateForm(userName, userEmail, message) {
   return true;
 }
 
-// Feedback helpers
+// Function to show success message
 function showSuccessMessage() {
-  const successMessage = document.getElementById("success-message");
-  successMessage.style.display = "flex";
-  setTimeout(() => (successMessage.style.display = "none"), 5000);
-}
+    const successMessage = document.getElementById('success-message');
+    successMessage.style.display = 'flex';  // Show success message
+    setTimeout(() => {
+      successMessage.style.display = 'none'; // Hide after 5 seconds
+    }, 5000);
+  }
+  
+  // Function to show error message
+  function showErrorMessage() {
+    const errorMessage = document.getElementById('error-message');
+    errorMessage.style.display = 'flex';  // Show error message
+    setTimeout(() => {
+      errorMessage.style.display = 'none'; // Hide after 5 seconds
+    }, 5000);
+  }
 
-function showErrorMessage() {
-  const errorMessage = document.getElementById("error-message");
-  errorMessage.style.display = "flex";
-  setTimeout(() => (errorMessage.style.display = "none"), 5000);
-}
-
+// Function to show loading spinner
 function showLoadingSpinner() {
-  console.log("Sending message...");
+  // Optional: You can show a loading spinner here while the email is being sent.
+  console.log('Sending message...');
 }
 
+// Function to hide loading spinner
 function hideLoadingSpinner() {
-  console.log("Done sending.");
+  // Optional: Hide the loading spinner once the email is sent.
+  console.log('Message sent!');
 }
