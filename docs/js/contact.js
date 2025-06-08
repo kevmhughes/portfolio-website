@@ -1,32 +1,46 @@
-// Initialize EmailJS
+// Initialize EmailJS with your user ID
 emailjs.init("UgbZDkujbJx7CxKt4");
 
-// Wait for DOM to load
+// Widget ID variable for explicit reCAPTCHA rendering
+let widgetId;
+
+// This function is called when the reCAPTCHA API finishes loading
+function onloadCallback() {
+  console.log("grecaptcha is ready!");
+  widgetId = grecaptcha.render('recaptcha-container', {
+    'sitekey': '6LeltFkrAAAAAPEG8JPYSCXDftKf4CjX2v6Q7AlN'
+  });
+}
+
+// Wait for DOM content to load before attaching event listener
 document.addEventListener('DOMContentLoaded', function () {
-  document.getElementById('contact-form').addEventListener('submit', sendEmail);
+  const form = document.getElementById('contact-form');
+  form.addEventListener('submit', sendEmail);
 });
 
-// Function to handle form submission and validation
+// Handle form submission
 function sendEmail(event) {
-  event.preventDefault();  // Prevent default form submission
+  event.preventDefault();
 
-  // Check reCAPTCHA response
-  const recaptchaResponse = grecaptcha.getResponse();
-  console.log("reCAPTCHA token:", recaptchaResponse);
+  // Get reCAPTCHA response token explicitly using widget ID
+  const recaptchaResponse = grecaptcha.getResponse(widgetId);
+  console.log("reCAPTCHA token before send:", recaptchaResponse);
+
+  // Require reCAPTCHA completion
   if (!recaptchaResponse) {
     alert('Please confirm you are not a robot.');
     return;
   }
 
-  // Set reCAPTCHA response into hidden input field so EmailJS can read it
+  // Put token in hidden input so EmailJS can read it
   document.getElementById('g-recaptcha-response').value = recaptchaResponse;
 
-  // Get form values for manual validation
-  const userName = document.getElementById('user_name').value;
-  const userEmail = document.getElementById('user_email').value;
-  const message = document.getElementById('message').value;
+  // Get user inputs
+  const userName = document.getElementById('user_name').value.trim();
+  const userEmail = document.getElementById('user_email').value.trim();
+  const message = document.getElementById('message').value.trim();
 
-  // Validate form fields
+  // Validate form inputs
   if (!validateForm(userName, userEmail, message)) {
     document.getElementById('error-message').style.display = 'block';
     return;
@@ -36,22 +50,25 @@ function sendEmail(event) {
 
   showLoadingSpinner();
 
-  // Send form via EmailJS using form selector
+  // Send form using EmailJS
   emailjs.sendForm("service_7slz0dg", "template_cjnzzfj", "#contact-form")
-    .then((response) => {
+    .then(response => {
       console.log('SUCCESS!', response);
       showSuccessMessage();
       hideLoadingSpinner();
-      grecaptcha.reset();
-    }, (error) => {
+      grecaptcha.reset(widgetId);  // Reset reCAPTCHA widget for new submission
+      // Optional: clear form fields if desired
+      // document.getElementById('contact-form').reset();
+    })
+    .catch(error => {
       console.log('FAILED...', error);
       showErrorMessage();
       hideLoadingSpinner();
-      grecaptcha.reset();
+      grecaptcha.reset(widgetId);
     });
 }
 
-// Function to validate form inputs
+// Basic validation for the form fields
 function validateForm(userName, userEmail, message) {
   const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
@@ -65,10 +82,15 @@ function validateForm(userName, userEmail, message) {
     return false;
   }
 
+  if (message.length < 10) {
+    alert("Message should be at least 10 characters.");
+    return false;
+  }
+
   return true;
 }
 
-// Function to show success message
+// Show success message
 function showSuccessMessage() {
   const successMessage = document.getElementById('success-message');
   successMessage.style.display = 'flex';
@@ -77,7 +99,7 @@ function showSuccessMessage() {
   }, 5000);
 }
 
-// Function to show error message
+// Show error message
 function showErrorMessage() {
   const errorMessage = document.getElementById('error-message');
   errorMessage.style.display = 'flex';
@@ -86,12 +108,12 @@ function showErrorMessage() {
   }, 5000);
 }
 
-// Function to show loading spinner
+// Show loading spinner (you can replace with actual spinner)
 function showLoadingSpinner() {
   console.log('Sending message...');
 }
 
-// Function to hide loading spinner
+// Hide loading spinner
 function hideLoadingSpinner() {
   console.log('Message sent!');
 }
