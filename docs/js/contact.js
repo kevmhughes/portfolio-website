@@ -4,6 +4,13 @@ emailjs.init("UgbZDkujbJx7CxKt4");
 // Function to handle form submission and validation
 function sendEmail(event) {
   event.preventDefault();  // Prevent default form submission
+
+  // Check reCAPTCHA response
+const recaptchaResponse = grecaptcha.getResponse();
+if (!recaptchaResponse) {
+  alert('Please confirm you are not a robot.');
+  return;
+}
   
   // Get form data
   const userName = document.getElementById('user_name').value;
