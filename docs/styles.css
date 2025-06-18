@@ -28,7 +28,7 @@ html {
 }
 
 body {
- /*  background: linear-gradient(135deg, #5f6eff, #feb47b); */
+  /*  background: linear-gradient(135deg, #5f6eff, #feb47b); */
   margin: 0;
 }
 
@@ -566,6 +566,10 @@ figcaption {
     font-size: 12px;
   }
 
+  form {
+    padding: 1rem;
+  }
+
   .projects-grid {
     display: flex;
     flex-direction: column;
@@ -653,10 +657,98 @@ figcaption {
   .face {
     width: 360px;
   }
+
   .mockup {
     height: 25rem;
   }
+
   .yariga {
     height: 27vh;
+  }
+}
+
+/* PICO CSS STYLE FORM */
+
+/* Mimic Pico.css form styling */
+form {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #111;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #fff;
+  color: #000;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #666;
+  outline: none;
+}
+
+button[type="submit"] {
+  padding: 0.75rem 1.25rem;
+  background-color: #0172ad;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #02659a;
+}
+
+/* Optional: G-recaptcha alignment */
+.g-recaptcha {
+  margin-top: 0.5rem;
+}
+
+/* Optional: Form message styling */
+.success-message,
+.error-message {
+  padding: 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.success-message {
+  background-color: #d1fadf;
+  color: #2e7d32;
+}
+
+.error-message {
+  background-color: #fdecea;
+  color: #c62828;
+}
+
+@media (max-width: 575px) {
+  form {
+    padding: 1rem;
   }
 }
