@@ -9,6 +9,7 @@
 </head>
 
 <body style="background: white">
+
   <header>
     <div class="nav-bar">
       <div class="nav-bar-name"><a href="./index.html">KH</a></div>
@@ -20,7 +21,22 @@
         <div><a href="./contact.html">Contact</a></div>
       </div>
     </div>
+
+    <div class="nav-bar-mobile">
+      <div class="nav-bar-name"><a href="./index.html">KH</a></div>
+      <button class="burger" id="burger" aria-label="Toggle navigation">
+        <span class="burger-line line1"></span>
+        <span class="burger-line line2"></span>
+        <span class="burger-line line3"></span>
+      </button>
+      <div class="nav-items-mobile" id="nav-items-mobile">
+        <div class="nav-item-link-mobile"><a href="./projects.html">Projects</a></div>
+        <div class="nav-item-link-mobile"><a href="./about.html">About</a></div>
+        <div class="nav-item-link-mobile"><a href="./contact.html">Contact</a></div>
+      </div>
+    </div>
   </header>
+
   <div class="typewriter">
     <h1 style="color: black; margin-bottom: 1rem" class="case-study-title">
       Mello
@@ -109,6 +125,8 @@
       </footer>
     </article>
   </main>
+
+  <script src="./js/hamburger-menu.js"></script>
 </body>
 
 </html>
