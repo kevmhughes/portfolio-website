@@ -137,6 +137,10 @@ figcaption {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .intro {
+    padding: 0 2rem;
+  }
+  
   .intro h1 {
     font-size: 2rem;
   }
