@@ -1,308 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Kevin Hughes - Projects</title>
-  </head>
 
-  <body>
-    
-    <header>
-      <div class="nav-bar">
-        <div class="nav-bar-name"><a href="./index.html">KH</a></div>
-        <div class="nav-items">
-          <div>
-            <a href="./projects.html">Projects</a>
-          </div>
-          <div><a href="./about.html">About</a></div>
-          <div><a href="./contact.html">Contact</a></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Kevin Hughes - Projects</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="nav-bar">
+      <div class="nav-bar-name"><a href="./index.html">KH</a></div>
+      <div class="nav-items">
+        <div>
+          <a href="./projects.html">Projects</a>
         </div>
+        <div><a href="./about.html">About</a></div>
+        <div><a href="./contact.html">Contact</a></div>
       </div>
+    </div>
 
-      <div class="nav-bar-mobile">
-        <div class="nav-bar-name"><a href="./index.html">KH</a></div>
-        <button class="burger" id="burger" aria-label="Toggle navigation">
-          <span class="burger-line line1"></span>
-          <span class="burger-line line2"></span>
-          <span class="burger-line line3"></span>
-        </button>
-        <div class="nav-items-mobile" id="nav-items-mobile">
-          <div class="nav-item-link-mobile"><a href="./projects.html">Projects</a></div>
-          <div class="nav-item-link-mobile"><a href="./about.html">About</a></div>
-          <div class="nav-item-link-mobile"><a href="./contact.html">Contact</a></div>
+    <div class="nav-bar-mobile">
+      <div class="nav-bar-name"><a href="./index.html">KH</a></div>
+      <button class="burger" id="burger" aria-label="Toggle navigation">
+        <span class="burger-line line1"></span>
+        <span class="burger-line line2"></span>
+        <span class="burger-line line3"></span>
+      </button>
+      <div class="nav-items-mobile" id="nav-items-mobile">
+        <div class="nav-item-link-mobile"><a href="./projects.html">Projects</a></div>
+        <div class="nav-item-link-mobile"><a href="./about.html">About</a></div>
+        <div class="nav-item-link-mobile"><a href="./contact.html">Contact</a></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="typewriter">
+    <h1 style="color: black; margin-bottom: 1rem; font-family: Raleway" class="case-study-title">
+      Projects
+    </h1>
+  </div>
+
+  <div class="project-cards-container">
+    <div class="project-card">
+      <img src="./assets/mock-ups/andaluciabirdland-laptop.png" alt="Project Screenshot" class="project-image" />
+
+      <div class="project-content">
+        <div class="project-content-first">
+          <h3 class="project-title">Andalucía BirdLand</h3>
+          <p class="project-description">
+            Andalucía BirdLand is an ecotourism website built with HTML, CSS,
+            and JavaScript. It features nature photography hides and courses
+            in Andalusia, with Mister Plan for real-time booking and payments.
+            Optimized for SEO, accessibility, and fast performance on all
+            devices.
+          </p>
         </div>
-      </div>
-    </header>
 
-    <div class="project-cards-container">
-      <div class="project-card">
-        <img
-          src="./assets/mock-ups/andaluciabirdland-laptop.png"
-          alt="Project Screenshot"
-          class="project-image"
-        />
-
-        <div class="project-content">
-          <div class="project-content-first">
-            <h3 class="project-title">Andalucía BirdLand</h3>
-            <p class="project-description">
-              Andalucía BirdLand is an ecotourism website built with HTML, CSS,
-              and JavaScript. It features nature photography hides and courses
-              in Andalusia, with Mister Plan for real-time booking and payments.
-              Optimized for SEO, accessibility, and fast performance on all
-              devices.
-            </p>
+        <div class="project-content-second">
+          <div class="tech-tags">
+            <span>JavaScript</span>
+            <span>HTML</span>
+            <span>CSS</span>
           </div>
 
-          <div class="project-content-second">
-            <div class="tech-tags">
-              <span>JavaScript</span>
-              <span>HTML</span>
-              <span>CSS</span>
-            </div>
-
-            <div class="project-links">
-              <a
-                href="https://www.andaluciabirdland.com/index-en.html"
-                target="_blank"
-                class="btn"
-                >Live Demo</a
-              >
-              <a
-                href="https://github.com/kevmhughes/andalucia_birdland"
-                target="_blank"
-                class="btn-outline"
-                >GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <img
-          src="./assets/mock-ups/livedocs-laptop.png"
-          alt="Project Screenshot"
-          class="project-image"
-        />
-
-        <div class="project-content">
-          <div class="project-content-first">
-            <h3 class="project-title">Live Docs</h3>
-            <p class="project-description">
-              LiveDocs is a fully responsive, real-time collaborative word
-              processor built with React, Next.js, TypeScript, and Liveblocks.
-              Like Google Docs, it lets multiple users write, edit, and comment
-              on documents simultaneously — making teamwork fast and seamless.
-            </p>
-          </div>
-
-          <div class="project-content-second">
-            <div class="tech-tags">
-              <span>React</span>
-              <span>Next.js</span>
-              <span>TypeScript</span>
-              <span>Liveblocks</span>
-            </div>
-
-            <div class="project-links">
-              <a
-                href="https://live-docs-sepia-six.vercel.app"
-                target="_blank"
-                class="btn"
-                >Live Demo</a
-              >
-              <a
-                href="https://github.com/kevmhughes/live_docs"
-                target="_blank"
-                class="btn-outline"
-                >GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <img
-          src="./assets/mock-ups/mello-laptop.png"
-          alt="Project Screenshot"
-          class="project-image"
-        />
-
-        <div class="project-content">
-          <div class="project-content-first">
-            <h3 class="project-title">Mello</h3>
-            <p class="project-description">
-              Mello is a fully responsive, single-view Kanban to-do list app
-              built with Vue.js, offering a streamlined and intuitive way to
-              organize tasks and manage workflow. Discover more about the
-              development journey in the full case study
-              <a href="./mello.html" class="case-study-link">here</a>.
-            </p>
-          </div>
-
-          <div class="project-content-second">
-            <div class="tech-tags">
-              <span>Vue.js</span>
-              <span>Node</span>
-              <span>Material Design</span>
-            </div>
-
-            <div class="project-links">
-              <a
-                href="https://kevmhughes.github.io/Mello"
-                target="_blank"
-                class="btn"
-                >Live Demo</a
-              >
-              <a
-                href="https://github.com/kevmhughes/Mello"
-                target="_blank"
-                class="btn-outline"
-                >GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <img
-          src="./assets/mock-ups/yariga-laptop.png"
-          alt="Project Screenshot"
-          class="project-image"
-        />
-        <div class="project-content">
-          <div class="project-content-first">
-            <h3 class="project-title">Yariga</h3>
-            <p class="project-description">
-              Yariga is a full-stack real estate management dashboard for
-              desktops, built with the MERN stack. It offers powerful, intuitive
-              tools for managing properties and agents, tracking reviews, and
-              handling transactions, all within a sleek, user-friendly
-              interface.
-            </p>
-          </div>
-
-          <div class="project-content-second">
-            <div class="tech-tags">
-              <span>Mongoose</span>
-              <span>Express</span>
-              <span>React</span>
-              <span>Node</span>
-            </div>
-
-            <div class="project-links">
-              <a
-                href="https://real-estate-admin-dashboard.netlify.app/"
-                target="_blank"
-                class="btn"
-                >Live Demo</a
-              >
-              <a
-                href="https://github.com/kevmhughes/real_estate_admin_dashboard"
-                target="_blank"
-                class="btn-outline"
-                >GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <img
-          src="./assets/mock-ups/flowerheads-laptop.png"
-          alt="Project Screenshot"
-          class="project-image"
-        />
-
-        <div class="project-content">
-          <div class="project-content-first">
-            <h3 class="project-title">Flowerheads</h3>
-            <p class="project-description">
-              Flower Heads is a fully responsive and modern full-stack
-              e-commerce application built with React, Next.js, Stripe, and
-              Sanity. It provides a seamless shopping experience, from browsing
-              products to secure payment processing. See case study
-              <a href="./flowerheads.html" class="case-study-link">here</a>.
-            </p>
-          </div>
-
-          <div class="project-content-second">
-            <div class="tech-tags">
-              <span>React</span>
-              <span>Next.js</span>
-              <span>Stripe</span>
-              <span>Sanity</span>
-            </div>
-
-            <div class="project-links">
-              <a
-                href="https://flowerheads-ecom-app.vercel.app"
-                target="_blank"
-                class="btn"
-                >Live Demo</a
-              >
-              <a
-                href="https://github.com/kevmhughes/flowerheads_ecom_app"
-                target="_blank"
-                class="btn-outline"
-                >GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <img
-          src="./assets/mock-ups/krypt-laptop.png"
-          alt="Project Screenshot"
-          class="project-image"
-        />
-
-        <div class="project-content">
-          <div class="project-content-first">
-            <h3 class="project-title">Krypt</h3>
-            <p class="project-description">
-              Krypt is a Web 3.0 blockchain app for sending and receiving
-              cryptocurrency, built with React, Solidity, Tailwind, and Vite. It
-              enables users to securely manage transactions via a MetaMask
-              account by connecting their digital wallet.
-            </p>
-          </div>
-
-          <div class="project-content-second">
-            <div class="tech-tags">
-              <span>React</span>
-              <span>Vite</span>
-              <span>Tailwind</span>
-              <span>Solidity</span>
-            </div>
-
-            <div class="project-links">
-              <a
-                href="https://krypt-transfers.netlify.app/"
-                target="_blank"
-                class="btn"
-                >Live Demo</a
-              >
-              <a
-                href="https://github.com/kevmhughes/krypt"
-                target="_blank"
-                class="btn-outline"
-                >GitHub</a
-              >
-            </div>
+          <div class="project-links">
+            <a href="https://www.andaluciabirdland.com/index-en.html" target="_blank" class="btn">Live Demo</a>
+            <a href="https://github.com/kevmhughes/andalucia_birdland" target="_blank" class="btn-outline">GitHub</a>
           </div>
         </div>
       </div>
     </div>
 
-    <script src="./js/hamburger-menu.js"></script>
-  </body>
+    <div class="project-card">
+      <img src="./assets/mock-ups/livedocs-laptop.png" alt="Project Screenshot" class="project-image" />
+
+      <div class="project-content">
+        <div class="project-content-first">
+          <h3 class="project-title">Live Docs</h3>
+          <p class="project-description">
+            LiveDocs is a fully responsive, real-time collaborative word
+            processor built with React, Next.js, TypeScript, and Liveblocks.
+            Like Google Docs, it lets multiple users write, edit, and comment
+            on documents simultaneously — making teamwork fast and seamless.
+          </p>
+        </div>
+
+        <div class="project-content-second">
+          <div class="tech-tags">
+            <span>React</span>
+            <span>Next.js</span>
+            <span>TypeScript</span>
+            <span>Liveblocks</span>
+          </div>
+
+          <div class="project-links">
+            <a href="https://live-docs-sepia-six.vercel.app" target="_blank" class="btn">Live Demo</a>
+            <a href="https://github.com/kevmhughes/live_docs" target="_blank" class="btn-outline">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="./assets/mock-ups/mello-laptop.png" alt="Project Screenshot" class="project-image" />
+
+      <div class="project-content">
+        <div class="project-content-first">
+          <h3 class="project-title">Mello</h3>
+          <p class="project-description">
+            Mello is a fully responsive, single-view Kanban to-do list app
+            built with Vue.js, offering a streamlined and intuitive way to
+            organize tasks and manage workflow. Discover more about the
+            development journey in the full case study
+            <a href="./mello.html" class="case-study-link">here</a>.
+          </p>
+        </div>
+
+        <div class="project-content-second">
+          <div class="tech-tags">
+            <span>Vue.js</span>
+            <span>Node</span>
+            <span>Material Design</span>
+          </div>
+
+          <div class="project-links">
+            <a href="https://kevmhughes.github.io/Mello" target="_blank" class="btn">Live Demo</a>
+            <a href="https://github.com/kevmhughes/Mello" target="_blank" class="btn-outline">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="./assets/mock-ups/yariga-laptop.png" alt="Project Screenshot" class="project-image" />
+      <div class="project-content">
+        <div class="project-content-first">
+          <h3 class="project-title">Yariga</h3>
+          <p class="project-description">
+            Yariga is a full-stack real estate management dashboard for
+            desktops, built with the MERN stack. It offers powerful, intuitive
+            tools for managing properties and agents, tracking reviews, and
+            handling transactions, all within a sleek, user-friendly
+            interface.
+          </p>
+        </div>
+
+        <div class="project-content-second">
+          <div class="tech-tags">
+            <span>Mongoose</span>
+            <span>Express</span>
+            <span>React</span>
+            <span>Node</span>
+          </div>
+
+          <div class="project-links">
+            <a href="https://real-estate-admin-dashboard.netlify.app/" target="_blank" class="btn">Live Demo</a>
+            <a href="https://github.com/kevmhughes/real_estate_admin_dashboard" target="_blank"
+              class="btn-outline">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="./assets/mock-ups/flowerheads-laptop.png" alt="Project Screenshot" class="project-image" />
+
+      <div class="project-content">
+        <div class="project-content-first">
+          <h3 class="project-title">Flowerheads</h3>
+          <p class="project-description">
+            Flower Heads is a fully responsive and modern full-stack
+            e-commerce application built with React, Next.js, Stripe, and
+            Sanity. It provides a seamless shopping experience, from browsing
+            products to secure payment processing. See case study
+            <a href="./flowerheads.html" class="case-study-link">here</a>.
+          </p>
+        </div>
+
+        <div class="project-content-second">
+          <div class="tech-tags">
+            <span>React</span>
+            <span>Next.js</span>
+            <span>Stripe</span>
+            <span>Sanity</span>
+          </div>
+
+          <div class="project-links">
+            <a href="https://flowerheads-ecom-app.vercel.app" target="_blank" class="btn">Live Demo</a>
+            <a href="https://github.com/kevmhughes/flowerheads_ecom_app" target="_blank" class="btn-outline">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="./assets/mock-ups/krypt-laptop.png" alt="Project Screenshot" class="project-image" />
+
+      <div class="project-content">
+        <div class="project-content-first">
+          <h3 class="project-title">Krypt</h3>
+          <p class="project-description">
+            Krypt is a Web 3.0 blockchain app for sending and receiving
+            cryptocurrency, built with React, Solidity, Tailwind, and Vite. It
+            enables users to securely manage transactions via a MetaMask
+            account by connecting their digital wallet.
+          </p>
+        </div>
+
+        <div class="project-content-second">
+          <div class="tech-tags">
+            <span>React</span>
+            <span>Vite</span>
+            <span>Tailwind</span>
+            <span>Solidity</span>
+          </div>
+
+          <div class="project-links">
+            <a href="https://krypt-transfers.netlify.app/" target="_blank" class="btn">Live Demo</a>
+            <a href="https://github.com/kevmhughes/krypt" target="_blank" class="btn-outline">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/hamburger-menu.js"></script>
+</body>
+
 </html>
