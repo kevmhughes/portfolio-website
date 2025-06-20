@@ -137,12 +137,11 @@ figcaption {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 6rem;
-    /* adjust based on your header height */
+    top: 7rem;
     right: 0;
     background-color: white;
     width: 100%;
-    height: calc(100vh - 6rem);
+    height: calc(100vh - 7rem);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     z-index: 999;
     gap: 1.5rem;
