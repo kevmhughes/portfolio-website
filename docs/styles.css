@@ -140,7 +140,7 @@ figcaption {
   .intro {
     padding: 0 2rem;
   }
-  
+
   .intro h1 {
     font-size: 2rem;
   }
@@ -150,8 +150,8 @@ figcaption {
   }
 
   .intro-avatar {
-    width: 120px;
-    height: 120px;
+    width: 13rem;
+    height: 13rem;
   }
 }
 
