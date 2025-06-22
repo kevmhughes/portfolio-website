@@ -6,19 +6,36 @@
 
 @font-face {
   font-family: "Raleway";
-  src: url("./assets/fonts/Raleway-Italic-VariableFont_wght.ttf") format("truetype");
+  src: url("./assets/fonts/Raleway-Italic-VariableFont_wght.ttf")
+    format("truetype");
   font-style: italic;
 }
 
 @font-face {
   font-family: "Source Code Pro";
-  src: url("./assets/fonts/SourceCodePro-VariableFont_wght.ttf") format("truetype");
+  src: url("./assets/fonts/SourceCodePro-VariableFont_wght.ttf")
+    format("truetype");
   font-style: normal;
 }
 
 @font-face {
   font-family: "Source Code Pro";
-  src: url("./assets/fonts/SourceCodePro-Italic-VariableFont_wght.ttf") format("truetype");
+  src: url("./assets/fonts/SourceCodePro-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-VariableFont_opsz\,wght.ttf")
+    format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-Italic-VariableFont_opsz\,wght.ttf")
+    format("truetype");
   font-style: italic;
 }
 
@@ -52,7 +69,7 @@ figcaption {
 }
 
 /* home page */
-/* table and desktop view */
+/* tablet and desktop view */
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -72,11 +89,13 @@ figcaption {
   border: 1px solid black;
   padding: 1rem;
   border-radius: 50%;
+  font-family: "Raleway", "Source_Code_Pro", monospace;
 }
 
 .nav-items {
   display: flex;
   gap: 18px;
+  font-weight: 300;
 }
 
 /* mobile view - hamburger styles */
@@ -147,6 +166,7 @@ figcaption {
     gap: 1.5rem;
     transition: transform 0.3s ease-in-out;
     transform: translateY(-100%);
+    font-weight: 300;
   }
 
   /* When menu is active (visible) */
@@ -288,7 +308,7 @@ figcaption {
 .project-card {
   display: flex;
   flex-direction: column;
-  height: 40rem;
+  height: auto;
   width: 25rem;
   background: #fff;
   border-radius: 8px;
@@ -314,8 +334,11 @@ figcaption {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* pushes top/bottom content apart */
   padding: 24px;
+}
+
+.project-content-second {
+  margin-top: 2rem;
 }
 
 .project-title {
@@ -324,9 +347,10 @@ figcaption {
 }
 
 .project-description {
-  font-size: 0.95rem;
+  font-size: 1.25rem;
   margin-bottom: 1rem;
   line-height: 1.5;
+  font-weight: 300;
 }
 
 .tech-tags {
@@ -394,8 +418,11 @@ body.dark-mode .tech-tags span {
   }
 
   .project-card {
-    height: 42rem;
     width: 20rem;
+  }
+
+  .project-description {
+    font-size: 0.95rem;
   }
 }
 
@@ -420,7 +447,7 @@ body.dark-mode .tech-tags span {
 }
 
 .about-text {
-  margin-bottom: 3rem;
+  margin-top: 0;
   font-size: 1.5rem;
   font-weight: 200;
 }
@@ -486,52 +513,8 @@ body.dark-mode .tech-tags span {
   color: #007bff;
 }
 
-.case-study-title {
-  text-align: center;
-  font-size: 4rem;
-  font-weight: 300;
-  margin-bottom: 1rem;
-}
-
 .case-study-full-width-image {
   width: 100vw;
-}
-
-.typewriter h1 {
-  color: #fff;
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation starts*/
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em;
-  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
-  width: 100%;
-  text-align: center;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-
-  from,
-  to {
-    border-color: transparent;
-  }
-
-  50% {
-    border-color: orange;
-  }
 }
 
 .case-study-text-container {
@@ -927,7 +910,6 @@ body.dark-mode .tech-tags span {
 }
 
 /* PICO CSS STYLE FORM */
-
 /* Mimic Pico.css form styling */
 form {
   max-width: 1200px;
@@ -1010,4 +992,54 @@ button[type="submit"]:hover {
   form {
     padding: 1rem;
   }
+}
+
+/* TEST AREA */
+/* TEST AREA */
+/* TEST AREA */
+/* TEST AREA */
+/* TEST AREA */
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.projects-title {
+  color: black;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 200;
+  margin-top: 0;
+  margin-bottom: 3rem;
+
+  /* Animation styles */
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
+.private-link {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid gray;
+  color: black;
+}
+
+.private-link::before {
+  content: "GitHub";
+}
+
+.private-link:hover {
+  background-color: rgb(230, 173, 173);
+  color: gray;
+}
+
+.private-link:hover::before {
+  content: "Private";
 }
