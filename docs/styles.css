@@ -6,36 +6,31 @@
 
 @font-face {
   font-family: "Raleway";
-  src: url("./assets/fonts/Raleway-Italic-VariableFont_wght.ttf")
-    format("truetype");
+  src: url("./assets/fonts/Raleway-Italic-VariableFont_wght.ttf") format("truetype");
   font-style: italic;
 }
 
 @font-face {
   font-family: "Source Code Pro";
-  src: url("./assets/fonts/SourceCodePro-VariableFont_wght.ttf")
-    format("truetype");
+  src: url("./assets/fonts/SourceCodePro-VariableFont_wght.ttf") format("truetype");
   font-style: normal;
 }
 
 @font-face {
   font-family: "Source Code Pro";
-  src: url("./assets/fonts/SourceCodePro-Italic-VariableFont_wght.ttf")
-    format("truetype");
+  src: url("./assets/fonts/SourceCodePro-Italic-VariableFont_wght.ttf") format("truetype");
   font-style: italic;
 }
 
 @font-face {
   font-family: "Inter";
-  src: url("./assets/fonts/Inter-VariableFont_opsz\,wght.ttf")
-    format("truetype");
+  src: url("./assets/fonts/Inter-VariableFont_opsz\,wght.ttf") format("truetype");
   font-style: normal;
 }
 
 @font-face {
   font-family: "Inter";
-  src: url("./assets/fonts/Inter-Italic-VariableFont_opsz\,wght.ttf")
-    format("truetype");
+  src: url("./assets/fonts/Inter-Italic-VariableFont_opsz\,wght.ttf") format("truetype");
   font-style: italic;
 }
 
@@ -182,7 +177,7 @@ figcaption {
   }
 
   .nav-item-link-mobile {
-    font-size: 3.5rem;
+    font-size: 3rem;
     padding-right: 2rem;
   }
 }
@@ -292,6 +287,26 @@ figcaption {
 }
 
 /* projects */
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.projects-title {
+  color: black;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 200;
+  margin-top: 0;
+  margin-bottom: 3rem;
+
+  /* Animation styles */
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in forwards;
+}
 
 /* cards */
 .project-cards-container {
@@ -418,11 +433,11 @@ body.dark-mode .tech-tags span {
   }
 
   .project-card {
-    width: 20rem;
+    width: 22rem;
   }
 
   .project-description {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 }
 
@@ -434,6 +449,14 @@ body.dark-mode .tech-tags span {
   .project-card {
     height: auto;
     width: calc(100% - 4rem);
+  }
+
+  .projects-title {
+    font-size: 3rem;
+  }
+
+  .project-description {
+    font-size: 1.25rem;
   }
 }
 
@@ -999,26 +1022,6 @@ button[type="submit"]:hover {
 /* TEST AREA */
 /* TEST AREA */
 /* TEST AREA */
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-
-.projects-title {
-  color: black;
-  font-family: "Raleway", sans-serif;
-  text-align: center;
-  font-size: 4rem;
-  font-weight: 200;
-  margin-top: 0;
-  margin-bottom: 3rem;
-
-  /* Animation styles */
-  opacity: 0;
-  animation: fadeIn 1.5s ease-in forwards;
-}
 
 .private-link {
   padding: 0.5rem 1rem;
