@@ -79,10 +79,15 @@ figcaption {
 }
 
 .nav-bar-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
   font-weight: 800;
   font-size: 2rem;
   border: 1px solid black;
-  padding: 1.2rem;
+  padding: 0;
   border-radius: 50%;
   font-family: "Raleway", "Source_Code_Pro", monospace;
 }
