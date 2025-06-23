@@ -331,10 +331,10 @@ figcaption {
   height: auto;
   width: 25rem;
   background: #fff;
-  border-radius: 8px;
   overflow: hidden;
-  box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.05);
-  border: 1px solid #00000007;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 10px;
 }
 
 .project-card:hover {
