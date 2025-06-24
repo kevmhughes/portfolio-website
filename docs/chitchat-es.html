@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Kevin Hughes - ChitChat</title>
+</head>
+
+<body style="background: white">
+    <header>
+        <div class="nav-bar">
+            <a href="./index-es.html" class="nav-bar-name">KH</a>
+            <div class="nav-items">
+                <div>
+                    <a href="./projects-es.html">Proyectos</a>
+                </div>
+                <div><a href="./about-es.html">Sobre Mí</a></div>
+                <div><a href="./contact-es.html">Contacto</a></div>
+                <div class="nav-flag-container">
+                    <a href="./chitchat.html"><img src="./assets/flags/united-kingdom.png" alt="Bandera Británica"
+                            class="nav-flag"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-bar-mobile">
+            <a href="./index-es.html" class="nav-bar-name">KH</a>
+            <div class="nav-bar-mobile-items-container">
+                <div class="nav-flag-container">
+                    <a href="./chitchat.html"><img src="./assets/flags/united-kingdom.png" alt="Bandera Británica"
+                            class="nav-flag"></a>
+                </div>
+                <button class="burger" id="burger" aria-label="Alternar navegación">
+                    <span class="burger-line line1"></span>
+                    <span class="burger-line line2"></span>
+                    <span class="burger-line line3"></span>
+                </button>
+            </div>
+
+            <div class="nav-items-mobile" id="nav-items-mobile">
+                <div class="nav-item-link-mobile"><a href="./projects-es.html">Proyectos</a></div>
+                <div class="nav-item-link-mobile"><a href="./about-es.html">Sobre Mí</a></div>
+                <div class="nav-item-link-mobile"><a href="./contact-es.html">Contacto</a></div>
+            </div>
+        </div>
+    </header>
+
+    <h1 class="projects-title">
+        ChitChat
+    </h1>
+
+    <main>
+        <div>
+            <img src="./assets/case-study-images/chitchat_full_width.png" alt="teléfono móvil en la mano"
+                class="case-study-full-width-image" />
+        </div>
+        <article class="case-study-text-container">
+            <h2 class="title-two">Resumen del Proyecto</h2>
+            <h3 class="title-three">¿Qué es?</h3>
+            <p class="case-study-text">
+                ChitChat es una aplicación móvil nativa desarrollada con React Native. Es un servicio de mensajería
+                similar a WhatsApp, que permite a los usuarios enviar y recibir mensajes de texto, fotos tomadas con la
+                cámara del teléfono, imágenes de la galería y compartir su ubicación.
+            </p>
+            <h3 class="title-three">¿Cuál fue el objetivo?</h3>
+            <p class="case-study-text">
+                Desarrollar una app de chat para dispositivos móviles usando React Native y Expo.io, como parte del
+                curso de Desarrollo Web de CareerFoundry.
+            </p>
+            <h3 class="title-three">¿Qué herramientas se usaron?</h3>
+            <div class="case-study-text">
+                <div>Lado del servidor: Google Firestore Database, Google Firebase</div>
+                <div>Lado del cliente: React Native, biblioteca Gifted Chat</div>
+                <div>Entorno de desarrollo: Expo.io</div>
+            </div>
+            <div class="case-study-logos-container">
+                <img src="./assets/case-study-images/chitchat_tool_logos.png" alt="logos de herramientas"
+                    class="case-study-logos">
+            </div>
+            <h2 class="title-two">Historias de Usuario</h2>
+            <ul class="case-study-text">
+                <li>Como nuevo usuario, quiero poder ingresar fácilmente a una sala de chat para comenzar a hablar con
+                    mis amigos y familiares rápidamente.</li>
+                <li>Como usuario, quiero poder enviar mensajes para intercambiar noticias.</li>
+                <li>Como usuario, quiero enviar imágenes a mis amigos para mostrarles lo que estoy haciendo.</li>
+                <li>Como usuario, quiero compartir mi ubicación para mostrar dónde estoy.</li>
+                <li>Como usuario, quiero poder leer mis mensajes sin conexión para repasar las conversaciones cuando
+                    quiera.</li>
+                <li>Como usuario con discapacidad visual, quiero usar una app de chat compatible con lectores de
+                    pantalla para poder interactuar con la interfaz.</li>
+            </ul>
+            <h2 class="title-two">Características Clave</h2>
+            <ul class="case-study-text">
+                <li>Pantalla donde el usuario ingresa su nombre y elige el color de fondo antes de iniciar el chat.</li>
+                <li>Pantalla que muestra la conversación, con campo de entrada y botón para enviar.</li>
+                <li>La app permite enviar imágenes y datos de ubicación.</li>
+                <li>Los datos se almacenan tanto en línea como sin conexión.</li>
+            </ul>
+            <h2 class="title-two">Diseño UI y Recursos</h2>
+            <h3 class="title-three">Especificaciones de Diseño:</h3>
+            <div class="chitchat-ui-design">
+                <img src="./assets/case-study-images/chitchat_ui.png" alt="diseño UI de ChitChat">
+            </div>
+            <ul class="case-study-text">
+                <li>Espaciado vertical y horizontal: distribuido uniformemente.</li>
+                <li>Título de la app: tamaño de fuente 45, peso 600, color #FFFFFF.</li>
+                <li>“Tu nombre”: tamaño 16, peso 300, color #757083, opacidad 50%.</li>
+                <li>“Elige color de fondo”: tamaño 16, peso 300, color #757083, opacidad 100%.</li>
+                <li>Códigos HEX de colores: #090C08; #474056; #8A95A5; #B9C6AE.</li>
+                <li>Botón “Comenzar chat”: tamaño 16, peso 600, color #FFFFFF, color del botón #757083.</li>
+            </ul>
+            <h2 class="title-two">Construcción de la App</h2>
+            <h3 class="title-three">Requisitos técnicos:</h3>
+            <ul class="case-study-text">
+                <li>La app debe estar desarrollada con React Native.</li>
+                <li>Debe utilizar Expo.io.</li>
+                <li>La app debe seguir el diseño dado en Figma.</li>
+                <li>Las conversaciones deben almacenarse en Google Firestore.</li>
+                <li>Los usuarios deben autenticarse de forma anónima con Firebase.</li>
+                <li>Las conversaciones deben guardarse localmente también.</li>
+                <li>Los usuarios pueden elegir y enviar imágenes desde la galería.</li>
+                <li>Los usuarios pueden tomar fotos con la cámara del dispositivo y enviarlas.</li>
+                <li>Las imágenes se almacenan en Firebase Cloud Storage.</li>
+                <li>La app puede acceder a la ubicación del usuario.</li>
+                <li>Los datos de ubicación se envían en el chat como vista de mapa.</li>
+                <li>La interfaz de chat se implementa usando la biblioteca Gifted Chat.</li>
+                <li>El proyecto incluye documentación técnica.</li>
+                <li>Todo el código se somete a linting según los requisitos.</li>
+            </ul>
+            <h2 class="title-two">Producto Final</h2>
+            <div class="chitchat-gif-container">
+                <img src="./assets/case-study-images/chitchat.gif" alt="gif de ChitChat" class="chitchat-gif">
+            </div>
+            <p class="case-study-text">
+                El código fuente está alojado en GitHub, una plataforma colaborativa para control de versiones y gestión
+                de proyectos. Puedes acceder al código <a href="https://github.com/kevmhughes/ChitChat"
+                    class="case-study-link" target="_blank">aquí</a>.
+            </p>
+            <h2 class="title-two">Retos Enfrentados</h2>
+            <p class="case-study-text">
+                Este proyecto marcó mi primera experiencia con React Native, y tuvo una curva de aprendizaje
+                pronunciada. Sin embargo, mi base sólida en React me ayudó a adaptarme rápidamente. Uno de los mayores
+                retos fue mantener la paciencia al trabajar con Expo, un iPhone, y un emulador Android lento y pesado.
+                Descubrí que la funcionalidad en iOS no siempre se trasladaba perfectamente a Android, lo que requería
+                pruebas constantes en ambos sistemas. En el proceso, realmente comprendí el significado de “la paciencia
+                es una virtud”.
+            </p>
+            <footer>
+                <div class="arrow-up-container">
+                    <a href="#">
+                        <img src="./assets/icons/arrow-up.svg" alt="volver arriba" class="arrow-up">
+                    </a>
+                </div>
+            </footer>
+        </article>
+    </main>
+
+    <script src="./js/hamburger-menu.js"></script>
+</body>
+
+</html>

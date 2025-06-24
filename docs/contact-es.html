@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Kevin Hughes - Contacto</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body style="background: white" style="all: unset">
+    <div class="wrapper">
+        <div>
+
+            <header>
+                <div class="nav-bar">
+                    <a href="./index-es.html" class="nav-bar-name">KH</a>
+                    <div class="nav-items">
+                        <div>
+                            <a href="./projects-es.html">Proyectos</a>
+                        </div>
+                        <div><a href="./about-es.html">Sobre Mí</a></div>
+                        <div><a href="./contact-es.html">Contacto</a></div>
+                        <div class="nav-flag-container">
+                            <a href="./contact.html"><img src="./assets/flags/united-kingdom.png" alt="British Flag"
+                                    class="nav-flag"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-bar-mobile">
+                    <a href="./index-es.html" class="nav-bar-name">KH</a>
+                    <div class="nav-bar-mobile-items-container">
+                        <div class="nav-flag-container">
+                            <a href="./contact.html"><img src="./assets/flags/united-kingdom.png" alt="British Flag"
+                                    class="nav-flag"></a>
+                        </div>
+                        <button class="burger" id="burger" aria-label="Alternar navegación">
+                            <span class="burger-line line1"></span>
+                            <span class="burger-line line2"></span>
+                            <span class="burger-line line3"></span>
+                        </button>
+                    </div>
+
+                    <div class="nav-items-mobile" id="nav-items-mobile">
+                        <div class="nav-item-link-mobile"><a href="./projects-es.html">Proyectos</a></div>
+                        <div class="nav-item-link-mobile"><a href="./about-es.html">Sobre Mí</a></div>
+                        <div class="nav-item-link-mobile"><a href="./contact-es.html">Contacto</a></div>
+                    </div>
+                </div>
+            </header>
+
+            <h1 class="projects-title">
+                Contáctame
+            </h1>
+
+            <form id="contact-form" class="container" onsubmit="sendEmail(event)" style="font-family: Raleway">
+                <input type="hidden" name="contact_number" minlength="3" required />
+                <label class="form-text">Nombre</label>
+                <input type="text" id="user_name" name="user_name" required />
+                <label class="form-text">Correo electrónico</label>
+                <input type="email" id="user_email" name="user_email" required />
+                <label class="form-text">Mensaje</label>
+                <textarea id="message" name="message" rows="5" minlength="10" maxlength="500"
+                    placeholder="Escribe tu mensaje aquí..." class="form-text" required></textarea>
+                <div class="g-recaptcha" data-sitekey="6LeltFkrAAAAAPEG8JPYSCXDftKf4CjX2v6Q7AlN"></div>
+                <button type="submit" class="form-text form-button">Enviar</button>
+            </form>
+
+            <div class="container">
+                <div id="success-message" class="container success-message message-container" style="display: none">
+                    ¡Tu mensaje ha sido enviado con éxito!
+                </div>
+                <div id="error-message" class="container error-message message-container" style="display: none">
+                    Algo salió mal. Por favor, intenta más tarde.
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="social-media-icons">
+                <a href="mailto:kevhughes24@hotmail.com" target="_blank" aria-label="correo electrónico"><img
+                        src="./assets/social-media/email.svg" class="contact-icons" alt="icono de correo" /></a>
+                <a href="https://www.linkedin.com/in/kevin-michael-hughes" target="_blank"
+                    aria-label="perfil de LinkedIn"><img src="./assets/social-media/linkedin.svg" class="contact-icons"
+                        alt="icono de linkedin" /></a>
+                <a href="https://github.com/kevmhughes" target="_blank" aria-label="perfil de GitHub"><img
+                        src="./assets/social-media/github.svg" class="contact-icons" alt="icono de github" /></a>
+                <a href="https://wa.me/34630116629" target="_blank" aria-label="número de teléfono"><img
+                        src="./assets/social-media/whatsapp.svg" class="contact-icons" alt="icono de whatsapp" /></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/hamburger-menu.js"></script>
+    <script src="./js/contact.js"></script>
+</body>
+
+</html>
