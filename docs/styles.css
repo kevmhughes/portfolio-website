@@ -409,7 +409,7 @@ figcaption {
 }
 
 .project-title {
-  font-size: 1.75rem;
+  font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 
@@ -417,7 +417,7 @@ figcaption {
   font-size: 1.25rem;
   margin-bottom: 1rem;
   line-height: 1.5;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .tech-tags {
@@ -487,10 +487,6 @@ body.dark-mode .tech-tags span {
   .project-card {
     width: 22rem;
   }
-
-  .project-description {
-    font-size: 1rem;
-  }
 }
 
 @media (max-width: 768px) {
@@ -505,10 +501,6 @@ body.dark-mode .tech-tags span {
 
   .projects-title {
     font-size: 3rem;
-  }
-
-  .project-description {
-    font-size: 1.25rem;
   }
 }
 
