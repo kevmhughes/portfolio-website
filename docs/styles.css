@@ -98,6 +98,14 @@ figcaption {
   font-weight: 300;
 }
 
+.nav-item-link.active {
+  font-weight: 500;
+}
+
+.nav-item-link a:hover {
+ color: rgb(88, 88, 88);
+}
+
 .nav-flag-container {
   height: 2rem;
   width: 2rem;
@@ -203,6 +211,10 @@ figcaption {
   .nav-item-link-mobile {
     font-size: 3rem;
     padding-right: 2rem;
+  }
+
+  .nav-item-link-mobile.active {
+    font-weight: 500;
   }
 }
 
