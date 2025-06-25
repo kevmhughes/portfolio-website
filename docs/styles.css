@@ -99,13 +99,13 @@ figcaption {
 }
 
 .nav-flag-container {
-  height: 1.75rem;
-  width: 1.75rem;
+  height: 2rem;
+  width: 2rem;
 }
 
 .nav-flag {
-  height: 1.75rem;
-  width: 1.75rem;
+  height: 2rem;
+  width: 2rem;
 }
 
 .nav-bar-mobile-items-container {
@@ -119,8 +119,9 @@ figcaption {
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 24px;
-  height: 18px;
+  align-items: center;
+  width: 2rem;
+  height: 1.75rem;
   background: none;
   border: none;
   cursor: pointer;
@@ -138,7 +139,8 @@ figcaption {
 
 /* Burger active (X) animation */
 .burger.active .line1 {
-  transform: rotate(45deg) translate(6px, 6px);
+  transform: rotate(45deg) translate(8px, 5px);
+  width: 2.5rem;
 }
 
 .burger.active .line2 {
@@ -146,7 +148,8 @@ figcaption {
 }
 
 .burger.active .line3 {
-  transform: rotate(-45deg) translate(5px, -5px);
+  transform: rotate(-45deg) translate(8px, -5px);
+  width: 2.5rem;
 }
 
 /* Responsive visibility */
