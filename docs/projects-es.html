@@ -6,46 +6,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
   <title>Kevin Hughes - Proyectos</title>
+  <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon/android-chrome-512x512.png" />
+  <link rel="manifest" href="/assets/favicon/site.webmanifest" />
 </head>
 
 <body>
 
-<header>
-  <div class="nav-bar">
-    <a href="./index-es.html" class="nav-bar-name">KH</a>
-    <div class="nav-items">
-      <div class="nav-item-link active">
-        <a href="./projects-es.html">Proyectos</a>
-      </div>
-      <div class="nav-item-link"><a href="./about-es.html">Sobre Mí</a></div>
-      <div class="nav-item-link"><a href="./contact-es.html">Contacto</a></div>
-      <div class="nav-flag-container">
-        <a href="./projects.html"><img src="./assets/flags/united-kingdom.png" alt="Bandera Británica"
-            class="nav-flag"></a>
+  <header>
+    <div class="nav-bar">
+      <a href="./index-es.html" class="nav-bar-name">KH</a>
+      <div class="nav-items">
+        <div class="nav-item-link active">
+          <a href="./projects-es.html">Proyectos</a>
+        </div>
+        <div class="nav-item-link"><a href="./about-es.html">Sobre Mí</a></div>
+        <div class="nav-item-link"><a href="./contact-es.html">Contacto</a></div>
+        <div class="nav-flag-container">
+          <a href="./projects.html"><img src="./assets/flags/united-kingdom.png" alt="Bandera Británica"
+              class="nav-flag"></a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="nav-bar-mobile">
-    <a href="./index-es.html" class="nav-bar-name">KH</a>
-    <div class="nav-bar-mobile-items-container">
-      <div class="nav-flag-container">
-        <a href="./projects.html"><img src="./assets/flags/united-kingdom.png" alt="Bandera Británica"
-            class="nav-flag"></a>
+    <div class="nav-bar-mobile">
+      <a href="./index-es.html" class="nav-bar-name">KH</a>
+      <div class="nav-bar-mobile-items-container">
+        <div class="nav-flag-container">
+          <a href="./projects.html"><img src="./assets/flags/united-kingdom.png" alt="Bandera Británica"
+              class="nav-flag"></a>
+        </div>
+        <button class="burger" id="burger" aria-label="Alternar navegación">
+          <span class="burger-line line1"></span>
+          <span class="burger-line line2"></span>
+          <span class="burger-line line3"></span>
+        </button>
       </div>
-      <button class="burger" id="burger" aria-label="Alternar navegación">
-        <span class="burger-line line1"></span>
-        <span class="burger-line line2"></span>
-        <span class="burger-line line3"></span>
-      </button>
+      <div class="nav-items-mobile" id="nav-items-mobile">
+        <div class="nav-item-link-mobile active"><a href="./projects-es.html">Proyectos</a></div>
+        <div class="nav-item-link-mobile"><a href="./about-es.html">Sobre Mí</a></div>
+        <div class="nav-item-link-mobile"><a href="./contact-es.html">Contacto</a></div>
+      </div>
     </div>
-    <div class="nav-items-mobile" id="nav-items-mobile">
-      <div  class="nav-item-link-mobile active"><a href="./projects-es.html">Proyectos</a></div>
-      <div class="nav-item-link-mobile"><a href="./about-es.html">Sobre Mí</a></div>
-      <div class="nav-item-link-mobile"><a href="./contact-es.html">Contacto</a></div>
-    </div>
-  </div>
-</header>
+  </header>
 
   <h1 class="projects-title">
     Proyectos
@@ -54,12 +61,15 @@
   <div class="project-cards-container">
 
     <div class="project-card">
-      <img src="./assets/mock-ups/andaluciabirdland-laptop.jpg" alt="Captura del proyecto" class="project-image" loading="lazy" />
+      <img src="./assets/mock-ups/andaluciabirdland-laptop.jpg" alt="Captura del proyecto" class="project-image"
+        loading="lazy" />
       <div class="project-content">
         <div class="project-content-first">
           <h3 class="project-title">Andalucía BirdLand</h3>
           <p class="project-description">
-            Andalucía BirdLand es un sitio web de ecoturismo creado con HTML, CSS y JavaScript. Ofrece escondites para fotografía de naturaleza y cursos en Andalucía, con integración de Mister Plan para reservas y pagos en tiempo real. Está optimizado para SEO, accesibilidad y alto rendimiento en todos los dispositivos.
+            Andalucía BirdLand es un sitio web de ecoturismo creado con HTML, CSS y JavaScript. Ofrece escondites para
+            fotografía de naturaleza y cursos en Andalucía, con integración de Mister Plan para reservas y pagos en
+            tiempo real. Está optimizado para SEO, accesibilidad y alto rendimiento en todos los dispositivos.
           </p>
         </div>
         <div class="project-content-second">
@@ -77,12 +87,15 @@
     </div>
 
     <div class="project-card">
-      <img src="./assets/mock-ups/livedocs-laptop.jpg" alt="Captura del proyecto" class="project-image" loading="lazy" />
+      <img src="./assets/mock-ups/livedocs-laptop.jpg" alt="Captura del proyecto" class="project-image"
+        loading="lazy" />
       <div class="project-content">
         <div class="project-content-first">
           <h3 class="project-title">Live Docs</h3>
           <p class="project-description">
-            LiveDocs es un procesador de texto colaborativo en tiempo real, completamente responsivo, construido con React, Next.js, TypeScript y Liveblocks. Al igual que Google Docs, permite a múltiples usuarios escribir, editar y comentar simultáneamente, facilitando el trabajo en equipo de manera ágil.
+            LiveDocs es un procesador de texto colaborativo en tiempo real, completamente responsivo, construido con
+            React, Next.js, TypeScript y Liveblocks. Al igual que Google Docs, permite a múltiples usuarios escribir,
+            editar y comentar simultáneamente, facilitando el trabajo en equipo de manera ágil.
           </p>
         </div>
         <div class="project-content-second">
@@ -105,7 +118,9 @@
         <div class="project-content-first">
           <h3 class="project-title">Mello</h3>
           <p class="project-description">
-            Mello es una aplicación de lista de tareas tipo Kanban de una sola vista, totalmente responsiva, creada con Vue.js. Ofrece una forma intuitiva de organizar tareas y gestionar flujos de trabajo. Descubre más sobre el desarrollo en el estudio de caso completo
+            Mello es una aplicación de lista de tareas tipo Kanban de una sola vista, totalmente responsiva, creada con
+            Vue.js. Ofrece una forma intuitiva de organizar tareas y gestionar flujos de trabajo. Descubre más sobre el
+            desarrollo en el estudio de caso completo
             <a href="./mello-es.html" class="case-study-link">aquí</a>.
           </p>
         </div>
@@ -129,7 +144,9 @@
         <div class="project-content-first">
           <h3 class="project-title">Yariga</h3>
           <p class="project-description">
-            Yariga es un panel de administración inmobiliaria full-stack para escritorio, construido con la pila MERN. Ofrece potentes herramientas para gestionar propiedades y agentes, controlar reseñas y manejar transacciones, todo en una interfaz elegante y fácil de usar.
+            Yariga es un panel de administración inmobiliaria full-stack para escritorio, construido con la pila MERN.
+            Ofrece potentes herramientas para gestionar propiedades y agentes, controlar reseñas y manejar
+            transacciones, todo en una interfaz elegante y fácil de usar.
           </p>
         </div>
         <div class="project-content-second">
@@ -141,19 +158,23 @@
           </div>
           <div class="project-links">
             <a href="https://real-estate-admin-dashboard.netlify.app/" target="_blank" class="btn">Ver Demo</a>
-            <a href="https://github.com/kevmhughes/real_estate_admin_dashboard" target="_blank" class="btn-outline">GitHub</a>
+            <a href="https://github.com/kevmhughes/real_estate_admin_dashboard" target="_blank"
+              class="btn-outline">GitHub</a>
           </div>
         </div>
       </div>
     </div>
 
     <div class="project-card">
-      <img src="./assets/mock-ups/flowerheads-laptop.jpg" alt="Captura del proyecto" class="project-image" loading="lazy" />
+      <img src="./assets/mock-ups/flowerheads-laptop.jpg" alt="Captura del proyecto" class="project-image"
+        loading="lazy" />
       <div class="project-content">
         <div class="project-content-first">
           <h3 class="project-title">Flowerheads</h3>
           <p class="project-description">
-            Flowerheads es una aplicación moderna de comercio electrónico full-stack y totalmente responsiva, desarrollada con React, Next.js, Stripe y Sanity. Ofrece una experiencia de compra fluida, desde la navegación de productos hasta el pago seguro. Ver estudio de caso
+            Flowerheads es una aplicación moderna de comercio electrónico full-stack y totalmente responsiva,
+            desarrollada con React, Next.js, Stripe y Sanity. Ofrece una experiencia de compra fluida, desde la
+            navegación de productos hasta el pago seguro. Ver estudio de caso
             <a href="./flowerheads-es.html" class="case-study-link">aquí</a>.
           </p>
         </div>
@@ -178,7 +199,9 @@
         <div class="project-content-first">
           <h3 class="project-title">Krypt</h3>
           <p class="project-description">
-            Krypt es una aplicación Web 3.0 basada en blockchain para enviar y recibir criptomonedas, construida con React, Solidity, Tailwind y Vite. Permite a los usuarios gestionar transacciones de forma segura conectando su billetera digital mediante MetaMask.
+            Krypt es una aplicación Web 3.0 basada en blockchain para enviar y recibir criptomonedas, construida con
+            React, Solidity, Tailwind y Vite. Permite a los usuarios gestionar transacciones de forma segura conectando
+            su billetera digital mediante MetaMask.
           </p>
         </div>
         <div class="project-content-second">
