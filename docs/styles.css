@@ -22,18 +22,6 @@
   font-style: italic;
 }
 
-@font-face {
-  font-family: "Inter";
-  src: url("./assets/fonts/Inter-VariableFont_opsz\,wght.ttf") format("truetype");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("./assets/fonts/Inter-Italic-VariableFont_opsz\,wght.ttf") format("truetype");
-  font-style: italic;
-}
-
 html {
   font-size: 16px;
   font-family: "Source Code Pro", Courier, monospace;
@@ -103,7 +91,7 @@ figcaption {
 }
 
 .nav-item-link a:hover {
- color: rgb(88, 88, 88);
+  color: rgb(88, 88, 88);
 }
 
 .nav-flag-container {
@@ -165,8 +153,8 @@ figcaption {
   width: 2.5rem;
 }
 
-/* Responsive visibility */
-@media (max-width: 768px) {
+/* Tablets */
+@media (max-width: 767.98px) {
   .burger {
     display: flex;
   }
@@ -178,7 +166,7 @@ figcaption {
   .nav-bar-mobile {
     display: flex;
     justify-content: space-between;
-    font-family: "Raleway", "Source_Code_Pro", monospace;
+    font-family: "Raleway", "Source Code Pro", monospace;
     font-size: 1.5rem;
     padding: 1.5rem;
     align-items: center;
@@ -207,10 +195,6 @@ figcaption {
     transform: translateY(0);
     align-items: flex-end;
     padding-top: 1rem;
-  }
-
-  .nav-items-mobile.active {
-    display: flex;
   }
 
   .nav-item-link-mobile {
@@ -796,6 +780,55 @@ body.dark-mode .tech-tags span {
 
   .face {
     height: 900px;
+  }
+
+  .nav-bar {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  .nav-flag {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .nav-bar-name {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+  }
+
+  .intro-avatar {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  .intro h1 {
+    font-size: 3rem;
+  }
+
+  .intro p {
+    font-size: 1.2rem;
+  }
+
+  .projects-title {
+    font-size: 3rem;
+  }
+
+  .project-title {
+    font-size: 1.75rem;
+  }
+
+  .project-description {
+    font-size: 1.2rem;
+  }
+
+  .about-text {
+    font-size: 1.2rem;
+  }
+
+  .form-text {
+    font-size: 1.2rem;
   }
 }
 
