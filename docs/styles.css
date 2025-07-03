@@ -731,6 +731,40 @@ body.dark-mode .tech-tags span {
   .face {
     height: 800px;
   }
+
+
+  .intro-avatar {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  .intro h1 {
+    font-size: 3rem;
+  }
+
+  .intro p {
+    font-size: 1.2rem;
+  }
+
+  .projects-title {
+    font-size: 3rem;
+  }
+
+  .project-title {
+    font-size: 1.75rem;
+  }
+
+  .project-description {
+    font-size: 1.2rem;
+  }
+
+  .about-text {
+    font-size: 1.2rem;
+  }
+
+  .form-text {
+    font-size: 1.2rem;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
