@@ -220,11 +220,11 @@ figcaption {
   justify-content: center;
   background-color: #ffffff;
   color: #111;
-  padding: 0 20px;
   text-align: center;
   overflow: hidden;
   margin-top: 11rem;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
+  padding: 0 2rem 4rem;
 }
 
 /* Content wrapper */
@@ -286,7 +286,7 @@ figcaption {
 /* Responsive */
 @media (max-width: 768px) {
   .intro {
-    padding: 0 2rem;
+    padding: 0 2rem 4rem;
   }
 
   .intro h1 {
@@ -300,6 +300,12 @@ figcaption {
   .intro-avatar {
     width: 13rem;
     height: 13rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .intro {
+    margin-top: 7rem;
   }
 }
 
