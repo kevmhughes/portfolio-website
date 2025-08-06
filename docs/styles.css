@@ -324,7 +324,6 @@ figcaption {
   background-color: #333;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .intro {
     padding: 0 2rem 4rem;
@@ -344,12 +343,6 @@ figcaption {
   }
 }
 
-@media (max-width: 375px) {
-  .intro {
-    margin-top: 7rem;
-  }
-}
-
 /* Animations */
 @keyframes fadeInUp {
   to {
@@ -366,7 +359,6 @@ figcaption {
 }
 
 /* projects */
-
 @keyframes fadeIn {
   to {
     opacity: 1;
@@ -1085,6 +1077,15 @@ body.dark-mode .tech-tags span {
     font-size: 12px;
   }
 
+  .gradient {
+    background: none;
+    animation: none;
+  }
+
+  .intro-avatar {
+    box-shadow: none;
+  }
+
   .nav-items {
     gap: 10px;
   }
@@ -1101,9 +1102,17 @@ body.dark-mode .tech-tags span {
     width: 95vw;
     height: unset;
   }
+
+  .projects-title {
+    margin-top: 0rem
+  }
 }
 
 @media (max-width: 400px) {
+  .intro {
+    margin-top: 5rem;
+  }
+
   .face {
     width: 360px;
   }
