@@ -285,7 +285,7 @@ figcaption {
   filter: grayscale(100%);
   margin-bottom: 25px;
   border: 2px solid #ccc;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
   opacity: 0;
   transform: scale(0.9);
   animation: zoomIn 1s ease-out forwards;
