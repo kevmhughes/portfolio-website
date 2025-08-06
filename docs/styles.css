@@ -52,6 +52,26 @@ figcaption {
 }
 
 /* home page */
+.gradient {
+  background: linear-gradient(-45deg, #ff6ec4, #7873f5, #4ade80, #facc15);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 /* tablet and desktop view */
 .nav-bar {
   display: flex;
@@ -65,6 +85,21 @@ figcaption {
   left: 0;
   width: calc(100% - 3rem);
   background-color: white;
+  z-index: 1000;
+}
+
+/* gradient look */
+.nav-bar-home {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Raleway", "Source_Code_Pro", monospace;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100% - 3rem);
   z-index: 1000;
 }
 
@@ -84,6 +119,7 @@ figcaption {
   padding: 0;
   border-radius: 50%;
   font-family: "Raleway", "Source_Code_Pro", monospace;
+  background-color: white;
 }
 
 .nav-items {
@@ -165,7 +201,8 @@ figcaption {
     display: flex;
   }
 
-  .nav-bar {
+  .nav-bar,
+  .nav-bar-home {
     display: none;
   }
 
@@ -176,6 +213,10 @@ figcaption {
     font-size: 1.5rem;
     padding: 1.5rem;
     align-items: center;
+  }
+
+  .white-bg {
+    background-color: white;
   }
 
   .nav-items-mobile {
@@ -218,7 +259,6 @@ figcaption {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffffff;
   color: #111;
   text-align: center;
   overflow: hidden;
@@ -245,11 +285,12 @@ figcaption {
   filter: grayscale(100%);
   margin-bottom: 25px;
   border: 2px solid #ccc;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
   opacity: 0;
   transform: scale(0.9);
   animation: zoomIn 1s ease-out forwards;
   animation-delay: 1.2s;
+  background-color: white;
 }
 
 /* Headline */
@@ -263,7 +304,7 @@ figcaption {
 .intro p {
   font-size: 1.4rem;
   line-height: 1.6;
-  color: #444;
+  color: #111;
   margin-bottom: 3rem;
 }
 
@@ -744,7 +785,6 @@ body.dark-mode .tech-tags span {
   .face {
     height: 800px;
   }
-
 
   .intro-avatar {
     width: 14rem;
