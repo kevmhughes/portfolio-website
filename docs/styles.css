@@ -669,6 +669,7 @@ body.dark-mode .tech-tags span {
   margin: auto;
   box-shadow: 12px 12px 29px #555;
   margin-top: 3rem;
+  border-radius: 5px;
 }
 
 .case-study-floating-screen-container {
