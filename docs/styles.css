@@ -1137,7 +1137,7 @@ figcaption {
   }
 
   .carousel-container {
-    width: calc(100% - 6rem);
+    width: calc(100% - 4rem);
   }
 
   .carousel-btn.next,
