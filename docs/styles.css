@@ -570,15 +570,6 @@ figcaption {
 }
 
 /* Responsive */
-@media (max-width: 1440px) {
-  /*   .project-cards-container {
-    width: 900px;
-  } */
-  /*   .project-card {
-    width: 23rem;
-  } */
-}
-
 @media (max-width: 1024px) {
   .carousel-container {
     width: calc(100% - 12rem);
@@ -590,15 +581,6 @@ figcaption {
 }
 
 @media (max-width: 768px) {
-  /*   .project-cards-container {
-    width: 100%;
-  }
-
-  .project-card {
-    height: auto;
-    width: calc(100% - 4rem);
-  } */
-
   .projects-title {
     font-size: 3rem;
   }
