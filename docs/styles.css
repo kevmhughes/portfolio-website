@@ -527,6 +527,9 @@ body.dark-mode .tech-tags span {
   .project-cards-container {
     width: 900px;
   }
+  .project-card {
+    width: 23rem;
+  }
 }
 
 @media (max-width: 1024px) {
