@@ -24,7 +24,7 @@ class Carousel {
     }
 
     // Preload the first few images to prevent delay on first slide
-    preloadImages(preloadCount = 4) {
+    preloadImages(preloadCount = 6) {
         const images = this.container.querySelectorAll("img[loading='lazy']");
         images.forEach((img, i) => {
             if (i < preloadCount) {
@@ -141,7 +141,7 @@ class Carousel {
 
     // Initialize carousel: preload images, render first slide, add listeners
     init() {
-        this.preloadImages(4); 
+        this.preloadImages(6); 
         this.updateCarousel();
         this.addEventListeners();
     }

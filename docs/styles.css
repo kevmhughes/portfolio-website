@@ -525,6 +525,7 @@ figcaption {
   font-size: 0.875rem;
   font-weight: 600;
   transition: all 0.3s ease;
+  border: 2px solid black;
 }
 
 .btn-outline {
