@@ -1139,11 +1139,6 @@ figcaption {
   .carousel-container {
     width: calc(100% - 6rem);
   }
-
-  .carousel-btn.next,
-  .carousel-btn.prev {
-    display: none;
-  }
 }
 
 @media (max-width: 400px) {
