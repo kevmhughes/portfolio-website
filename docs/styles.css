@@ -417,7 +417,7 @@ figcaption {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  width: 1300px;
+  width: 1200px;
   margin: auto;
   margin-bottom: 2rem;
 }
@@ -426,7 +426,7 @@ figcaption {
   display: flex;
   flex-direction: column;
   height: auto;
-  width: 25rem;
+  width: 36rem;
   background: #fff;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
