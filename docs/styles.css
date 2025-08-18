@@ -336,7 +336,7 @@ figcaption {
   opacity: 0;
   transform: scale(0.9);
   animation: zoomIn 1s ease-out forwards;
-  animation-delay: 1.4s;
+  animation-delay: 1.2s;
   background-color: white;
 }
 
