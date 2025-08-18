@@ -250,7 +250,7 @@ figcaption {
   }
 
   .nav-item-link-mobile.active {
-    font-weight: 500;
+    font-weight: 400;
   }
 }
 
@@ -370,7 +370,7 @@ figcaption {
   font-family: "Raleway", sans-serif;
   text-align: center;
   font-size: 4rem;
-  font-weight: 200;
+  font-weight: 400;
   margin-top: 7rem;
   margin-bottom: 3rem;
   opacity: 0;
