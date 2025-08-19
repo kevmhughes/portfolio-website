@@ -301,12 +301,10 @@ figcaption {
   left: -75%;
   width: 50%;
   height: 100%;
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.4) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(120deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.4) 50%,
+      rgba(255, 255, 255, 0) 100%);
   transform: skewX(-20deg);
   animation: glisten 2.4s ease-in-out 1;
   animation-delay: 3.2s;
@@ -318,6 +316,7 @@ figcaption {
   0% {
     left: -75%;
   }
+
   100% {
     left: 125%;
   }
@@ -643,36 +642,63 @@ figcaption {
 
 .about-text {
   margin-top: 0;
-  font-size: 1.5rem;
-  font-weight: 200;
+  font-size: 1.4rem;
+  margin-bottom: 0;
 }
 
-.about-me-likes-container-odd {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
+.about-icons-container {
+  justify-self: center;
+  margin: 2rem 0
 }
 
-.about-me-likes-container-even {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  gap: 3rem;
+.icons-animation-one {
+  opacity: 0;
+  transform: scale(0.9);
+  animation: zoomIn 1s ease-out forwards;
+  animation-delay: 1.4s;
 }
 
-.coffee {
-  height: 14rem;
+.icons-animation-two {
+  opacity: 0;
+  transform: scale(0.9);
+  animation: zoomIn 1s ease-out forwards;
+  animation-delay: 3.4s;
 }
 
-.jazz-record {
-  height: 16rem;
+.icons-animation-three {
+  opacity: 0;
+  transform: scale(0.9);
+  animation: zoomIn 1s ease-out forwards;
+  animation-delay: 5.4s;
 }
 
-.soup {
-  height: 18rem;
+.about-icons {
+  height: 8rem;
+}
+
+.about-text-animation-one {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.4s;
+}
+
+.about-text-animation-two {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 2.4s;
+}
+
+.about-text-animation-three {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 4.4s;
 }
 
 .download-button {
+  position: relative;
   background-color: #007bff;
   padding: 0.5rem 1rem;
   font-size: 1rem;
@@ -682,6 +708,127 @@ figcaption {
   font-weight: 100;
   font-family: "Source Code Pro";
   margin-bottom: 3rem;
+  overflow: hidden;
+  opacity: 0;
+  animation: fadeInButton 0.4s ease-in forwards;
+  animation-delay: 6.4s;
+}
+
+.download-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(173, 216, 255, 0.6) 50%,
+      /* blue-tinted shimmer */
+      rgba(255, 255, 255, 0) 100%);
+  transform: skewX(-20deg);
+  animation: glistenDload 2.4s ease-in-out forwards;
+  animation-delay: 6.6s;
+  z-index: 2;
+  pointer-events: none;
+
+  /* 👇 Hide the shimmer until it starts moving */
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInButton {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes glistenDload {
+  0% {
+    left: -75%;
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    left: 125%;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .icons-animation-one {
+    opacity: 0;
+    transform: scale(0.9);
+    animation: zoomIn 1s ease-out forwards;
+    animation-delay: 1.4s;
+  }
+
+  .icons-animation-two {
+    display: none;
+  }
+
+  .icons-animation-three {
+    display: none;
+  }
+
+  .about-text-animation-two {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 2.4s;
+  }
+
+  .about-text-animation-three {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 3.4s;
+  }
+
+  .download-button {
+    animation-delay: 4.4s;
+  }
+
+  .download-button::before {
+    animation-delay: 4.6s;
+  }
+
+}
+
+@media (max-width: 390px) {
+  .icons-animation-one {
+    display: none;
+  }
+
+  .about-text-animation-two {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 1.4s;
+  }
+
+  .about-text-animation-three {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 2.4s;
+  }
+
+  .download-button {
+    animation-delay: 3.4s;
+  }
+
+  .download-button::before {
+    animation-delay: 3.6s;
+  }
 }
 
 .download-button-container,
@@ -829,28 +976,9 @@ figcaption {
 }
 
 /* media queries */
-@media (min-width: 1536px) {
-
-  .projects-grid {
-    width: 1450px;
-  }
-}
-
 @media (min-width: 1280px) and (max-width: 1535px) {
   html {
     font-size: 16px;
-  }
-
-  .projects-grid {
-    width: 1200px;
-  }
-
-  .grid-item {
-    flex-direction: column;
-  }
-
-  .face {
-    height: 800px;
   }
 
   .intro-avatar {
@@ -888,18 +1016,6 @@ figcaption {
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
-  .projects-grid {
-    display: flex;
-    flex-direction: column;
-    width: 950px;
-  }
-
-  .grid-item {
-    flex-direction: column;
-    gap: 0;
-    height: 100vh;
-  }
-
   .projects-text-container {
     width: 90%;
   }
@@ -922,14 +1038,6 @@ figcaption {
 
   .yariga {
     height: 48vh !important;
-  }
-
-  .yariga-grid {
-    margin-bottom: 0;
-  }
-
-  .face {
-    height: 900px;
   }
 
   .nav-bar {
@@ -992,31 +1100,12 @@ figcaption {
     font-size: 16px;
   }
 
-  .projects-grid {
-    width: 700px;
-  }
-
-  .grid-item {
-    flex-direction: column;
-    gap: 0;
-    height: 100vh;
-  }
-
   .projects-text-container {
     width: 80%;
   }
 
-  .face {
-    height: 700px;
-  }
-
   .about-main-container {
     width: 700px;
-  }
-
-  .about-me-likes-container-even,
-  .about-me-likes-container-odd {
-    flex-direction: column;
   }
 
   .mockup {
@@ -1035,10 +1124,6 @@ figcaption {
   .yariga {
     height: 44vh !important;
   }
-
-  .yariga-grid {
-    margin-bottom: 0;
-  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -1046,30 +1131,9 @@ figcaption {
     font-size: 12px;
   }
 
-  .projects-grid {
-    width: 510px;
-  }
-
-  .grid-item,
-  .grid-item-even {
-    flex-direction: column;
-    gap: 0;
-    margin-bottom: 2rem;
-  }
-
   .projects-text-container,
   .about-main-container {
     width: 90%;
-  }
-
-  .face {
-    height: 500px;
-  }
-
-  .about-me-likes-container-even,
-  .about-me-likes-container-odd {
-    flex-direction: column;
-    gap: 1rem;
   }
 
   .about-text {
@@ -1087,21 +1151,6 @@ figcaption {
     width: calc(100% - 3rem);
   }
 
-  .projects-grid {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin-bottom: 5rem;
-    gap: 6rem;
-  }
-
-  .grid-item,
-  .grid-item-even {
-    flex-direction: column;
-    gap: 0;
-    margin-bottom: 2rem;
-  }
-
   .projects-text-container,
   .about-main-container {
     width: calc(100% - 4rem);
@@ -1109,16 +1158,6 @@ figcaption {
 
   .projects-icons-container {
     width: 90px;
-  }
-
-  .face {
-    height: 400px;
-  }
-
-  .about-me-likes-container-even,
-  .about-me-likes-container-odd {
-    flex-direction: column;
-    gap: 1rem;
   }
 
   .about-text {
@@ -1169,10 +1208,6 @@ figcaption {
     font-size: 1.5rem;
   }
 
-  .face {
-    width: 400px;
-  }
-
   .mockup-adjust {
     width: 95vw;
     height: unset;
@@ -1196,10 +1231,6 @@ figcaption {
 @media (max-width: 400px) {
   .intro {
     margin-top: 5rem;
-  }
-
-  .face {
-    width: 360px;
   }
 
   .mockup {
