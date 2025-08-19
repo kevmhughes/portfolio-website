@@ -647,7 +647,8 @@ figcaption {
 }
 
 .about-icons-container {
-  justify-self: center;
+  display: flex;
+  justify-content: center;
   margin: 2rem 0
 }
 
