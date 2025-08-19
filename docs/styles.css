@@ -762,7 +762,13 @@ figcaption {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1600px) {
+  .about-icons {
+    height: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
   .icons-animation-one {
     opacity: 0;
     transform: scale(0.9);
