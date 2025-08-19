@@ -15,92 +15,96 @@
   <link rel="manifest" href="assets/favicon/site.webmanifest" />
 </head>
 
-<header>
-  <div class="nav-bar">
-    <a href="./index.html" class="nav-bar-name">KH</a>
-    <div class="nav-items">
-      <div class="nav-item-link">
-        <a href="./projects.html">Projects</a>
-      </div>
-      <div class="nav-item-link active"><a href="./about.html">About</a></div>
-      <div class="nav-item-link"><a href="./contact.html">Contact</a></div>
-      <div class="nav-flag-container">
-        <a href="./about-es.html"><img src="./assets/flags/spain.png" alt="Spanish flag" class="nav-flag"></a>
+
+<body>
+  <header>
+    <div class="nav-bar">
+      <a href="./index.html" class="nav-bar-name">KH</a>
+      <div class="nav-items">
+        <div class="nav-item-link">
+          <a href="./projects.html">Projects</a>
+        </div>
+        <div class="nav-item-link active"><a href="./about.html">About</a></div>
+        <div class="nav-item-link"><a href="./contact.html">Contact</a></div>
+        <div class="nav-flag-container">
+          <a href="./about-es.html"><img src="./assets/flags/spain.png" alt="Spanish flag" class="nav-flag"></a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="nav-bar-mobile">
-    <a href="./index.html" class="nav-bar-name">KH</a>
-    <div class="nav-bar-mobile-items-container">
-      <div class="nav-flag-container">
-        <a href="./about-es.html"><img src="./assets/flags/spain.png" alt="Spanish flag" class="nav-flag"></a>
+    <div class="nav-bar-mobile">
+      <a href="./index.html" class="nav-bar-name">KH</a>
+      <div class="nav-bar-mobile-items-container">
+        <div class="nav-flag-container">
+          <a href="./about-es.html"><img src="./assets/flags/spain.png" alt="Spanish flag" class="nav-flag"></a>
+        </div>
+        <button class="burger" id="burger" aria-label="Toggle navigation">
+          <span class="burger-line line1"></span>
+          <span class="burger-line line2"></span>
+          <span class="burger-line line3"></span>
+        </button>
       </div>
-      <button class="burger" id="burger" aria-label="Toggle navigation">
-        <span class="burger-line line1"></span>
-        <span class="burger-line line2"></span>
-        <span class="burger-line line3"></span>
+
+      <div class="nav-items-mobile" id="nav-items-mobile">
+        <div class="nav-item-link-mobile"><a href="./projects.html">Projects</a></div>
+        <div class="nav-item-link-mobile active"><a href="./about.html">About</a></div>
+        <div class="nav-item-link-mobile"><a href="./contact.html">Contact</a></div>
+      </div>
+    </div>
+  </header>
+
+  <h1 class="projects-title">
+    About
+  </h1>
+
+  <main class="about-main-container">
+    <article>
+      <p class="about-text about-text-animation-one">
+        I'm a web developer based in Malaga with a passion for building clean, functional, and
+        beautifully designed applications. I enjoy turning complex ideas into seamless digital experiences, always with
+        a
+        focus on user-centered design and high-quality code.
+      </p>
+
+      <div class="about-icons-container">
+        <img src="./assets/icons/coding.svg" class="about-icons icons-animation-one" alt="coding icon" />
+      </div>
+
+      <p class="about-text about-text-animation-two">
+        I'm currently open to both full-time and freelance opportunities. My experience has taught me how to balance
+        creativity with technical precision, delivering solutions that not only meet requirements but also delight users
+        and clients alike.
+      </p>
+
+      <div class="about-icons-container">
+        <img src="./assets/icons/coffee.svg" class="about-icons icons-animation-two" alt="coffee icon" />
+      </div>
+
+      <p class="about-text about-text-animation-three">
+        Beyond coding, I draw inspiration from my other passions: exploring global coffee varieties, music production
+        and
+        collecting records from an array of musical styles, and experimenting with international cuisine at home. These
+        interests fuel my creativity and
+        help me bring fresh perspectives into my work.
+      </p>
+
+      <div class="about-icons-container">
+        <img src="./assets/icons/music.svg" class="about-icons icons-animation-three" alt="ghetto blaster icon" />
+      </div>
+    </article>
+  </main>
+
+
+  <footer>
+    <div class="download-button-container">
+      <button class="download-button" target="_blank"
+        onclick="window.open('./assets/cv/Kevin Hughes - Web Developer CV.pdf')">
+        Download CV
       </button>
     </div>
+  </footer>
 
-    <div class="nav-items-mobile" id="nav-items-mobile">
-      <div class="nav-item-link-mobile"><a href="./projects.html">Projects</a></div>
-      <div class="nav-item-link-mobile active"><a href="./about.html">About</a></div>
-      <div class="nav-item-link-mobile"><a href="./contact.html">Contact</a></div>
-    </div>
-  </div>
-</header>
-
-<h1 class="projects-title">
-  About
-</h1>
-
-<main class="about-main-container">
-  <article>
-    <p class="about-text about-text-animation-one">
-      I'm a web developer based in Malaga with a passion for building clean, functional, and
-      beautifully designed applications. I enjoy turning complex ideas into seamless digital experiences, always with a
-      focus on user-centered design and high-quality code.
-    </p>
-
-    <div class="about-icons-container">
-      <img src="./assets/icons/coding.svg" class="about-icons icons-animation-one" alt="coding icon"/>
-    </div>
-
-    <p class="about-text about-text-animation-two">
-      I'm currently open to both full-time and freelance opportunities. My experience has taught me how to balance
-      creativity with technical precision, delivering solutions that not only meet requirements but also delight users
-      and clients alike.
-    </p>
-
-    <div class="about-icons-container">
-      <img src="./assets/icons/coffee.svg" class="about-icons icons-animation-two" alt="coffee icon"/>
-    </div>
-
-    <p class="about-text about-text-animation-three">
-      Beyond coding, I draw inspiration from my other passions: exploring global coffee varieties, music production and
-      collecting records from an array of musical styles, and experimenting with international cuisine at home. These
-      interests fuel my creativity and
-      help me bring fresh perspectives into my work.
-    </p>
-
-    <div class="about-icons-container">
-      <img src="./assets/icons/music.svg" class="about-icons icons-animation-three" alt="ghetto blaster icon"/>
-    </div>
-  </article>
-</main>
-
-
-<footer>
-  <div class="download-button-container">
-    <button class="download-button" target="_blank"
-      onclick="window.open('./assets/cv/Kevin Hughes - Web Developer CV.pdf')">
-      Download CV
-    </button>
-  </div>
-</footer>
-
-<script src="./js/hamburger-menu.js"></script>
+  <script src="./js/hamburger-menu.js"></script>
 </body>
 
 </html>

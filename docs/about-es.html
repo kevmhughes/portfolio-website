@@ -15,92 +15,97 @@
   <link rel="manifest" href="assets/favicon/site.webmanifest" />
 </head>
 
-<header>
-  <div class="nav-bar">
-    <a href="./index-es.html" class="nav-bar-name">KH</a>
-    <div class="nav-items">
-      <div class="nav-item-link">
-        <a href="./projects-es.html">Proyectos</a>
-      </div>
-      <div class="nav-item-link active"><a href="./about-es.html">Sobre Mí</a></div>
-      <div class="nav-item-link"><a href="./contact-es.html">Contacto</a></div>
-      <div class="nav-flag-container">
-        <a href="./about.html"><img src="./assets/flags/united-kingdom.png" alt="Bandera Británica"
-            class="nav-flag"></a>
+<body>
+  <header>
+    <div class="nav-bar">
+      <a href="./index-es.html" class="nav-bar-name">KH</a>
+      <div class="nav-items">
+        <div class="nav-item-link">
+          <a href="./projects-es.html">Proyectos</a>
+        </div>
+        <div class="nav-item-link active"><a href="./about-es.html">Sobre Mí</a></div>
+        <div class="nav-item-link"><a href="./contact-es.html">Contacto</a></div>
+        <div class="nav-flag-container">
+          <a href="./about.html"><img src="./assets/flags/united-kingdom.png" alt="Bandera Británica"
+              class="nav-flag"></a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="nav-bar-mobile">
-    <a href="./index-es.html" class="nav-bar-name">KH</a>
-    <div class="nav-bar-mobile-items-container">
-      <div class="nav-flag-container">
-        <a href="./about.html"><img src="./assets/flags/united-kingdom.png" alt="Bandera Británica"
-            class="nav-flag"></a>
+    <div class="nav-bar-mobile">
+      <a href="./index-es.html" class="nav-bar-name">KH</a>
+      <div class="nav-bar-mobile-items-container">
+        <div class="nav-flag-container">
+          <a href="./about.html"><img src="./assets/flags/united-kingdom.png" alt="Bandera Británica"
+              class="nav-flag"></a>
+        </div>
+        <button class="burger" id="burger" aria-label="Alternar navegación">
+          <span class="burger-line line1"></span>
+          <span class="burger-line line2"></span>
+          <span class="burger-line line3"></span>
+        </button>
       </div>
-      <button class="burger" id="burger" aria-label="Alternar navegación">
-        <span class="burger-line line1"></span>
-        <span class="burger-line line2"></span>
-        <span class="burger-line line3"></span>
+      <div class="nav-items-mobile" id="nav-items-mobile">
+        <div class="nav-item-link-mobile"><a href="./projects-es.html">Proyectos</a></div>
+        <div class="nav-item-link-mobile active"><a href="./about-es.html">Sobre Mí</a></div>
+        <div class="nav-item-link-mobile"><a href="./contact-es.html">Contacto</a></div>
+      </div>
+    </div>
+  </header>
+
+  <h1 class="projects-title">
+    Sobre Mí
+  </h1>
+
+  <main class="about-main-container">
+    <article>
+      <p class="about-text about-text-animation-one">
+        Soy un desarrollador web con sede en Málaga, apasionado por crear aplicaciones limpias, funcionales y con un
+        diseño atractivo. Me gusta transformar ideas complejas en experiencias digitales fluidas, siempre con enfoque en
+        el usuario y en un código de alta calidad.
+      </p>
+
+      <div class="about-icons-container">
+        <img src="./assets/icons/coding.svg" class="about-icons icons-animation-one" alt="icono de programación" />
+      </div>
+
+      <p class="about-text about-text-animation-two">
+        Actualmente estoy abierto a oportunidades tanto a tiempo completo como freelance. Mi experiencia me ha enseñado
+        a
+        equilibrar la creatividad con la precisión técnica, ofreciendo soluciones que superan expectativas y satisfacen
+        a
+        usuarios y clientes.
+      </p>
+
+      <div class="about-icons-container">
+        <img src="./assets/icons/coffee.svg" class="about-icons icons-animation-two" alt="icono de café" />
+      </div>
+
+      <p class="about-text about-text-animation-three">
+        Más allá de la programación, encuentro inspiración en mis otras pasiones: explorar cafés del mundo, la
+        producción
+        musical, coleccionar discos de diversos estilos y experimentar con cocina internacional. Estos intereses nutren
+        mi
+        creatividad y aportan nuevas perspectivas a mi trabajo.
+      </p>
+
+
+      <div class="about-icons-container">
+        <img src="./assets/icons/music.svg" class="about-icons icons-animation-three" alt="icono de radiocasete" />
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="download-button-container">
+      <button class="download-button" target="_blank"
+        onclick="window.open('./assets/cv/Kevin Hughes - CV Desarrollador Web.pdf')">
+        Descargar CV
       </button>
     </div>
-    <div class="nav-items-mobile" id="nav-items-mobile">
-      <div class="nav-item-link-mobile"><a href="./projects-es.html">Proyectos</a></div>
-      <div class="nav-item-link-mobile active"><a href="./about-es.html">Sobre Mí</a></div>
-      <div class="nav-item-link-mobile"><a href="./contact-es.html">Contacto</a></div>
-    </div>
-  </div>
-</header>
+  </footer>
 
-<h1 class="projects-title">
-  Sobre Mí
-</h1>
-
-<main class="about-main-container">
-  <article>
-    <p class="about-text about-text-animation-one">
-      Soy un desarrollador web con sede en Málaga, apasionado por crear aplicaciones limpias, funcionales y con un
-      diseño atractivo. Me gusta transformar ideas complejas en experiencias digitales fluidas, siempre con enfoque en
-      el usuario y en un código de alta calidad.
-    </p>
-
-    <div class="about-icons-container">
-      <img src="./assets/icons/coding.svg" class="about-icons icons-animation-one" alt="icono de programación" />
-    </div>
-
-    <p class="about-text about-text-animation-two">
-      Actualmente estoy abierto a oportunidades tanto a tiempo completo como freelance. Mi experiencia me ha enseñado a
-      equilibrar la creatividad con la precisión técnica, ofreciendo soluciones que superan expectativas y satisfacen a
-      usuarios y clientes.
-    </p>
-
-    <div class="about-icons-container">
-      <img src="./assets/icons/coffee.svg" class="about-icons icons-animation-two" alt="icono de café" />
-    </div>
-
-    <p class="about-text about-text-animation-three">
-      Más allá de la programación, encuentro inspiración en mis otras pasiones: explorar cafés del mundo, la producción
-      musical, coleccionar discos de diversos estilos y experimentar con cocina internacional. Estos intereses nutren mi
-      creatividad y aportan nuevas perspectivas a mi trabajo.
-    </p>
-
-
-    <div class="about-icons-container">
-      <img src="./assets/icons/music.svg" class="about-icons icons-animation-three" alt="icono de radiocasete" />
-    </div>
-  </article>
-</main>
-
-<footer>
-  <div class="download-button-container">
-    <button class="download-button" target="_blank"
-      onclick="window.open('./assets/cv/Kevin Hughes - CV Desarrollador Web.pdf')">
-      Descargar CV
-    </button>
-  </div>
-</footer>
-
-<script src="./js/hamburger-menu.js"></script>
+  <script src="./js/hamburger-menu.js"></script>
 </body>
 
 </html>
