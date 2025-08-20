@@ -636,7 +636,7 @@ figcaption {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1200px;
+  max-width: 800px;
   margin: auto;
 }
 
@@ -1183,7 +1183,7 @@ figcaption {
 /* PICO CSS STYLE FORM */
 /* Mimic Pico.css form styling */
 form {
-  max-width: 1200px;
+  max-width: 800px;
   margin: 2rem auto;
   padding: 4rem;
   display: flex;
